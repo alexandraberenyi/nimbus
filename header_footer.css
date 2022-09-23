@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(40, 96, 112, 1);
+}
+
+.headbar {
+    background-color: rgba(100, 139, 138, 1);
+    display: block;
+}
+
+.main-head{
+    height: 50vw;
+
+}
+
+.head-cont {
+    display:inline-block;}
+
+.logo {
+    width: 50vw;
+    background-color: rgba(100, 139, 138, 0.5);
+}
+
+.elte-met {
+    color: white;
+    width: 50vw;
+    vertical-align: middle;
+    background-color: rgba(100, 139, 138, 0.5);
+}
+
+
+
