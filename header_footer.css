@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     background-color: rgba(40, 96, 112, 1);
 }
@@ -16,12 +21,12 @@ header {
 }
 
 .head-cont {
-    display:inline-block;}
+    display:inline-block;
+}
 
 .logo {
     width: 50vw;
     padding:8%;
-    
 }
 
 .elte-met {
@@ -31,7 +36,7 @@ header {
     vertical-align: top;
 }
 
-.elte {
+.main_text {
     padding-left:10%;
     display: table;
     width: 100%;
@@ -46,5 +51,11 @@ ul {
 h1 {
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 1.5em;
+    font-size:1.2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+.elte {
+    font-size:2.8em;
 }
