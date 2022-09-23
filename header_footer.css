@@ -13,7 +13,6 @@ header {
 
 .main-head{
     height: 50vw;
-
 }
 
 .head-cont {
@@ -21,15 +20,31 @@ header {
 
 .logo {
     width: 50vw;
-    background-color: rgba(100, 139, 138, 0.5);
+    padding:8%;
+    
 }
 
 .elte-met {
     color: white;
     width: 50vw;
-    vertical-align: middle;
-    background-color: rgba(100, 139, 138, 0.5);
+    height: 50vw;
+    vertical-align: top;
 }
 
+.elte {
+    padding-left:10%;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
 
+ul {
+    display: table-cell;
+    vertical-align: middle;
+}
 
+h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5em;
+}
