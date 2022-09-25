@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--JS-->
+    <script src = "nav.js"></script>
+
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="header_footer.css">    
@@ -15,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
     <title>ELTE Meteorológiai Tanszék</title>
+
+    <!--icons(font-awesome)-->
+    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
   
   </head>
   
@@ -23,11 +29,11 @@
     <!--------------------------- FEJLEC ----------------------->   
     <header>
       <div class="headbar">
-        <a href="#" class="">EN/HUN</a>
+        <a href="#" class="link_light">EN/HUN</a>
       </div>
       <div class="main-head ">
         <div class="logo-cont head-cont">
-          <img class = "logo" src="/media/elte_logo.png" alt="logo">
+          <a href="index.html"><img class = "logo" src="/media/elte_logo.png" alt="logo"></a>
         </div><!--white space reset
         --><div class="elte-met head-cont">
           <div class="main_text">
@@ -38,51 +44,78 @@
           </div>
         </div>
         <div class="head-contact">
-
         </div>
       </div>
     </header>
 
     <!--------------------------- MENU ----------------------->
-    <nav class="topnav" id="respTopnav">
-      <ul>
-        <li><a href="hirek.html">Hírek</a></li>
-        <li><a href="#" class="hallgatok">Hallgatóknak</a>
-          <ul>
-            <li><a href="#" class="dropdown">BSc tudástár</a></li>
-            <li><a href="#" class="dropdown">MSc tudástár</a></li>
-            <li><a href="#" class="dropdown">PhD képzés</a></li>
-            <li><a href="#" class="dropdown">Mentorálási program</a></li>
-            <li><a href="#" class="dropdown">TDK</a></li>
-            <li><a href="#" class="dropdown">Erasmus</a></li>
-            <li><a href="#" class="dropdown">Pályázatok és ösztöndíjak</a></li>
-            <li><a href="#EXT#" class="dropdown">Előrejelzési vetélkedő</a></li>
-            <li><a href="#" class="dropdown">Jegyzetek és segédanyagok</a></li>
-          </ul>
-        </li>
-        <li><a href="kutatas.html">Kutatás</a></li>
-        <li><a href="munkatarsak.html">Munkatársak</a></li>
-        <li><a href="#" class="deptinfo">A Tanszékről
-          <ul>
-            <li><a href="#" class="dropdown">Elérhetőség</a></li>
-            <li><a href="#" class="dropdown">Történet</a></li>
-            <li><a href="#" class="dropdown">Végzett hallgatók</a></li>
-            <li><a href="#" class="dropdown">Kirándulások</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="topnav" id="mobileTopnav">
+      <a href="hirek.html">Hírek</a>
+      <div class="dropdwn">
+        <button class="hallgatoknak">Hallgatóknak
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdwn_content">
+          <a href="#">BSc tudástár</a>
+          <a href="#">MSc tudástár</a>
+          <a href="#">PhD képzés</a>
+          <a href="#">Mentorálási program</a>
+          <a href="#">TDK</a>
+          <a href="#">Erasmus</a>
+          <a href="#">Pályázatok és ösztöndíjak</a>
+          <a href="#EXT#">Előrejelzési vetélkedő</a>
+          <a href="#">Jegyzetek és segédanyagok</a>
+        </div>   
+      </div>
+      <a href="kutatas.html">Kutatás</a>
+      <a href="munkatarsak.html">Munkatársak</a>
+      <div class="dropdwn">
+        <button class="deptinfo">A Tanszékről
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdwn_content">
+          <a href="#">Elérhetőség</a>
+          <a href="#">Történet</a>
+          <a href="#">Végzett hallgatók</a>
+          <a href="#">Kirándulások</a>
+        </div>
+      </div> 
+      <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+    </div>
+
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc">
+      <a href="index.html" class="link_light">Főoldal</a>
+    </div>
+
+
     <!--------------------------- TORZS ----------------------->
     <main>
       <div class="content">
-
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
     </main>                                                                          
 
     <!--------------------------- FOOTER ----------------------->
     <footer>
+      <div class="footer_contact">
+        <h1>ELTE Meteorológiai Taszék</h1>
+        <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+        <p><span>Telefon:</span> 06 (1) 372-2945</p>
+        <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+        <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+      </div>
       <div class="webmaestros">
-        Webmesterek: <a href="#">Breuer Hajnalka</a>, <a href="#">Leelőssy Ádám</a>, <a href="#">Barcza Zoltán</a>
+        <p><span>Webmesterek: </p></span>
+        <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+        <p class="webdev"><span>Weboldal fejlesztés: </span><a href="#" class="link_light">Berényi Alexandra</a></p>
+        <p>© 2022 ELTE Meteorológiai Tanszék</p>
+        <p>MInden jog fenntartva.</p>
       </div>
       <div class="pagemap">
 
