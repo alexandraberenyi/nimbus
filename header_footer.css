@@ -30,6 +30,33 @@ header {
     padding-top:.7em;
 }
 
+.hbcont {
+    display: inline-block;
+}
+
+.searchbar {
+    float: right;
+    position: absolute;
+    top: .35em;
+    right:20px;
+}
+
+.placeholder {
+    background-color: #fff;
+    height: 1.5em;
+    vertical-align: center;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.searchbar button {
+    background-color: rgba(100, 139, 138, 1);
+    font-size: 17px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 .main-head{
     height: 50vw;
 }

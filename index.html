@@ -29,7 +29,22 @@
     <!--------------------------- FEJLEC ----------------------->   
     <header>
       <div class="headbar">
-        <a href="#" class="link_light">EN/HUN</a>
+        <div class="language hbcont">
+          <a href="index.html" class="link_light active">Magyar</a>
+          <a href="index_en.html" class="link_light">English</a>
+        </div>
+        <div class="ext_links hbcont">
+          <a href="elte.hu" class="link_light">ELTE</a>
+          <a href="neptun.elte.hu" class="link_light">Neptun</a>
+        </div>
+        <div class="searchbar hbcont">
+          <form method="get" action="http://www.google.com/search">
+            <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input name="domains" value="nimbus.elte.hu" type="hidden">
+            <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+          </form>   
+        </div>
       </div>
       <div class="main-head ">
         <div class="logo-cont head-cont">
