@@ -5,6 +5,8 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    height: 100vh;
 }
 
 .link_light {
@@ -294,6 +296,8 @@ nav .fa {
 }
 
 /*-----CONTENT-----*/
+
+
 .content {
     padding: 20px;
     background-color: #fff;
@@ -301,6 +305,12 @@ nav .fa {
 
 .content p {
 padding: 10px;
+}
+
+@media (min-width:600px) {
+    main {
+        min-height: calc(100vh - 4.4em - 331px);
+    }
 }
 
 
@@ -353,7 +363,6 @@ span {
 @media (min-width:600px) {
 
     footer {
-        bottom: 0;
         padding: 0px;
         height: 150px;
         margin: 0px;
@@ -365,6 +374,7 @@ span {
         display:none;
         padding: 0px;
         margin: 0px;
+        overflow: none;
     }
 
     .pagemap .copyright {
