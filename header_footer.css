@@ -7,6 +7,11 @@
     color: white;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+}
 
 @media (min-width:600px) {
     .top_head {
@@ -14,6 +19,7 @@
         position: fixed;
         top: 0px;
         z-index: 999;
+        width: 100%;
     }
 
     .logo, .main_text, .main-head, .elte-met, .cont_text, .head-contact{
@@ -36,7 +42,7 @@ header {
 .headbar {
     background-color: rgba(100, 139, 138, 1);
     display: block;
-    width:100vw;
+    width:100%;
     height: 2.2em;
 }
 
@@ -143,6 +149,7 @@ header {
 
 .main-head{
     height: 50vw;
+    width: 100%;
 }
 
 .head-cont {
@@ -362,6 +369,18 @@ a .fa {
     color: white;
 }
 
+.mobile_logo{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    margin: 0.4em;
+    opacity: 0;
+}
+
+.m_logo {
+    height: 3em;
+}
+
 @media (min-width:600px) {
 
     nav {
@@ -431,6 +450,9 @@ a .fa {
         display: none;
     }
 
+    .mobile_logo{
+        display:none;
+    }
 }
 
 
