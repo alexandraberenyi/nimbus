@@ -5,4 +5,17 @@ function respTopnav() {
     } else {
       x.className = "topnav";
     }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var x = document.getElementById("main-head_id");
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (x.className === "main-head") {
+      x.className += " scroll";
+    } 
+  } else {
+    x.className = "main-head";
   }
+}

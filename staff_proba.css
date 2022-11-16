@@ -1,0 +1,72 @@
+
+
+.container {
+    width: 100vw;
+
+}
+
+.staff_container {
+    background-color: aqua;
+}
+
+.staff1{
+    background-color: blue;
+}
+
+.staff2{
+    background-color:coral;
+}
+
+.staff3{
+    background-color: deeppink;
+}
+
+.staff4{
+    background-color: chartreuse;
+}
+
+.staff_pic{
+    width: 170px;
+    height: 170px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+@media (max-width:599px) {
+    .staff_container {
+        width: 80vw; 
+        margin: 0 auto;
+    }
+
+    .st {
+        height: 400px;
+    }
+}
+
+@media (min-width:600px) {
+    .staff_container {
+        display: block;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .st{
+        display: block;
+        width: 600px;
+        height: 170px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .staff_container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .st{
+        display: block;
+        width: 600px;
+        float: left
+    }
+}
