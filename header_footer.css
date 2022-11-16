@@ -439,6 +439,7 @@ a .fa {
 /*-----LOCATION-----*/
 
 .currloc {
+    margin-top: calc(181px + 2.3em);
     background-color: rgba(100, 139, 138, 1);
     display: block;
     width:100vw;
