@@ -1,0 +1,14 @@
+.mobile_logo{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.mobile_logo.scroll {
+    opacity: 1;
+}
+
+@media (min-width:600px) {
+    .mobile_logo, .mobile_logo.scroll {
+        display: none;
+    }
+}
