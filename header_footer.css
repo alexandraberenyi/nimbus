@@ -51,6 +51,7 @@ header {
     display: inline-block;
     padding: 0.6em;
     font-weight: 600;
+    font-size: 1;
 }
 
 .ext_links {
@@ -136,6 +137,7 @@ header {
         vertical-align: center;
         border-radius: 20px;
         padding-left: 15px;
+        width: 150px;
     }
 
 
@@ -163,7 +165,7 @@ header {
 
 .elte-met {
     color: white;
-    width: 45vw;
+    width: 40vw;
     height: 50vw;
     vertical-align: top;
 }
@@ -183,13 +185,13 @@ ul {
 .main_text h1 {
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size:6vw;
+    font-size: 6vw;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
 
 h1.elte{
-    font-size:10vw;
+    font-size:8vw;
     font-weight: 300;
 }
 
@@ -237,7 +239,7 @@ h1.elte{
 
     .head-contact {
         position: relative;
-        width: 39vw;
+        width: 35vw;
         height: 120px;
         float:right;
         text-align: right;
@@ -247,6 +249,7 @@ h1.elte{
 
     .cont_text{
         float: right;
+        font-size: 90%;
     }
 
     .head-contact li {
@@ -452,6 +455,17 @@ a .fa {
     .mobile_logo{
         display:none;
     }
+}
+
+@media (min-width:1107px) {
+    .topnav{
+        transition: 0.4s;
+    }
+    .topnav.scroll {
+        transform: translate(200px, -36px);
+        height: 0px;
+    }
+
 }
 
 
