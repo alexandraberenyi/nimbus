@@ -15,7 +15,6 @@ body {
 
 @media (min-width:600px) {
     .top_head {
-        position: -webkit-sticky; /* Safari */
         position: fixed;
         top: 0px;
         z-index: 999;
