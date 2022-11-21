@@ -84,10 +84,10 @@
       <div class="topnav" id="mobileTopnav">
         <a href="hirek.html">Hírek</a>
         <div class="dropdwn">
-          <a href="#" class="hallgatoknak">Hallgatóknak
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
             <i class="fa fa-caret-down" aria-hidden="true"></i>
           </a>
-          <div class="dropdwn_content dc_hall">
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
             <a href="#">BSc tudástár</a>
             <a href="#">MSc tudástár</a>
             <a href="#">PhD képzés</a>
@@ -102,10 +102,10 @@
         <a href="kutatas.html">Kutatás</a>
         <a href="staff.html">Munkatársak</a>
         <div class="dropdwn">
-          <a href="#" class="deptinfo">A Tanszékről
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
             <i class="fa fa-caret-down" aria-hidden="true"></i>
           </a>
-          <div class="dropdwn_content dc_dept">
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
             <a href="#">Elérhetőség</a>
             <a href="#">Történet</a>
             <a href="#">Végzett hallgatók</a>
@@ -119,7 +119,7 @@
     </div>
     <!-------------------------- LOCATION --------------------->
 
-    <div class="currloc">
+    <div class="currloc" id="currloc_id">
       <a href="index.html" class="link_light">Főoldal</a>
     </div>
 

@@ -13,7 +13,7 @@ body {
     overflow-x:hidden;
 }
 
-@media (min-width:600px) {
+@media (min-width:764px) {
     .top_head {
         position: fixed;
         top: 0px;
@@ -109,7 +109,7 @@ header {
 
 
 
-@media (min-width:600px) {
+@media (min-width:764px) {
     .hbcont {
         display: inline-block;
     }
@@ -167,6 +167,7 @@ header {
     width: 40vw;
     height: 50vw;
     vertical-align: top;
+    background-color: #3b5998;
 }
 
 .main_text {
@@ -194,18 +195,17 @@ h1.elte{
     font-weight: 300;
 }
 
-@media (max-width:600px) {
+@media (max-width:764px) {
     .head-contact {
         display: none;
     }
 }
 
 
-@media (min-width:600px) {
+@media (min-width:764px) {
     
     header {
         margin-top: 0px;
-    
     }
     
 
@@ -284,6 +284,13 @@ h1.elte{
     }
 }
 
+@media (min-width:1107px) {
+    header{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
+    }
+
+}
+
 /*-----MENU-----*/
 
 .topnav a, .hallgatoknak, .deptinfo{
@@ -360,10 +367,15 @@ a .fa {
     display: none;
 }
 
-.dropdwn:hover .dropdwn_content {
+/*.dropdwn:hover .dropdwn_content {
     display: block;
     background-color: rgba(100, 139, 138, 1);
 
+}*/
+
+.show {
+    display: block;
+    background-color: rgba(100, 139, 138, 1);
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -382,7 +394,7 @@ a .fa {
     height: 3em;
 }
 
-@media (min-width:600px) {
+@media (min-width:764px) {
 
     nav {
         position: relative;
@@ -427,6 +439,11 @@ a .fa {
         margin: 0;
     }
 
+    .dropdwn:hover .dropdwn_content {
+        display: block;
+        background-color: rgba(100, 139, 138, 1);
+    }
+
     .dropdwn_content{
         position: absolute;
         top: 36px;
@@ -452,6 +469,10 @@ a .fa {
     }
 
     .mobile_logo{
+        display:none;
+    }
+
+    .show {
         display:none;
     }
 }
@@ -483,12 +504,17 @@ a .fa {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-@media (min-width:600px) {
+@media (min-width:764px) {
     
     .currloc {
         position: relative;
         background-color: rgba(255, 255, 255, 1);
-        margin-top: calc(181px + 2.3em);
+        margin-top: calc(191px + 2.3em);
+        transition: 0.4s;
+    }
+
+    .currloc.scroll {
+        margin-top: calc(131px + 2.3em);
     }
 
     .currloc a {
@@ -508,7 +534,7 @@ a .fa {
 padding: 10px;
 }
 
-@media (min-width:600px) {
+@media (min-width:764px) {
     main {
         min-height: calc(100vh - 4.4em - 331px);
     }
@@ -549,7 +575,7 @@ span {
     font-weight: 900; 
 }
 
-@media (max-width:600px) {
+@media (max-width:764px) {
     .footer_contact::after {
         display: inline-block;
         content: "";
@@ -565,7 +591,7 @@ span {
     padding-bottom: 10px;
 }
 
-@media (min-width:600px) {
+@media (min-width:764px) {
 
     footer {
         height: 170px;
@@ -582,6 +608,8 @@ span {
         max-width: 1200px;
         height: 100%;
         margin: 0 auto;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .footer_contact, .webmaestros, .pagemap {
@@ -589,7 +617,7 @@ span {
         float: left;
         width: 33.3%;
         padding: 8px;
-        padding-top:18px;
+        padding-top:12px;
         margin: 0px;
         text-align: left;
     }

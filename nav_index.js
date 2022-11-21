@@ -1,3 +1,4 @@
+/* responsive navigation bar*/
 function respTopnav() {
     var x = document.getElementById("mobileTopnav");
     if (x.className === "topnav") {
@@ -7,7 +8,19 @@ function respTopnav() {
     }
 }
 
-window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunction3()};
+
+/* small screen dropdown on click*/
+function dropMenuStud() {
+  document.getElementById("dropd_oncl_stud").classList.toggle("show");
+}
+
+function dropMenuDep() {
+  document.getElementById("dropd_oncl_dep").classList.toggle("show");
+}
+
+
+/* shrinks the headbar on scroll on bigger screens*/
+window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunction3(), scrollFunction4()};
 
 function scrollFunction() {
   var x = document.getElementById("main-head_id");
@@ -20,7 +33,19 @@ function scrollFunction() {
   }
 }
 
+/* margin adjustment when shrink*/
+function scrollFunction4() {
+  var x = document.getElementById("currloc_id");
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    if (x.className === "currloc") {
+      x.className += " scroll";
+    } 
+  } else {
+    x.className = "currloc";
+  }
+}
 
+/* changig the opacity of the logo in small screens on scroll */
 function scrollFunction2() {
   var z = document.getElementById("mobile_logo_id");
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -32,7 +57,7 @@ function scrollFunction2() {
   }
 }
 
-
+/* moving the menubar at the right size in screens bigger than 1107px */
 function scrollFunction3() {
   var z = document.getElementById("mobileTopnav");
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
