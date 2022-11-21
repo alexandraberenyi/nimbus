@@ -162,7 +162,12 @@ header {
     padding:8%;
 }
 
+.logo-cont {
+    float:left;
+}
+
 .elte-met {
+    float:left;
     color: white;
     width: 40vw;
     height: 50vw;
