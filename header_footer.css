@@ -409,6 +409,18 @@ a .fa {
         box-shadow: 0px 7px 8px rgba(0, 0, 0, .3);
     }
 
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav.responsive a.icon{
+        display: none;
+    }
+
+    .topnav.responsive{
+        display: none;
+    }
+
     .topnav {
         position: relative;
         padding: 0px;
@@ -432,11 +444,8 @@ a .fa {
         padding-top: 10px;
         text-transform: uppercase;
     }
-
-    .topnav a.icon {
-        display: none;
-    }
-
+   
+  
 
     .deptinfo, .hallgatoknak{
         outline: none;
