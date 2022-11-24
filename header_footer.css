@@ -365,9 +365,11 @@ h1.elte{
 
 .topnav.responsive {
     position: fixed;
+    top: 0;
+    bottom:0;
     padding:0px;
     z-index:99;
-    overflow-y:auto;
+    overflow-y: scroll;
 }
 
 .topnav.responsive a.icon {

@@ -27,6 +27,8 @@ window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunctio
 function scrollFunction3(){
   if (document.documentElement.scrollTop > 80) {
     document.getElementById("mobileTopnav").classList.remove("responsive");
+    document.getElementById("dropd_oncl_stud").classList.remove("show");
+    document.getElementById("dropd_oncl_dep").classList.remove("show");
   }
 }
 
