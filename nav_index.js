@@ -5,6 +5,8 @@ function respTopnav() {
       x.className += " responsive";
     } else {
       x.className = "topnav";
+      document.getElementById("dropd_oncl_stud").classList.remove("show");
+      document.getElementById("dropd_oncl_dep").classList.remove("show");
     }
 }
 
@@ -21,6 +23,13 @@ function dropMenuDep() {
 
 /* shrinks the headbar on scroll on bigger screens*/
 window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunction3(), scrollFunction4()};
+
+function scrollFunction3(){
+  if (document.documentElement.scrollTop > 80) {
+    document.getElementById("mobileTopnav").classList.remove("responsive");
+  }
+}
+
 
 function scrollFunction() {
   var x = document.getElementById("main-head_id");
@@ -57,7 +66,7 @@ function scrollFunction2() {
   }
 }
 
-/* moving the menubar at the right size in screens bigger than 1107px */
+/* moving the menubar at the right size in screens bigger than 1107px 
 function scrollFunction3() {
   var z = document.getElementById("mobileTopnav");
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -68,3 +77,4 @@ function scrollFunction3() {
     z.className = "topnav";
   }
 }
+*/
