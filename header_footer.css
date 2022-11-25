@@ -16,6 +16,7 @@ body {
 @media (min-width:600px) {
     .top_head {
         position: fixed;
+        top: 0px;
         z-index: 999;
         width: 100%;
     }
@@ -176,7 +177,6 @@ header {
     width: 40vw;
     height: 50vw;
     vertical-align: top;
-    background-color: #3b5998;
 }
 
 .main_text {
@@ -331,7 +331,7 @@ h1.elte{
     }
 }
 
-@media (min-width:1107px) {
+@media (min-width:600px) {
     header{
         box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
     }
@@ -366,10 +366,36 @@ h1.elte{
 .topnav.responsive {
     position: fixed;
     top: 0;
-    bottom:0;
     padding:0px;
     z-index:99;
+    height: auto;
     overflow-y: scroll;
+}
+
+@media (max-height:350px) {
+    .topnav.responsive {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.topnav.responsive.dp_resp1 {
+    position: fixed;
+    bottom: 0;
+}
+
+.topnav.responsive.dp_resp2 {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (min-height: 590px) {
+    .topnav.responsive.dp_resp2{
+        position: fixed;
+        top: 50px;
+        height:540px;
+    }
 }
 
 .topnav.responsive a.icon {
@@ -578,6 +604,15 @@ a .fa {
 
 }
 
+@media (min-width:1700px) {
+    .topnav{
+        transform: translate(0px, -36px);
+        height: 0px;
+        transition: 0.4s;
+    }
+
+}
+
 
 
 
@@ -599,7 +634,7 @@ a .fa {
     .currloc {
         position: relative;
         background-color: rgba(255, 255, 255, 1);
-        margin-top: 0;
+        margin-top: calc(100px + 2.3em);
     }
 
 
@@ -613,16 +648,19 @@ a .fa {
     .currloc {
         position: relative;
         background-color: rgba(255, 255, 255, 1);
-        margin-top: calc(191px + 2.3em);
+        margin-top: calc(181px + 2.3em);
     }
 
-    .currloc.scroll {
-        margin-top: calc(131px + 2.3em);
+}
+
+@media (min-width:1107px) {
+    
+    .currloc {
+        position: relative;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: calc(146px + 2.3em);
     }
 
-    .currloc a {
-        color: rgba(40, 96, 112, 1);
-    }
 }
 
 /*-----CONTENT-----*/
@@ -637,13 +675,24 @@ a .fa {
 padding: 10px;
 }
 
-@media (min-width:764px) {
+@media (min-width:600px) {
     main {
-        min-height: calc(100vh - 4.4em - 331px);
+        min-height: calc(100vh - 2.2em - 400px);
     }
 }
 
 
+@media (min-width:900px) {
+    main {
+        min-height: calc(100vh - 4.4em - 221px);
+    }
+}
+
+@media (min-width:1107px) {
+    main {
+        min-height: calc(100vh - 4.4em - 316px);
+    }
+}
 
 /*-----FOOTER-----*/
 
@@ -652,6 +701,7 @@ footer {
     background-color: rgba(40, 96, 112, 1);
     color: white;
     padding:20px;
+    height: 320px;
 }
 
 .pagemap {
@@ -678,7 +728,7 @@ span {
     font-weight: 900; 
 }
 
-@media (max-width:764px) {
+@media (max-width:900px) {
     .footer_contact::after {
         display: inline-block;
         content: "";
@@ -694,7 +744,7 @@ span {
     padding-bottom: 10px;
 }
 
-@media (min-width:764px) {
+@media (min-width:900px) {
 
     footer {
         height: 170px;

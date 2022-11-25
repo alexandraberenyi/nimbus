@@ -14,28 +14,60 @@ function respTopnav() {
 /* small screen dropdown on click*/
 function dropMenuStud() {
   document.getElementById("dropd_oncl_stud").classList.toggle("show");
+  document.getElementById("mobileTopnav").classList.toggle("dp_resp1");
 }
 
 function dropMenuDep() {
   document.getElementById("dropd_oncl_dep").classList.toggle("show");
+  document.getElementById("mobileTopnav").classList.toggle("dp_resp2");
 }
+
+window.onclick = function(event) {
+  if (!event.target.matches('.hallgatoknak')) {
+    var dropdowns = document.getElementsByClassName("dc_hall");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        document.getElementById("mobileTopnav").classList.remove("dp_resp1");
+      }
+    }
+  }
+  if (!event.target.matches('.deptinfo')) {
+    var dropdowns = document.getElementsByClassName("dc_dept");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        document.getElementById("mobileTopnav").classList.remove("dp_resp2");
+      }
+    }
+  }
+}
+
+
 
 
 /* shrinks the headbar on scroll on bigger screens*/
 window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunction3(), scrollFunction4()};
+
 
 function scrollFunction3(){
   if (document.documentElement.scrollTop > 80) {
     document.getElementById("mobileTopnav").classList.remove("responsive");
     document.getElementById("dropd_oncl_stud").classList.remove("show");
     document.getElementById("dropd_oncl_dep").classList.remove("show");
+    document.getElementById("mobileTopnav").classList.remove("dp_resp1");
+    document.getElementById("mobileTopnav").classList.remove("dp_resp2");
   }
 }
 
 
 function scrollFunction() {
   var x = document.getElementById("main-head_id");
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     if (x.className === "main-head") {
       x.className += " scroll";
     } 
@@ -68,15 +100,9 @@ function scrollFunction2() {
   }
 }
 
-/* moving the menubar at the right size in screens bigger than 1107px 
-function scrollFunction3() {
-  var z = document.getElementById("mobileTopnav");
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    if (z.className === "topnav") {
-      z.className += " scroll";
-    } 
-  } else {
-    z.className = "topnav";
-  }
+
+window.onresize = function() {
+  document.getElementById("mobileTopnav").classList.remove("responsive");
+  document.getElementById("dropd_oncl_stud").classList.remove("show");
+  document.getElementById("dropd_oncl_dep").classList.remove("show");
 }
-*/
