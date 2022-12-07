@@ -101,6 +101,21 @@ function scrollFunction2() {
 }
 
 
+var lastScrollTop = 0;
+window.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   var x = document.getElementById("header_id");
+   if (st > lastScrollTop && st > 120){
+    if (x.className === "header_class") {
+      x.className += " scroll";
+      console.log(document.body.scrollTop)
+    } 
+   } else {
+    document.getElementById("header_id").classList.remove("scroll")
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+
 window.onresize = function() {
   document.getElementById("mobileTopnav").classList.remove("responsive");
   document.getElementById("dropd_oncl_stud").classList.remove("show");

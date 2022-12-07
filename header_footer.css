@@ -22,7 +22,7 @@ body {
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:950px) {
     .top_head {
         position: fixed;
         top: 0px;
@@ -37,7 +37,28 @@ body {
 
 }
 
+/*-----SCROLLBAR-----*/
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(200, 200, 200, 1);
+    border-radius:  15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 1); 
+  }
 
 /*-----FEJLEC-----*/
 
@@ -204,7 +225,7 @@ h1.elte{
     font-weight: 300;
 }
 
-@media (max-width:900px) {
+@media (max-width:950px) {
     .head-contact {
         display: none;
     }
@@ -247,9 +268,22 @@ h1.elte{
         height: 30px;
     }
 
+    @media (max-width:949px){
+        
+    /*ON-SCROLL*/
+
+    .header_class.scroll{
+        transform: translate(0px, -140px);
+        transition: 0.4s;
+    }
+
+    .header_class{
+        transition: 0.4s;
+    }
+    }
 }
 
-@media (min-width:900px) {
+@media (min-width:950px) {
     
     header {
         margin-top: 0px;
@@ -393,8 +427,14 @@ h1.elte{
 @media (min-height: 590px) {
     .topnav.responsive.dp_resp2{
         position: fixed;
-        top: 50px;
         height:540px;
+    }
+}
+
+@media (min-height: 890px) {
+    .topnav.responsive.dp_resp1{
+        position: fixed;
+        height: 840px;
     }
 }
 
@@ -491,7 +531,7 @@ a .fa {
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:950px) {
 
     nav {
         position: relative;
@@ -643,7 +683,7 @@ a .fa {
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:950px) {
     
     .currloc {
         position: relative;
@@ -682,7 +722,7 @@ padding: 10px;
 }
 
 
-@media (min-width:900px) {
+@media (min-width: 950px) {
     main {
         min-height: calc(100vh - 4.4em - 221px);
     }
@@ -728,7 +768,7 @@ span {
     font-weight: 900; 
 }
 
-@media (max-width:900px) {
+@media (max-width:950px) {
     .footer_contact::after {
         display: inline-block;
         content: "";
@@ -744,7 +784,7 @@ span {
     padding-bottom: 10px;
 }
 
-@media (min-width:900px) {
+@media (min-width:950px) {
 
     footer {
         height: 170px;
