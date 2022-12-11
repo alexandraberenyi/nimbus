@@ -717,13 +717,17 @@ padding: 10px;
 
 @media (min-width:600px) {
     main {
-        min-height: calc(100vh - 2.2em - 400px);
+        min-height: calc(100% - 2.2em - 400px);
+    }
+
+    .content{
+        min-height: calc(100% - 2.2em - 400px);
     }
 }
 
 
 @media (min-width: 950px) {
-    main {
+    main{
         min-height: calc(100vh - 4.4em - 221px);
     }
 }

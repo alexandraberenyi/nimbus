@@ -51,7 +51,12 @@ window.onclick = function(event) {
 
 
 /* shrinks the headbar on scroll on bigger screens*/
-window.onscroll = function() {scrollFunction(), scrollFunction2(), scrollFunction3(), scrollFunction4()};
+window.onscroll = function() {
+  scrollFunction();
+  scrollFunction2(); 
+  scrollFunction3(); 
+  scrollFunction4();
+};
 
 
 function scrollFunction3(){
@@ -120,4 +125,4 @@ window.onresize = function() {
   document.getElementById("mobileTopnav").classList.remove("responsive");
   document.getElementById("dropd_oncl_stud").classList.remove("show");
   document.getElementById("dropd_oncl_dep").classList.remove("show");
-}
+};
