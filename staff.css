@@ -180,3 +180,20 @@
     filter: grayscale(0%);
     transition: all 0.2s ease-in-out;
 }
+
+
+.easter_egg{
+    position: relative;
+    top: -170px;
+    display:none;
+}
+
+.easter_egg.surp{
+    position: relative;
+    top: -171px;
+    display:inline-block;
+}
+
+.cursor {
+    cursor: default;
+}
