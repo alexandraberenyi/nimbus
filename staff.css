@@ -40,7 +40,16 @@
         padding-bottom: 0px;
         margin-bottom: 30px;
     }
+.staff_info.row{
+    min-height: 50px;
+    padding-bottom: 0px;
+}
 
+@media (max-width:600px) {
+    .no_picture .pic-cont{
+        display:none;
+    }
+}
 
 @media (min-width:600px) {
     .pic-cont{
@@ -48,7 +57,6 @@
         height: 170px;
         display: block;
         float:left;
-
     }
 
     .staff_container, .staff_container_row{
@@ -164,11 +172,15 @@
     display: table-cell;
     vertical-align: middle;
     padding-right: 15px;
+    position: relative;
+    z-index: 10;
 }
 
 .staff-pub a {
     display: table-cell;
     padding-right: 15px;
+    position: relative;
+    z-index: 10;
 }
 
 .pub_logo {
@@ -190,6 +202,7 @@
 
 .easter_egg.surp{
     position: relative;
+    z-index: 5;
     top: -171px;
     display:inline-block;
 }

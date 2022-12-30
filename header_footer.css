@@ -13,6 +13,11 @@ body {
     overflow-x:hidden;
 }
 
+.top_head{
+    position: relative;
+    z-index: 999;
+}
+
 @media (min-width:600px) {
     .top_head {
         position: fixed;
@@ -401,7 +406,7 @@ h1.elte{
     position: fixed;
     top: 0;
     padding:0px;
-    z-index:99;
+    z-index:999;
     height: auto;
     overflow-y: scroll;
 }
