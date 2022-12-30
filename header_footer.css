@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-
-.link_light {
-    color: white;
-}
-
 body {
     height: 100%;
     width: 100%;
@@ -68,13 +63,11 @@ body {
 /*-----FEJLEC-----*/
 
 header {
-    background-color: rgba(40, 96, 112, 1);
     margin-top:60px;
-    padding-bottom: 5px;
 }
 
 .headbar {
-    background-color: rgba(100, 139, 138, 1);
+    background-color: rgba(93, 150, 148, 1);
     display: block;
     width:100%;
     height: 2.2em;
@@ -154,7 +147,7 @@ header {
     }
 
     .searchbar button {
-        background-color: rgba(100, 139, 138, 1);
+        background-color: rgba(93, 150, 148, 1);
         font-size: 17px;
         border: none;
         color: #fff;
@@ -182,6 +175,7 @@ header {
 .main-head{
     height: 50vw;
     width: 100%;
+    background-color: rgba(40, 96, 112, 1);
 }
 
 .head-cont {
@@ -432,14 +426,14 @@ h1.elte{
 @media (min-height: 590px) {
     .topnav.responsive.dp_resp2{
         position: fixed;
-        height:540px;
+        height:600px;
     }
 }
 
 @media (min-height: 890px) {
     .topnav.responsive.dp_resp1{
         position: fixed;
-        height: 840px;
+        height: 900px;
     }
 }
 
@@ -490,13 +484,13 @@ a .fa {
 
 /*.dropdwn:hover .dropdwn_content {
     display: block;
-    background-color: rgba(100, 139, 138, 1);
+    background-color: rgba(93, 150, 148, 1);
 
 }*/
 
 .show {
     display: block;
-    background-color: rgba(100, 139, 138, 1);
+    background-color: rgba(93, 150, 148, 1);
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -519,7 +513,7 @@ a .fa {
     .topnav {
         width: 60px;
         top: 50px;
-        background-color: rgba(100, 139, 138, 1);
+        background-color: rgba(93, 150, 148, 1);
         border-radius: 10px 0px 0px 10px;
     }
 
@@ -603,7 +597,7 @@ a .fa {
 
     .dropdwn:hover .dropdwn_content {
         display: block;
-        background-color: rgba(100, 139, 138, 1);
+        background-color: rgba(93, 150, 148, 1);
     }
 
     .dropdwn_content{
@@ -664,7 +658,7 @@ a .fa {
 /*-----LOCATION-----*/
 
 .currloc {
-    background-color: rgba(100, 139, 138, 1);
+    background-color: rgba(93, 150, 148, 1);
     display: block;
     width:100vw;
     height: 2.2em;
@@ -711,13 +705,12 @@ a .fa {
 /*-----CONTENT-----*/
 
 
-.content {
-    padding: 20px;
-    background-color: #fff;
-}
 
-.content p {
-padding: 10px;
+
+@media (max-width:600px) {
+    main {
+        min-height: calc(100vh - 450px);
+    }
 }
 
 @media (min-width:600px) {
