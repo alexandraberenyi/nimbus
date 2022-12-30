@@ -6,6 +6,7 @@ index.html
     - bsc_info.html
     - msc_info.html
     - phd_info.html
+    - for_students.html
     - tutoring.html
     - tdk.html
     - erasmus.html
