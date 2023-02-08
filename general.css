@@ -9,6 +9,10 @@ body {
     color: white;
 }
 
+.darkgreen {
+    color: rgba(40, 96, 112, 1);
+}
+
 .content {
     padding: 20px;
 }
@@ -35,8 +39,15 @@ body {
     color: rgba(93, 150, 148, 1);
 }
 
+.content h3 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(40, 96, 112, 1);
+    font-size: 1.2em;
+    padding: 15px;
+}
+
 .content{
-    margin-top: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
 }

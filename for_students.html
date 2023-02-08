@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src = "nav_index.js" defer></script>
+    <script src = "forstudent_resp.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header_footer.css">
+    <link rel="stylesheet" type="text/css" href="logo_remove.css">
+    <link rel="stylesheet" type="text/css" href="for_student.css"> 
+  
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <!--icons(font-awesome)-->
+    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+  
+    <!--favicon-->
+    <link rel="icon" href="elte.ico">
+    <title>ELTE Meteorológiai Tanszék</title>
+
+  </head>
+  
+  <body>
+    <div class="top_head">
+      <!--------------------------- FEJLEC ----------------------->   
+      <header id="header_id" class="header_class">
+        <div class="headbar">
+          <div class="language hbcont">
+            <a href="index.html" class="link_light active">Magyar</a>
+            <a href="index_en.html" class="link_light">English</a>
+          </div>
+          <div class="searchbar hbcont"  id="mobileSearch">
+            <form method="get" action="http://www.google.com/search" target="_blank">
+              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input name="domains" value="nimbus.elte.hu" type="hidden">
+              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+            </form>   
+          </div>
+          <div class="ext_links hbcont">
+            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+          </div>
+        </div>
+        <div class="main-head" id="main-head_id">
+          <div class="logo-cont head-cont">
+            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+          </div><!--white space reset
+          --><div class="elte-met head-cont">
+            <div class="main_text" >
+                <ul>
+                <li><h1 class="elte" >ELTE TTK</h1></li>
+                <li><h1 > Meteorológiai Tanszék</h1></li>
+                </ul>
+            </div>
+          </div>
+          <div class="head-contact">
+            <div class="cont_text">
+            <ul>
+              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------- MENU ----------------------->
+      <nav>
+        <div class="mobile_logo" id="mobile_logo_id">
+          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+        </div>
+      <div class="topnav" id="mobileTopnav">
+        <a href="news.html">Hírek</a>
+        <div class="dropdwn">
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+            <a href="bsc_info.html">BSc tudástár</a>
+            <a href="msc_info.html">MSc tudástár</a>
+            <a href="phd_info.html">PhD képzés</a>
+            <a href="for_students.html">Ismertető a képzésről</a>
+            <a href="mentor.html">Mentorálási program</a>
+            <a href="tdk.html">TDK</a>
+            <a href="erasmus.html">Erasmus</a>
+            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+          </div>   
+        </div>
+        <a href="research.html">Kutatás</a>
+        <a href="staff.html">Munkatársak</a>
+        <div class="dropdwn">
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+            <a href="contact.html">Elérhetőség</a>
+            <a href="history.html">Történet</a>
+            <a href="alumni.html">Végzett hallgatók</a>
+            <a href="trips.html">Kirándulások</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+      </div>
+      </nav>
+
+    </div>
+
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc" id="currloc_id">
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="for_students.html" class="link_light">Ismertető a képzésről</a>
+    </div>
+
+
+    <!--------------------------- TORZS ----------------------->
+    <main>
+        <div class="wrap">
+            <div class="content" id="cont01">
+                <h1>Ismertető a meteorológus képzésről</h1>
+                <h2>Mivel foglalkozik a meteorológia? Mit csinál egy meteorológus?</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h2>"Hogyan lehetek meteorológus?"</h2>
+                <p>A meteorológia képzés Magyarországon egyedül az ELTE-n végezhető. A mesterképzést megelőzően a <span>földtudomány</span>, fizika vagy környezettan alapszakok valamelyikének elvégzése szükséges.</p>
+                <h3>Melyiket válasszam?</h3>
+
+                <div class="box foldtud" id="foldtud_id">
+                  <div class="main_drop">
+                    <div class="block left">
+                      <p>Földtudomány</p>
+                    </div>
+                    <div class="block right">
+                      <a href="javascript:void(0);" class="cont_icon" onclick="dropDownEarthsci()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <div class="cont_dropdown">
+                    <ul>
+                      <li><p><span class="white">&#x2022;</span> A meteorológia specializáció kurzusai a földtudományi képzésre optimalizáltak</p></li>
+                      <li><p><span class="white">&#x2022;</span> A meteorológiai alapok mellett (?) modul geológia és földrajz is szerepel a képzésben</p></li>
+                      <li><p><span class="white">&#x2022;</span> (?) modul fizika és matematika, (?) modul informatika </p></li>
+                      <li><p><span class="white">&#x2022;</span> A képzés során választható még geográfus, geológus, geofzikus és térképész specializáció</p></li>
+                      <li><p><span class="white">&#x2022;</span> Bővebb ismertető a földtudományi alapképzésről <a href="https://geo.elte.hu/foldtudomanyi_BSc" target="_blank" class="link_light"><span>itt található</span></a></p></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="box fizika" id="fizika_id">
+                  <div class="main_drop">
+                    <div class="block left">
+                      <p>Fizika</p>
+                    </div>
+                    <div class="block right">
+                      <a href="javascript:void(0);" class="cont_icon" onclick="dropDownPhys()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <div class="cont_dropdown">
+                    <ul>
+                      <li><p><span class="white">&#x2022;</span> A földtudományi képzéshez képest jóval több fizika (?), matematika (?) és informatika(?)</p></li>
+                      <li><p><span class="white">&#x2022;</span> Választható specializációk: fizikus, alkalmazott fizikus, biofizikus, csillagász, geofizikus</p></li>
+                      <li><p><span class="white">&#x2022;</span> Ismertető a fizikus alapképzésről <a href="https://physics.elte.hu/felvi/fizikuskepzes" target="_blank" class="darkgreen"><span>itt található</span></a></p></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="box kornytud" id="kornytud_id">
+                  <div class="main_drop">
+                    <div class="block left">
+                      <p>Környezettan</p>
+                    </div>
+                    <div class="block right">
+                      <a href="javascript:void(0);" class="cont_icon" onclick="dropDownEnvsci()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <div class="cont_dropdown">
+                    <ul>
+                      <li><p><span class="white">&#x2022;</span> Az előző két képzéshez képest jóval több kémia és biológia</p></li>
+                      <li><p><span class="white">&#x2022;</span> Kevesebb fizika, matematika és informatika </p></li>
+                      <li><p><span class="white">&#x2022;</span> További választható specializációk: környezetkutató, geofizikus, geológus </p></li>
+                      <li><p><span class="white">&#x2022;</span> Ismertető a környezettan képzésről <a href="http://environment.elte.hu/page/bsc/" target="_blank" class="darkgreen"><span>itt található</span></a></p></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p>Az alapszakokhoz szükséges követelményei, a pontszámítás menete, illetve a korábbi évek ponthatárai a <a href="https://www.felvi.hu/" target="_blank" class="lightgreen">felvi.hu</a> oldalon érhetők el.
+                </p>
+            </div>
+        </div>
+        <div class="separator">
+            <div id="main1">
+                <h1>Meteorológia specializáció alapszakon</h1>
+            </div>
+        </div>
+        <div class="source"><p>Fotó: Hérincs Dávid</p></div>
+        <div class="wrap">
+            <div class="content" id="cont02">
+                <p>A földtudományi alapszak 3 éves (6 szemeszter) képzés. Szakirányt az első félév végén kell választani, melyet követően - meteorológus specializáción - a meteorológia képzéshez szükséges alapozó-, illetve bevezető tárgyakat hallgathatod.</p>
+                <p>A természetföldrajzi bevezető tárgyak mellett nagy részben a fizika, matematika, illetve informatikai alapozás zajlik. A teljes tantervi hálót <a href="http://to.ttk.elte.hu/foldtudomanyi-alapszak" target="_blank" class="lightgreen">ezen a linken</a> nézheted meg.</p>
+                <p>A tantárgyak elvégzése mellett már az alapképzés során lehetőség nyílik kutatásra is. A <a href="tdk.html" target="_blank" class="lightgreen">TDK (Tudományos Diákkör)</a>  kutatás során általad választott, neked tetsző témán dolgozhatsz. Ez az érdekes feladatmegoldás, és a tapasztalat mellett segítséget nyújt később a szakdolgozat elkészítéséhez is, akár későbbi munkatársakat is megismerhetsz, illetve az MSc felvételin, valamint ösztöndíjpályázatokhoz is plusz pontot jelent.</p>
+                <p>Az <a href="erasmus.html" target="_blank" class="lightgreen">Erasmus ösztöndíjakra</a>  szintén lehet jelentkezni az alapképzés során.</p>
+                <p>Az utolsó évben a <a href="research.html" target="_blank" class="lightgreen">tanszéki kutatásokhoz</a> kapcsolódó témákból választva kell szakdolgozati témát választani, illetve írni. A 6. félév végén a záróvizsgával fejeződik be az alapképzés, illetve ezt követően kerül sor az MSc felvételire is.
+                </p>
+            </div>
+        </div>
+        <div class="separator">
+            <div id="main2">
+                <h1>Meteorológus mesterképzés</h1>
+            </div>
+        </div>
+        <div class="source"><p>Fotó: Henzel Dániel</p></div>
+        <div class="wrap">
+            <div class="content" id="cont03">
+                <p>A meteorológus mesterképzés 4 féléves(, szakirány?!). Szükségesek a földtudományi alapszakon szerzett meterológiai ismeretek, fizika és matematikai alapok, ezért ha valaki más alapszakról/egyetemről érkezne, különbözeti tárgyak elvégzésére lehet szükség.</p>
+                <p>A matematika, fizika és informatika tudás bővítése mellett az MSc-n már nagy hangsúlyt kap a gyakorlati tudás megszerzése is. A mesterképzés tantervei elérhetők a linken: a-a</p>
+                <p>Az MSc során a korábban megszerzett eszköztár segítségével akár összetettebb kutatási feladatokba is be lehet kapcsolódni. Sokszor a hallgatók olyan kutatásba/munkahelyre kapcsolódnak be, ahol a képzés végeztével állást is kapnak.</p>
+                <p>A mesterképzés során két főbb irány követnek a tantárgyak. Az előrejelző irány a mindennapi előrejelzések készítésére, illetve az ehhez szükséges modellek megismerésére/alkalmazására, valamint a programozói tudásra koncentrál. A klimatológia irányvonal a kutatásra, adatfeldolgozásra (programozás) fókuszál, de pl. az agrometeorológia révén gyakorlati alkalmazás is jelentős</p>
+                <p>A mesterképzést a <a href="research.html" target="_blank" class="lightgreen">tanszéki kutatásokhoz</a> kapcsolódó témákból választott diplomamunka, illetve záróvizsga zárja.</p>
+                <p>Akit a kutatás érdekel, és szeretné folytatni a munkát doktoranduszként, a záróvizsgát követő PhD-felvételire jelentkezhet.</p>
+            </div>
+        </div>
+        <div class="separator">
+          <div id="main3">
+              <h1>Lehetőségek az MSc képzés elvégzése után</h1>
+          </div>
+        </div>
+        <div class="source"><p>Fotó: Henzel Dániel</p></div>
+        <div class="wrap">
+          <div class="content" id="cont02">
+              <p>ez még várat magára, most már nem vagyok túl kreatív :(</p>
+              <p></p>
+          </div>
+        </div>
+        <div class="separator">
+          <div id="main4">
+              <h1>Közösség</h1>
+          </div>
+        </div>
+        <div class="source"><p>Fotó: Henzel Dániel</p></div>
+        <div class="wrap">
+          <div class="content" id="cont02">
+              <p>meg fáradt is vagyok, és nincs kedvem dolgozni :(</p>
+              <p></p>
+          </div>
+        </div>
+      </div>
+    </main>                                                                          
+
+
+    <!--------------------------- FOOTER ----------------------->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_contact">
+          <h1>ELTE Meteorológiai Tanszék</h1>
+          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+          <p><span>Telefon:</span> 06 (1) 372-2945</p>
+          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+        </div><!--white space reset
+        --><div class="pagemap">
+          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+        </div><!--white space reset
+        --><div class="webmaestros">
+          <p><span>Webmesterek: </p></span>
+          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+          <p>© 2022 ELTE Meteorológiai Tanszék</p>
+          <p>Minden jog fenntartva.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

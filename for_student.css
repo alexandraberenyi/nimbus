@@ -1,0 +1,131 @@
+
+/*Általános stílusbeállítások*/
+.content{
+    background-color:none;
+    position: relative;
+    z-index: 100;
+    height: auto;
+}
+
+.wrap {
+    position: relative;
+    z-index: 100;
+}
+
+
+/* A képzési kártyák beállításai */
+
+.box{
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: rgba(93, 150, 148, .8);
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.foldtud{
+    background-color: rgba(40, 96, 112, .7);
+}
+
+.main_drop{
+    height: 50px;
+    transition: 0.4s;
+}
+
+.left {
+    float: left;
+    display: table;
+    height: 100%;
+}
+
+.right {
+    float: right;
+    display: table;
+    height: 100%;
+}
+
+.left p, .right a{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.cont_dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    margin-top: 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+.foldtud span{
+    color: white;
+    font-weight: bolder;
+}
+
+/* Az elválasztó képek beállításai */
+.separator{
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+}
+
+#main1 {
+    background-image: url(media/20210518.jpg);
+    background-attachment:fixed;
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    height: 200px;
+    width: 100%;
+    background-blend-mode: multiply;
+}
+
+#main2 {
+    background-image: url(media/DSCF0606.JPG);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+#main3 {
+    background-image: url(media/DSCF0214.JPG);
+    background-attachment:fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+#main4 {
+    background-image: url(media/DSCF3764.JPG);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.separator h1 {
+    text-align: center;
+    padding-top: 85px;
+    font-size: 1.8em;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(250, 250, 250, 1);
+}
+
+main span {
+    color: rgba(40, 96, 112, 1);
+}
+
+.source p{
+    padding: 10px;
+    font-size: .9em;
+    font-style: italic;
+}

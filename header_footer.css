@@ -658,6 +658,8 @@ a .fa {
 /*-----LOCATION-----*/
 
 .currloc {
+    position: relative;
+    z-index: 50;
     background-color: rgba(93, 150, 148, 1);
     display: block;
     width:100vw;
@@ -687,7 +689,7 @@ a .fa {
     .currloc {
         position: relative;
         background-color: rgba(255, 255, 255, 1);
-        margin-top: calc(181px + 2.3em);
+        margin-top: calc(181px + 2.2em);
     }
 
 }
@@ -697,7 +699,7 @@ a .fa {
     .currloc {
         position: relative;
         background-color: rgba(255, 255, 255, 1);
-        margin-top: calc(146px + 2.3em);
+        margin-top: calc(146px + 2.2em);
     }
 
 }
@@ -715,11 +717,11 @@ a .fa {
 
 @media (min-width:600px) {
     main {
-        min-height: calc(100% - 2.2em - 400px);
+        min-height: calc(100vh - 2.2em - 450px);
     }
 
     .content{
-        min-height: calc(100% - 2.2em - 400px);
+        min-height: calc(100vh - 2.2em - 450px);
     }
 }
 
@@ -744,6 +746,8 @@ footer {
     color: white;
     padding:20px;
     height: 320px;
+    position: relative;
+    z-index: 999;
 }
 
 .pagemap {
