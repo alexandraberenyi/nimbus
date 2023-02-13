@@ -9,6 +9,7 @@
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src = "nav_index.js" defer></script>
+    <script src = "research_filter.js" defer></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="reset.css">
@@ -127,27 +128,140 @@
         <a href="index.html" class="link_light">Főoldal</a> > <a href="mentor.html" class="link_light">Kutatás</a>
     </div>
 
-
+    
     <!--------------------------- TORZS ----------------------->
     <main>
-      <div class="content">
+      <div class="content" id = "content_id">
         <h1>Aktuális kutatási területek</h1>
-        <div class = "box" id = "box1">
-            <h3>Meteorológiai prepocesszor zajterjedés modellezéséhez</h3>
-            <div class="image_cont">
-              <img class = "image" src="media/kutat_1.jpg">  
-            </div>
+        <div class="filter">
+          <div class="tag_filter" id="tagFilter">
+            <h5>Szűrés címkére:</h5>
+            <button class = "btn active" onclick="filterSelection('all')"><div class="tag all" id="mainTagAll"><p>Összes</p></div></button>
+            <button class = "btn " onclick="filterSelection('observ')"><div class="tag observ " id="mainTagObserv"><p>Műszeres mérés</p></div></button>
+            <button class = "btn " onclick="filterSelection('modeling')"><div class="tag modeling " id="mainTagModeling"><p>Modellezés</p></div></button>
+            <button class = "btn " onclick="filterSelection('clim')"><div class="tag clim "  id="mainTagClim"><p>Klímakutatás</p></div></button>
+            <button class = "btn " onclick="filterSelection('hydro')"><div class="tag hydro "  id="mainTagHydro"><p>Hidrológia</p></div></button>
+            <button class = "btn " onclick="filterSelection('urban')"><div class="tag urban "  id="mainTagUrban"><p>Városklíma</p></div></button>
+            <button class = "btn " onclick="filterSelection('synop')"><div class="tag synop "  id="mainTagSynop"><p>Szinoptika</p></div></button>
+            <button class = "btn " onclick="filterSelection('bio')"><div class="tag bio "  id="mainTagBio"><p>Bioszféra</p></div></button>
+          </div>
         </div>
-        <div class = "box" id = "box2">
-        </div>
-        <div class = "box" id = "box3">
-        </div>
-        <div class = "box" id = "box4">
-        </div>
-        <div class = "box" id = "box5">
-        </div>
-        <div class = "box" id = "box6">
-        </div>
+        <!---->
+        <a href=""><div class = "box" id = "box1">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>Meteorológiai prepocesszor zajterjedés modellezéséhez</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Weidinger Tamás</p></div>
+          <div class = "tag_container jsobserv jsmodeling" id="tagCont1">
+            <div class="tag observ"><p>Műszeres mérés</p></div>
+            <div class="tag modeling"><p>Modellezés</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box2">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>Éghajlati előrejelzésekkel kapcsolatos bizonytalanságok csökkentése regionális és lokális skálán</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Torma Csaba</p></div>
+          <div class = "tag_container jsmodeling jsclim" id="tagCont2">
+            <div class="tag modeling"><p>Modellezés</p></div>
+            <div class="tag clim"><p>Klímakutatás</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box3">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>A XXI. századra várható hidroklimatológiai változások és bizonytalanságainak elemzése éghajlati és hidrológiai modellek összekapcsolásával</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kis Anna</p></div>
+          <div class = "tag_container jsmodeling jsclim jshydro" id="tagCont3">
+            <div class="tag modeling"><p>Modellezés</p></div>
+            <div class="tag clim"><p>Klímakutatás</p></div>
+            <div class="tag hydro"><p>Hidrológia</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box4">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>WRF modell kutatási alkalmazása: regionális klíma- és időjárásmodellezés</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Breuer Hajnalka</p></div>
+          <div class = "tag_container jsclim jsmodeling jsurban" id="tagCont4">
+            <div class="tag modeling"><p>Modellezés</p></div>
+            <div class="tag clim"><p>Klímakutatás</p></div>
+            <div class="tag urban"><p>Városklíma</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box5">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>Városi hősziget vizsgálatok műholdas és állomási mérések alapján</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> Dr. Bartholy Judit, dr. Pongrácz Rita, Soósné dr. Dezső Zsuzsanna</p></div>
+          <div class = "tag_container jsobserv jsurban jssynop" id="tagCont5">
+            <div class="tag urban"><p>Városklíma</p></div>
+            <div class="tag observ"><p>Műszeres mérés</p></div>
+            <div class="tag synop"><p>Szinoptika</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box6">
+          <div class="image_cont">
+            <img class = "image" src="media/kutat_1.jpg">  
+          </div>
+          <h4>Időjárási szélsőségek szinoptikus-klimatológiai vizsgálata, előrejelezhetősége</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> Soósné dr. Dezső Zsuzsanna</p></div>
+          <div class = "tag_container jsclim jssynop" id="tagCont6">
+            <div class="tag clim"><p>Klímakutatás</p></div>
+            <div class="tag synop"><p>Szinoptika</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box7">
+          <div class="image_cont">
+            <img class = "image" src="media/forsee.png">  
+          </div>
+          <h4>FORSEE (Open Database for Climate Change Related Impact Studies in Central Europe)</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
+          <div class = "tag_container jsmodeling jsclim" id="tagCont7">
+            <div class="tag modeling"><p>Modellezés</p></div>
+            <div class="tag clim"><p>Klímakutatás</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href="https://nimbus.elte.hu/bbgc/" target="_blank"><div class = "box" id = "box8">
+          <div class="image_cont">
+            <img class = "image" src="media/biokem.jpg">  
+          </div>
+          <h4>Biogeokémiai modellezés</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
+          <div class = "tag_container jsmodeling jsbio" id="tagCont8">
+            <div class="tag modeling"><p>Modellezés</p></div>
+            <div class="tag bio"><p>Bioszféra</p></div>
+          </div>
+        </div></a>
+        <!---->
+        <a href=""><div class = "box" id = "box9">
+          <div class="image_cont">
+            <img class = "image" src="media/modis.jpg">  
+          </div>
+          <h4>Magyarország vegetációjának vizsgálata műholdas mérések alapján</h4>
+          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kern Anikó, dr. Barcza Zoltán</p></div>
+          <div class = "tag_container jsobserv jsbio" id="tagCont9">
+            <div class="tag observ"><p>Műszeres mérés</p></div>
+            <div class="tag bio"><p>Bioszféra</p></div>
+          </div>
+        </div></a>
+        <!--
+        <a href=""><div class = "box" id = "box10">
+        </div></a>
+        <a href=""><div class = "box" id = "box11">
+        </div></a>-->
       </div>
     </main>                                                                          
 
