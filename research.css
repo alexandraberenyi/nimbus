@@ -1,5 +1,6 @@
 .content {
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .filter{
