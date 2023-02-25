@@ -176,6 +176,10 @@
     filter: opacity(50%);
 }
 
+.active:hover{
+    filter: opacity(100%); 
+}
+
 .active{
     filter: opacity(100%);
 }
