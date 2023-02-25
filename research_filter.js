@@ -18,7 +18,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
   switchDisplay();
-
 }
 
 // Show filtered elements
@@ -47,13 +46,14 @@ function w3RemoveClass(element, name) {
 }
 
 
+
 var btnContainer = document.getElementById("tagFilter");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var z = 0; z < btns.length; z++) {
   btns[z].addEventListener("click", function() {
     var current = document.getElementsByClassName("btn active");
-    current[0].classList.remove('active')
-    /*current[0].className = current[0].className.replace(" active", "");*/
+    /*current[0].classList.remove('active')*/
+    current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
