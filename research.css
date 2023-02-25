@@ -176,7 +176,7 @@
     filter: opacity(50%);
 }
 
-.active:hover{
+.btn:hover{
     filter: opacity(100%); 
 }
 
