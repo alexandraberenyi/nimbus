@@ -11,6 +11,11 @@ filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("tag_container");
+  if (c == "all") {
+    search("alltag")
+  } else {
+    search(c)
+  }
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
@@ -18,7 +23,23 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
   switchDisplay();
+
 }
+
+function search(tag){
+  var btnContainer = document.getElementById("tagFilter");
+  var btns = btnContainer.getElementsByClassName("tag");
+  console.log(btns)
+  for(z = 0; z < btns.length; z++){
+    current = document.getElementById(btns[z].id)
+    if(current.classList.contains(tag)){
+      current.parentElement.className += ' active';
+    } else {
+      current.parentElement.classList.remove('active')
+    }
+  }
+}
+
 
 // Show filtered elements
 function w3AddClass(element, name) {
@@ -47,16 +68,16 @@ function w3RemoveClass(element, name) {
 
 
 
-var btnContainer = document.getElementById("tagFilter");
+/*var btnContainer = document.getElementById("tagFilter");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var z = 0; z < btns.length; z++) {
   btns[z].addEventListener("click", function() {
     var current = document.getElementsByClassName("btn active");
-    /*current[0].classList.remove('active')*/
+    /*current[0].classList.remove('active')
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+}*/
 
 function switchDisplay() {
 
