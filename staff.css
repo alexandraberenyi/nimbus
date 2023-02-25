@@ -178,6 +178,14 @@ body {
     display: inline-block;
 }
 
+.staff-pub{
+    background-color: aqua;
+    display: table;
+    width: 50px;
+
+    width: 100%;
+}
+
 .staff-pub p {
     display: table-cell;
     vertical-align: middle;
@@ -187,7 +195,6 @@ body {
 }
 
 .staff-pub a {
-    display: table-cell;
     padding-right: 15px;
     position: relative;
     z-index: 10;
