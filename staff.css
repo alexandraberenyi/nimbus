@@ -197,7 +197,9 @@ body {
     z-index: 10;
 }
 
-
+#torma_csaba .staff-pub a {
+    display: unset;
+}
 
 .pub_logo {
     height: 1.5em;
