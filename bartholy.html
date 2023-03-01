@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src = "nav_index.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header_footer.css">
+    <link rel="stylesheet" type="text/css" href="logo_remove.css">
+    <link rel="stylesheet" type="text/css" href="staff_aloldal.css">
+  
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <!--icons(font-awesome)-->
+    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+  
+    <!--favicon-->
+    <link rel="icon" href="elte.ico">
+    <title>ELTE Meteorológiai Tanszék</title>
+
+  </head>
+  
+  <body>
+    <div class="top_head">
+      <!--------------------------- FEJLEC ----------------------->   
+      <header id="header_id" class="header_class">
+        <div class="headbar">
+          <div class="language hbcont">
+            <a href="index.html" class="link_light active">Magyar</a>
+            <a href="index_en.html" class="link_light">English</a>
+          </div>
+          <div class="searchbar hbcont"  id="mobileSearch">
+            <form method="get" action="http://www.google.com/search" target="_blank">
+              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input name="domains" value="nimbus.elte.hu" type="hidden">
+              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+            </form>   
+          </div>
+          <div class="ext_links hbcont">
+            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+          </div>
+        </div>
+        <div class="main-head" id="main-head_id">
+          <div class="logo-cont head-cont">
+            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+          </div><!--white space reset
+          --><div class="elte-met head-cont">
+            <div class="main_text" >
+                <ul>
+                <li><h1 class="elte" >ELTE TTK</h1></li>
+                <li><h1 > Meteorológiai Tanszék</h1></li>
+                </ul>
+            </div>
+          </div>
+          <div class="head-contact">
+            <div class="cont_text">
+            <ul>
+              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------- MENU ----------------------->
+      <nav>
+        <div class="mobile_logo" id="mobile_logo_id">
+          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+        </div>
+      <div class="topnav" id="mobileTopnav">
+        <a href="news.html">Hírek</a>
+        <div class="dropdwn">
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+            <a href="bsc_info.html">BSc tudástár</a>
+            <a href="msc_info.html">MSc tudástár</a>
+            <a href="phd_info.html">PhD képzés</a>
+            <a href="for_students.html">Ismertető a képzésről</a>
+            <a href="mentor.html">Mentorálási program</a>
+            <a href="tdk.html">TDK</a>
+            <a href="erasmus.html">Erasmus</a>
+            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+          </div>   
+        </div>
+        <a href="research.html">Kutatás</a>
+        <a href="staff.html">Munkatársak</a>
+        <div class="dropdwn">
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+            <a href="contact.html">Elérhetőség</a>
+            <a href="history.html">Történet</a>
+            <a href="alumni.html">Végzett hallgatók</a>
+            <a href="trips.html">Kirándulások</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+      </div>
+      </nav>
+
+    </div>
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc" id="currloc_id">
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="staff.html" class="link_light">Munkatársak</a> > <a href="bartholy.html" class="link_light">Bartholy Judit</a>
+    </div>
+
+
+    <!--------------------------- TORZS ----------------------->
+    <main>
+      <div class="content">
+        <div class = "staff_container">
+            <div class="staff" id="bartholy_judit">
+                <div class="pic-cont">
+                  <img src="nimbus/media/staff_kepek/bartholy judit.jpg" alt="Bartholy Judit">
+                </div>
+                <div class="staff_info">
+                  <div class="staff-head st">
+                      <h3>Bartholy Judit</h3>
+                      <p>professor emeritus</p>
+                  </div> 
+                  <div class="staff-contact st">
+                      <p><span>Iroda: </span>6.115</p>
+                      <p><span>Telefon/mellék: </span>6608</p>
+                      <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@tiduj.ylohtrab</bdo></p>
+                  </div>
+                  <div class="staff-res st">
+                      <p><span>Kutatási terület: </span>klimatológia, a globális klímaváltozás lokális hatásainak elemzése, megújuló energiaforrások</p>
+                  </div>
+                  <div class="staff-pub st">
+                      <p><span>Publikációk: </span></p>
+                      <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003656&view=dataSheet" target="_blank"><img class="pub_logo" src="/nimbus/media/mtmt.png" alt=""></a>
+                      <!--<a href="#" target="_blank"><img class="pub_logo" src="/nimbus/media/researchgate.png" alt=""></a>
+                      <a href="#" target="_blank"><img class="pub_logo" src="/nimbus/media/ClipartKey_1242841.png" alt=""></a>
+                      <a href="#" target="_blank"><img class="pub_logo" src="/nimbus/media/orcid.png" alt=""></a>
+                      <a href="#" target="_blank"><img class="pub_logo" src="/nimbus/media/Scopus_logo.png" alt=""></a>-->
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <h4>Személyi adatok</h4>
+            <ul>
+                <li>Születési hely, idő: Budapest, 1952. 11. 07. </li>
+                <li>Családi állapot: férjezett, 2 gyermek anyja </li>
+            </ul>
+            <h4>Tanulmányok, címek</h4>
+            <ul>
+                <li>diploma: meteorológus, matematika tanár, ELTE TTK, Budapest, 1976.</li>
+                <li>egyetemi doktori cím: ELTE Meteorológiai Tanszék, Budapest, 1978. </li>
+                <li>kandidátusi cím: Magyar Tudományos Akadémia, Minősítő Bizottság, Budapest, 1988.</li>
+                <li>habilitáció: ELTE Meteorológiai Tanszék, Budapest, 1996. </li>
+                <li>egyetemi tanári cím: ELTE, Természettudományi Kar, 2000. </li>
+                <li>MTA doktora Magyar Tudományos Akadémia, 2006. </li>
+            </ul>
+            <h4>Szakmai tevékenység</h4>
+            <ul>
+                <li>2009-2012 dékánhelyettes </li>
+                <li>1996-2017 tanszékvezető, ELTE Meteorológiai Tanszék, Budapest </li>
+                <li>2000- egyetemi tanár, ELTE Meteorológiai Tanszék. Oktatott tárgyak: éghajlattan, klímaváltozás, általános meteorológia, statisztikus klimatológia. </li>
+                <li>1992-2000 egyetemi docens, ELTE Meteorológiai Tanszék, Budapest </li>
+                <li>1991-1992 tudományos főmunkatárs, ELTE Meteorológiai Tanszék, Budapest</li>
+                <li>1988-1991 tudományos titkár, Központi Meteorológiai Intézet, Országos Meteorológiai Szolgálat, Budapest </li>
+                <li>1985-1988 kandidátusi ösztöndíjas, MTA TMB</li>
+                <li>1985-1986 Posztdoktori ösztöndíj, NMC NOAA, Washington D.C., U.S.A. </li>
+                <li>1976-1985 tudományos segédmunkatárs, majd munkatárs, OMSZ KMI </li>
+            </ul>
+            <h4>Nyelvtudás</h4>
+            <ul>
+                <li>Angol (középfok), német (olvas), olasz (olvas), orosz (alapfok) </li>
+            </ul>
+            <h4>Kutatási területei</h4>
+            <ul>
+                <li>Statisztikus klimatológia, globális klímaváltozás és regionális modellezés, városklíma, alkalmazott klimatológia, idősor-analízis, EOF-analízis, hosszú távú előrejelzés, megújuló erőforrások. </li>
+                <li>Ezen témakörökben 23 elnyert hazai és nemzetközi kutatási projektben vett részt témavezetőként illetve konzorciumi tagként. Ebből 6 Európai Uniós pályázat, 6 OTKA pályázat, 3 NKFP illetve Jedlik Ányos pályázat. </li>
+            </ul>
+            <h4>Tudományos és közéleti szereplesék,díjak</h4>
+            <ul>
+                <li>Róna Zsigmond díj - 1988-ban</li>
+                <li>Magyar Meteorológiai Társaság választmányának tagja - 1989-től </li>
+                <li>A "Légkör" folyóirat operatív szerkesztője - 1990-2009-ig</li>
+                <li>A "Légkör" folyóirat szerkesztőbizottságának tagja - 1990-folyamatosan</li>
+                <li>MTA köztestületi tag, MTA Éghajlati albizottság titkára (2004-2008), elnöke (2008-tól) </li>
+                <li>Az Európai Meteorológiai Társaságok nemzeti oktatási referense - 1995-től </li> 
+                <li>Széchenyi professzori ösztöndíj - 1997-2001 </li> 
+                <li>Magyar Meteorológiai Társaság Tudományos Tanácsának tagja - 1998-tól</li>
+                <li>Európai Geofizikai Társaság tagja - 1998-tól </li>
+                <li>Oktatási Minisztérium Tankönyv és Tanszeriroda, szakreferens - 1999-től </li>
+                <li>Időjárás angolnyelvű szakfolyóirat szerkesztőbizottságának tagja - 1999-től </li>
+                <li>Steiner Lajos - emlékérem  Magyar Meteorológiai Társaság, 2000 </li>
+                <li>Pro Meteorologie díj, Környezetvédelmi Miniszter, 2000</li>
+                <li>2000 Pro Scientia témavezetői díj (2001) a Magyar Köztársaság Oktatási Minisztériumától </li>
+                <li>ELTE Szakterületi Habilitációs bizottság tagja - 2003-tól </li>
+                <li>MTA Közgyűlési képviselő - 2004-től </li>
+                <li>MAB Környezeti Szakbizottság tagja - 2004-től </li>
+                <li>Mestertanár  2005-től </li>
+                <li>Honvédelemért díj, Honvédelmi Minisztérium, 2005</li>
+                <li>Applied Ecology and Environmental Research folyóirat szerkesztőbizottságának tagja, 2007-től</li>
+                <li>A Magyar Köztársasági Érdemrend lovagkeresztje, Magyar Köztársaság Elnöke, 2009 </li>
+                <li>ELTE TTK KDT elnöke, 2009-től </li>
+                <li>ELTE EDT tagja, 2009-től </li>
+                <li>ELTE TTK KHB elnöke, 2009-től </li>
+                <li>ELTE EHB tagja, 2009-től </li>
+                <li>OTKA FT2 zsűri tagja 2008-tól </li>
+                <li>OTKA FT2 zsűri elnöke 2012-től </li>
+            </ul>
+        </div>
+      </div>
+    </main>                                                                          
+
+    <!--------------------------- FOOTER ----------------------->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_contact">
+          <h1>ELTE Meteorológiai Tanszék</h1>
+          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+          <p><span>Telefon:</span> 06 (1) 372-2945</p>
+          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+        </div><!--white space reset
+        --><div class="pagemap">
+          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+        </div><!--white space reset
+        --><div class="webmaestros">
+          <p><span>Webmesterek: </p></span>
+          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+          <p>© 2022 ELTE Meteorológiai Tanszék</p>
+          <p>Minden jog fenntartva.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
