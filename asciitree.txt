@@ -1,0 +1,49 @@
+/
+├── index.html
+├── news.html
+├── staff.html
+├── research.html
+├── /hallgatoknak/
+│   ├── bsc_info.thml
+│   ├── msc.info.html
+│   ├── phd_info.html
+│   ├── for_students.html
+│   ├── mentor.html
+│   ├── tdk.html
+│   ├── erasmus.html
+│   ├── fund_scholarship.html
+│   └── lecture_notes.html
+├── /tanszekrol/
+│   ├── contact.html
+│   ├── history.html
+│   ├── alumni.html
+│   └── trips.html
+├── MEDIA /folder/
+│   ├── staff_pictures
+│   ├── research_pictures
+│   └── images_for_display
+├── SCRIPT /folder/
+│   ├── easter_egg.js
+│   ├── forstudent_resp.js
+│   ├── info_graphics.js
+│   ├── nav_general.js
+│   ├── nav_index.js
+│   └── research_filter.js
+├── STYLE /folder/
+│   ├── for_student.css
+│   ├── general.css
+│   ├── logo_remove.css
+│   ├── mobile_logo.css
+│   ├── header_footer.css
+│   ├── research.css
+│   ├── reset.css
+│   ├── staff_aloldal.css
+│   ├── staff.css
+│   ├── study_info.css
+│   ├── RESEARCH /folder/
+│   ├── eghbiz_tcs.html
+│   └── xxhidro_ka.html
+└── STAFF /folder/
+    ├── weidinger.html
+    └── bartholy.html
+    

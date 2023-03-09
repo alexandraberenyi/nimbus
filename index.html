@@ -7,22 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "nav_index.js" defer></script>
-
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src ="nav_index.js" defer></script>
+    <script src ="jszip.js" defer></script>
+    <script src ="suncalc.js" defer></script>
+    <script src ="weather-widget.js" defer></script>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="general.css">
     <link rel="stylesheet" type="text/css" href="header_footer.css">
-    <link rel="stylesheet" type="text/css" href="mobile_logo.css">   
-  
+    <link rel="stylesheet" type="text/css" href="mobile_logo.css"> 
+    <link rel="stylesheet" type="text/css" href="main-page.css">    
+    <link rel="stylesheet" href="weather-icons-master/css/weather-icons.css">
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-    
+     
     <!--icons(font-awesome)-->
     <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+    
   
     <!--favicon-->
     <link rel="icon" href="elte.ico">
@@ -115,7 +120,7 @@
             <a href="trips.html">Kirándulások</a>
           </div>
         </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</i></a>
       </div>
       </nav>
 
@@ -129,14 +134,49 @@
 
     <!--------------------------- TORZS ----------------------->
     <main>
+      <div class="widget-image" id="widgetImageId">
+        <div class="widget-placeholder"></div>
+        <div class="widget">
+          <h2>Jelenlegi időjárás a Lágymányosi Campuson</h2>
+          <div class="weather">
+          <!--EXTERNAL HTML CODE-->
+            <div class = "mettable">
+              <div class="jelen" id="jelenID">
+                <i id = "jelenimg" class = "wi wi-day-sunny"></i> <span id = "jelenido"></span> 
+              </div>
+              <div class="weather-data" id="weatherData">
+                <div class="ws"><i class = "wi wi-thermometer"></i> Hőmérséklet: <span id = "ta"></span> </div>
+                <div class="ws"><i class = "wi wi-strong-wind"></i> Szélsebesség:<span id = "fs"></span></div>
+                <div class="ws"><i class = "wi wi-strong-wind"></i> Szélirány: <span id = "fsd"></span></div>
+                <div class="ws"><i class = "wi wi-strong-wind"></i> Széllökés: <span id = "fx"></span></div>
+                <div class="ws"><i class = "wi wi-barometer"></i> Műszerszinti légnyomás: <span id = "p"></span></div>
+              </div>  
+            </div>
+            <div class = "astronomy">
+              <div class = "astronomy-item">
+                <i class = "wi wi-sunrise"></i>
+                <span id="sunrise"></span>
+              </div>
+              <div class = "astronomy-item">
+                <i class = "wi wi-sunset"></i>
+                <span id="sunset"></span>
+              </div>
+              <div class = "astronomy-item">
+                <i class="wi wi-day-sunny" id="moonimg" ></i>
+                <!--img src="#" style="width:2em;height:2em;padding-right:5px;" id = "moonimg"/-->
+                <span id="moon"></span>
+              </div>
+            </div>
+            <div class="redirect">
+              <a href="http://vcsicsi.elte.hu/" target="_blank">Tovább a jelenidő oldalra</a>
+            </div>
+          <!--END--> 
+          </div>
+          <p class="data-source">Adatok forrása: OMSZ</p> 
+        </div>
+      </div>
+      <p class = "image-source" id="imageSource"></p>
       <div class="content">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    
       </div>
     </main>                                                                          
 
