@@ -1,0 +1,48 @@
+.kepzes-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bsc, .msc {
+  min-width: 300px;
+  min-height: 300px;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+@media (min-width:1200px) {
+  .bsc, .msc {
+    max-width: 550px;
+  }
+}
+.bsc{
+  background-color: rgba(62, 146, 143, 0.5);
+}
+
+.msc{
+  background-color: rgba(16, 90, 110, 0.5);
+}
+
+.zarovizsga{
+  margin: 10px;
+  padding: 10px;
+}
+
+.zarovizsga em{
+  font-style: italic;
+}
+
+.bsc h3, .msc h3{
+  color: white;
+  text-shadow: 1px 1px 5px rgb(25, 61, 71);
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.bsc a, .msc a, .zarovizsga a{
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(93, 150, 148, .5);
+}

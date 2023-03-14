@@ -1,0 +1,149 @@
+
+.weather-background-wrap{
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-background{
+  background-image: url(media/main_jelen/derult.jpeg);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom center;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.widget-image{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+}
+
+.widget{
+  background-color: rgba(16, 40, 48, 0.5);
+  height: 100%;
+  width: 500px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  padding-top: 20px;
+  position: relative;
+}
+
+.widget-placeholder{
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(16, 40, 48, 0.5));
+  height: 100%;
+  width: 300px;
+  z-index: 1;
+}
+
+.widget h2{
+  padding-top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 700;
+  color:rgb(219, 229, 231);
+  text-shadow: 1px 1px 10px black;
+}
+
+.mettable{
+  margin: 20px;
+}
+
+.jelen span{
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.jelen i{
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  padding: 10px 20px;
+}
+
+.weather-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.weather-data i{
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  width: 40px;
+}
+
+.astronomy{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.redirect{
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+
+.redirect a{
+  background-color: rgba(93, 150, 148, 1);
+  border: none;
+  padding: 2%;
+  color: white;
+  font-weight: 700;
+  text-shadow: none;
+  border-radius: 20px;
+}
+
+.data-source {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
+  font-size: .8em;
+  color: rgb(235, 235, 235);
+  font-style: italic;
+}
+
+.image-source{
+  padding: 6px;
+  font-size: .8em;
+  font-style: italic;
+}
+
+@media (min-width:600px) {
+    
+  .currloc {
+    background-color: unset;
+  }
+
+}
+
+@media (max-width:600px) {
+  .widget-placeholder{
+    display: none;
+  }
+
+  .widget{
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .redirect{
+    margin-bottom: 10px;
+  }
+}

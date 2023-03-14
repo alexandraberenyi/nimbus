@@ -75,7 +75,7 @@
 }
 
 #main1 {
-    background-image: url(media/20210518.jpg);
+    background-image: url(/media/20210518.jpg);
     background-attachment:fixed;
     background-position: top center;
     background-size: cover;
@@ -86,7 +86,7 @@
 }
 
 #main2 {
-    background-image: url(media/DSCF0606.JPG);
+    background-image: url(/media/DSCF0606.JPG);
     background-attachment:fixed;
     background-position: center;
     background-size: cover;
@@ -95,7 +95,7 @@
 }
 
 #main3 {
-    background-image: url(media/DSCF0214.JPG);
+    background-image: url(/media/DSCF0214.JPG);
     background-attachment:fixed;
     background-position: bottom;
     background-size: cover;
@@ -104,7 +104,7 @@
 }
 
 #main4 {
-    background-image: url(media/DSCF3764.JPG);
+    background-image: url(/media/DSCF3764.JPG);
     background-attachment:fixed;
     background-position: center;
     background-size: cover;

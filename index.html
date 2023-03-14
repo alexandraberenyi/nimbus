@@ -8,16 +8,16 @@
 
     <!--JS-->
     <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src ="nav_index.js" defer></script>
-    <script src ="jszip.js" defer></script>
-    <script src ="suncalc.js" defer></script>
-    <script src ="weather-widget.js" defer></script>
+    <script src ="scripts/nav_index.js" defer></script>
+    <script src ="scripts/jszip.js" defer></script>
+    <script src ="scripts/suncalc.js" defer></script>
+    <script src ="scripts/weather-widget.js" defer></script>
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="general.css">
-    <link rel="stylesheet" type="text/css" href="header_footer.css">
-    <link rel="stylesheet" type="text/css" href="mobile_logo.css"> 
-    <link rel="stylesheet" type="text/css" href="main-page.css">    
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/mobile_logo.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/main-page.css">    
     <link rel="stylesheet" href="weather-icons-master/css/weather-icons.css">
 
     <!--Google Fonts-->
@@ -134,7 +134,10 @@
 
     <!--------------------------- TORZS ----------------------->
     <main>
-      <div class="widget-image" id="widgetImageId">
+      <div class="widget-image">
+        <div class="weather-background-wrap">
+          <div class="weather-background"  id="widgetImageId"></div>
+        </div>
         <div class="widget-placeholder"></div>
         <div class="widget">
           <h2>Jelenlegi időjárás a Lágymányosi Campuson</h2>
@@ -172,13 +175,20 @@
             </div>
           <!--END--> 
           </div>
-          <p class="data-source">Adatok forrása: OMSZ</p> 
+          <p class="data-source" id="dataSource"></p> 
         </div>
       </div>
       <p class = "image-source" id="imageSource"></p>
       <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae viverra urna. Praesent mollis elementum purus, non euismod purus. Suspendisse eu convallis nibh. Aliquam erat volutpat. Curabitur eu commodo purus. Mauris urna turpis, tempor sit amet aliquam et, convallis quis justo. Duis turpis augue, maximus sed lacus sit amet, pretium pellentesque nunc. Aenean vulputate lacus nec ex lacinia, id blandit erat vestibulum. Morbi at nisl felis. Donec id pellentesque leo, ac volutpat turpis. Fusce efficitur purus sed cursus dictum. Praesent lobortis vestibulum nibh facilisis fermentum. Suspendisse fermentum ac elit sit amet imperdiet. Duis euismod nunc vitae sodales tincidunt. Proin consequat, dui vitae dapibus gravida, quam ex feugiat lacus, vitae vehicula justo ipsum sed sem. Quisque ullamcorper pretium massa, ac tempor orci commodo accumsan.
+
+          Nulla bibendum nec enim ac varius. Vestibulum semper aliquam urna non molestie. Sed sagittis ipsum accumsan, pellentesque metus vitae, lacinia mauris. Pellentesque at euismod ante, ac hendrerit velit. Morbi sit amet purus tortor. Nulla porttitor, felis maximus posuere pulvinar, neque ligula malesuada eros, et suscipit sapien tellus faucibus augue. Suspendisse a elementum diam. Nullam vitae diam a risus dictum consectetur. Sed ut augue dapibus, rhoncus risus in, suscipit est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          
+          Curabitur interdum dui vel eros facilisis facilisis. Nunc et purus fringilla, viverra nisi fringilla, posuere sapien. Aenean mollis risus at ipsum aliquet, sit amet sodales quam ultrices. Nam tristique euismod mattis. Donec nec lectus non tellus vulputate vestibulum. Cras purus lectus, vehicula quis pulvinar nec, feugiat non dui. Mauris rutrum nibh nec vulputate aliquet. Morbi malesuada consequat lacus sed eleifend. Sed sed diam enim. Quisque non tristique sapien. Fusce sagittis lectus eget pharetra porta. Donec lobortis rutrum quam, ac consequat magna. Sed vel sem nec nibh suscipit tincidunt. Pellentesque elementum nisl ut leo mattis, quis ultricies ex laoreet. Nunc sagittis molestie ante. Maecenas consequat libero nulla, sed auctor augue euismod ac.
+          
+          Aliquam bibendum sit amet odio vitae rhoncus. Donec mattis nibh non ornare iaculis. Aliquam consequat eget enim ac convallis. Quisque ultricies neque eu facilisis viverra. Nullam ultricies tincidunt dolor, nec suscipit velit accumsan pretium. Cras vehicula maximus nibh, vitae accumsan quam malesuada vitae. Phasellus imperdiet sem at congue tincidunt. Proin faucibus nulla sit amet urna interdum, eu pulvinar nisl malesuada. Nullam sit amet diam commodo, porta odio vel, pretium orci. Pellentesque neque purus, fermentum sit amet ante vitae, blandit finibus augue. Fusce sapien nisl, fermentum eu purus eget, vestibulum dictum nibh.</p>
       </div>
-    </main>                                                                          
+    </main>                                                                       
 
     <!--------------------------- FOOTER ----------------------->
     <footer>
