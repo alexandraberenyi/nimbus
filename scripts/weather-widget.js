@@ -83,7 +83,7 @@ function weatherWidget(){
                     //jelenido.classList.remove("wi-day-sunny");
                     jelenimg.classList.add("wi-day-sunny");
                     document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/derult.jpeg)"
-                    document.getElementById("imageSource").textContent = " Kép forrása: letga Ákos";
+                    document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
                 }else if (jelenido == 2) {
                     document.getElementById("jelenido").textContent = " kissé felhős";
                     jelenimg.classList.remove("wi-day-sunny");
@@ -106,7 +106,7 @@ function weatherWidget(){
                     document.getElementById("jelenido").textContent = " borult";
                     jelenimg.classList.add("wi-cloudy");
                     document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/borult.JPG)"
-                    document.getElementById("imageSource").textContent = " Kép forrása: letga Ákos";
+                    document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
                 }else if (jelenido == 6) {
                     document.getElementById("jelenido").textContent = " fátyolfelhős";
                     jelenimg.classList.remove("wi-day-sunny");
@@ -118,7 +118,7 @@ function weatherWidget(){
                     jelenimg.classList.remove("wi-day-sunny");
                     jelenimg.classList.add("wi-fog");
                     document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/kodos.JPG)"
-                    document.getElementById("imageSource").textContent = " Kép forrása: letga Ákos";
+                    document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
                 }else if (jelenido == 9) {
                     document.getElementById("jelenido").textContent = " derült, párás";
                     jelenimg.classList.remove("wi-day-sunny");
@@ -160,7 +160,7 @@ function weatherWidget(){
                     jelenimg.classList.remove("wi-day-sunny");
                     jelenimg.classList.add("wi-day-showers");
                     document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/zapor.jpg)"
-                    document.getElementById("imageSource").textContent = " Kép forrása: letga Ákos";
+                    document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
                 }else if (jelenido == 104) {
                     document.getElementById("jelenido").textContent = " zivatar esővel";
                     jelenimg.classList.remove("wi-day-sunny");

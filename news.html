@@ -9,14 +9,12 @@
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src = "scripts/nav_index.js" defer></script>
-    <script src = "scripts/info_graphics.js" defer></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/general.css">
     <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
     <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
-    <link rel="stylesheet" type="text/css" href="styles/study_info.css"> 
   
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +31,9 @@
   </head>
   
   <body>
+    <!--Facebook feed root-->
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v16.0" nonce="48TDKeUJ"></script>
     <div class="top_head">
       <!--------------------------- FEJLEC ----------------------->   
       <header id="header_id" class="header_class">
@@ -125,89 +126,16 @@
     <!-------------------------- LOCATION --------------------->
 
     <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="bsc_info.html" class="link_light">BSc Tudástár</a>
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Erasmus</a>
     </div>
 
 
     <!--------------------------- TORZS ----------------------->
     <main>
       <div class="content">
-        <h1>Tudnivalók a BSc képzésről</h1>
-        <div class = "container">
-            <div class = "graphics" id = 'canvasGraphics'>
-              <canvas id="myCanvas" width="50" height="100"></canvas>
-            </div>
-            <div class = "text" id = "parent-id">
-              <div class = "box" id = "box1">
-                <h4>Alapképzéssel kapcsolatos tudnivalók</h4>
-                <p>
-                  Üdvözlünk az alapképzésen! A meteorológiai tanszék honlapján is sok 
-                  információt megtalálsz a képzéssel és annak folyamatával kapcsolaban, 
-                  azonban javasoljuk még neked a <a href="http://to.ttk.elte.hu/" target="_blank" class="darkgreen"><span>Tanulmányi Osztály</span></a> 
-                  honlapját, ahol az aktuális félév <a href="https://tanrend.elte.hu/oktatoitanrend.php" target="_blank" class="darkgreen"><span>órarendjén</span></a>
-                  kívül megtalálod az alapképzésednek megfelelő <a href="http://to.ttk.elte.hu/?q=alapszakos-tantervek" target="_blank" class="darkgreen"><span>tantervet</span></a> is.  
-                </p>
-              </div>
-              <div class = "box" id = "box2">
-                <h4>Szakirányválasztás</h4>
-                <p>
-                  Az első félév végén történik meg a szakirányválasztás, melyről bővebb információt <a href="#" target="_blank" class="darkgreen"><span>itt</span></a>
-                  találsz. Meteorológus specializációra a földtudományi, a fizika és a környezettan alapképzésekről jelentkezhetsz.  
-                </p>
-              </div>
-              <div class = "box" id = "box3">
-                <h4>Mentorprogram</h4>
-                <p>
-                  A tanszéken <a href="mentor.html" target="_blank" class="darkgreen"><span>Mentorálási program</span></a> is folyik, melynek keretében
-                  kijelölt oktatóink egyenként igyekeznek segíteni a hallgatóknak a képzés során. Akármilyen krédéssel kereshetitek őket nyugodtan.
-                </p>
-              </div>
-              <div class = "box" id = "box4">
-                <h4>Jegyzetek és segédanyagok</h4>
-                <p>
-                  Számos, a tanszékhez kapcsolódó órához találhattok jegyzeteket és segédanyagot <a href="#" target="_blank" class="darkgreen"><span>ezen az oldalon</span></a>.
-                  Ezek lehetnek hivatalos elektronikus jegyzetek, órai diasorok, vagy akár hallgatók 
-                  álltal összeállított anyagok.
-                </p>
-              </div>
-              <div class = "box" id = "box5">
-                <h4>Tudományos Diákköri munka</h4>
-                <p>
-                  Amennyiben érdeklődsz a kutatás iránt, részt vehetsz a tanszéken folyó kutatásokban is.
-                  Az <a href="research.html" target="_blank" class="darkgreen"><span>az aktuális kutatási témák</span></a>
-                  mellet saját kutatási ötlettel is keresheted <a href="staff.html" target="_blank" class="darkgreen"><span>oktatóinkat</span></a>,
-                  eredményeidet pedig <a href="tdk.html" target="_blank" class="darkgreen"><span>TDK dolgozatban</span></a> foglalhatod össze,
-                  amely a szakdolgozat alapját is képezheti.
-                </p>
-              </div>
-              <div class = "box" id = "box6">
-                <h4>Erasmus</h4>
-                <p>
-                  Az egyetemen van lehetőség Erasmus programon belül külföldi egyetemek képzésén részt venni,
-                  melynek egyetemi ismeretetője <a href="https://www.elte.hu/erasmus" target="_blank" class="darkgreen"><span>itt</span></a>
-                  található. A bővebb tájékoztatásért és a jelentkezésért a tanszék <a href="erasmus.html" target="_blank" class="darkgreen"><span>Erasmus koordinátorát</span></a>
-                  is nyugodtan kereshetitek.
-                </p>
-              </div>
-              <div class = "box" id = "box7">
-                <h4>Szakdolgozat és államvizsga tudnivalók</h4>
-                <p>
-                  A szakdolgozati téma leadása előtt minden tavasszal tartanak oktatóink egy témabemutatót, 
-                  amely segíti számotokra a témaválasztást. Az abszolutórium feltételét képező szakdolgozatról és a
-                  képzést záró államvizsgáról <a href="thesis_final.html" target="_blank" class="darkgreen"><span>ezen az oldalon</span></a>
-                  találtok bővebb információkat.
-                </p>
-              </div>
-              <div class = "box" id = "box8">
-                <h4>Meteorológus MSc felvételi</h4>
-                <p>
-                  Okleveles meteorológus kizárólag a Meteorológus MSc elvégzésével válhat belőled,
-                  így javasoljuk a BSc képés után az MSc képzésre való jelentkezést. Az MSc felvételi
-                  követelményeit és pontszámítását <a href="msc_felveteli.html" target="_blank" class="darkgreen"><span>itt találhatod</span></a>.
-                </p>
-              </div>
-            </div>
-          </div>
+        <h1>Híreink </h1>
+<!--Facebook feed embed-->
+        <div class="fb-page" data-href="https://www.facebook.com/ELTEmeteo/" data-tabs="timeline" data-width="500" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ELTEmeteo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ELTEmeteo/">ELTE Meteorológiai Tanszék</a></blockquote></div>
       </div>
     </main>                                                                          
 

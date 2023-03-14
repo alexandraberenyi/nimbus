@@ -31,3 +31,12 @@ body {
     border-radius: 5px;
   }
   
+  h4{
+    color: rgba(40, 96, 112, 1);
+    padding: 10px;
+    font-weight: 700;
+  }
+
+  em{
+    font-style: italic;
+  }

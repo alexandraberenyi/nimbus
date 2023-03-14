@@ -1,3 +1,7 @@
+.content{
+  line-height: normal;
+}
+
 .kepzes-wrap{
   display: flex;
   flex-wrap: wrap;
@@ -29,6 +33,10 @@
 .zarovizsga{
   margin: 10px;
   padding: 10px;
+}
+
+.content li{
+  padding: 8px;
 }
 
 .zarovizsga em{
