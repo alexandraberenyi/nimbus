@@ -130,4 +130,5 @@ window.onresize = function() {
   document.getElementById("mobileTopnav").classList.remove("responsive");
   document.getElementById("dropd_oncl_stud").classList.remove("show");
   document.getElementById("dropd_oncl_dep").classList.remove("show");
+  drawGraphics();
 };

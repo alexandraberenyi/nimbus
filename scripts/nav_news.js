@@ -107,8 +107,9 @@ function scrollFunction2() {
 
 
 function facebookPluginResize(){
-  var windowWidth = window.innerWidth;
-  console.log(windowWidth);
+  var windowWidth = window.innerWidth * 0.9;
+  var fbDiv = document.querySelector("iframe");
+  fbDiv.style.width = windowWidth + "px";
 }
 
 var lastScrollTop = 0;
@@ -131,3 +132,12 @@ window.onresize = function() {
   document.getElementById("dropd_oncl_stud").classList.remove("show");
   document.getElementById("dropd_oncl_dep").classList.remove("show");
 };
+
+
+$( window ).resize(function() {
+  var container_width = $('#pageContainer').width();    
+  $('#pageContainer').html('<div class="fb-page" data-href="https://www.facebook.com/ELTEmeteo/" data-width="' + container_width + '" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ELTEmeteo/"><a href="https://www.facebook.com/ELTEmeteo/">Facebook</a></blockquote></div></div>');
+  FB.XFBML.parse();    
+});
+
+
