@@ -10,6 +10,9 @@ function weatherWidget(){
     let url= 'http://terkeptar.elte.hu/~saman/get.php?url=https://odp.met.hu/climate/observations_hungary/10_minutes/now/HABP_10M_'+code+'_now.zip';    
     let url2= 'http://terkeptar.elte.hu/~saman/get.php?url=https://odp.met.hu/climate/observations_hungary/hourly/now/HABP_1H_'+code2+'_now.zip';    
 
+    let currentHour = new Date().getHours();
+
+
     fetch(url)
     .then(r=>r.arrayBuffer())
         .then(d=>zip.loadAsync(d))
@@ -53,6 +56,7 @@ function weatherWidget(){
 
                     let textrise = document.createTextNode(sunriseStr);
                     let textset = document.createTextNode(sunsetStr);
+                    
                     sr.textContent = '';
                     ss.textContent = '';
                     sr.appendChild(textrise);
@@ -72,7 +76,6 @@ function weatherWidget(){
                         adatok[j]=adatok[j].trim()}
                     if (adatok.length<2) continue; 
                     let a = new Text (adatok[1]);
-                    console.log(adatok[1])
                     let ido = a.substringData(0,4)+ ". " + a.substringData(4,2)+ ". " + a.substringData(6,2)+ ". " + a.substringData(8,2)+":"+a.substringData(10,2)+' UTC'; 
                     document.getElementById("dataSource").textContent = "Utolsó mérés időpontja: " + ido
                 };
@@ -81,9 +84,16 @@ function weatherWidget(){
                 if (jelenido == 1)  {
                     document.getElementById("jelenido").textContent = " derült";
                     //jelenido.classList.remove("wi-day-sunny");
-                    jelenimg.classList.add("wi-day-sunny");
-                    document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/derult.jpeg)"
-                    document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
+                    if(currentHour <= 17 || currentHour <=5) {
+                        jelenimg.classList.add("wi-day-sunny");
+                        document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/derult.jpeg)"
+                        document.getElementById("imageSource").textContent = " Kép forrása: Varga Ákos";
+                    } else if (currentHour >= 18 || currentHour >= 5) {
+                        console.log(currentHour);
+                        jelenimg.classList.add("wi-stars");
+                        document.getElementById("widgetImageId").style.backgroundImage = "url(media/main_jelen/derult_ejszaka.jpg)"
+                        document.getElementById("imageSource").textContent = " Kép forrása: Berényi Alexandra";
+                    }
                 }else if (jelenido == 2) {
                     document.getElementById("jelenido").textContent = " kissé felhős";
                     jelenimg.classList.remove("wi-day-sunny");
