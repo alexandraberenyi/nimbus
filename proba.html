@@ -7,9 +7,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="../styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="../styles/general.css">
-  <link rel="stylesheet" type="text/css" href="../styles/emf.css">
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
+  <link rel="stylesheet" type="text/css" href="./styles/emf_snipets.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
@@ -17,10 +21,22 @@
 <body>  
 <h1 id = "randomId"></h1>
 
-<div id="text"></div>
+<div class="content">
+  <div class="snipet">
+    <em id="noID"></em><p>,</p>
+    <p id="editorID"></p><p>,</p>
+    <em id="yearID"></em><p>,</p>
+    <a id="titleID" href=""></a>
+  </div>
+</div>
 
 <script>
-  $( "#text" ).load( "/emf/sablon.htm #publish" );
+  $( "#noID" ).load( "/emf/emf34.htm #noID" );
+  $( "#editorID" ).load( "/emf/emf34.htm #editorID" );
+  $( "#titleID" ).load( "/emf/emf34.htm #titleID" );
+  $( "#yearID" ).load( "/emf/emf34.htm #yearID" );
+  document.getElementById("titleID").setAttribute("href", "index.html");
+
 </script>
 </body>
 </html>

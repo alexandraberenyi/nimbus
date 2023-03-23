@@ -1,0 +1,19 @@
+.snipet p, em, a {
+    display: inline;
+    padding: 0px;
+    /*padding-right: 4px;*/
+}
+
+.snipet {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#editorID a{
+    color: black;
+}
+
+#titleID {
+    color: rgba(93, 150, 148, 1);
+    font-weight: 700;
+}
