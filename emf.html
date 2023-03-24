@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src = "scripts/nav_index.js" defer></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/general.css">
     <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
-    <link rel="stylesheet" type="text/css" href="styles/thesis-final.css">  
+    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/emf_snipets.css">
   
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,99 +125,30 @@
     <!-------------------------- LOCATION --------------------->
 
     <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Hallgatóknak</a> > <a href="erasmus.html" class="link_light">Szakdolgozat és záróvizsga tudnivalók</a>
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Erasmus</a>
     </div>
 
 
     <!--------------------------- TORZS ----------------------->
     <main>
       <div class="content">
-        <h1>Szakdolgozat és záróvizsga tudnivalók</h1>
-        <div class="kepzes-wrap">
-          <div class="bsc">
-            <h3>BSc szakdolgozat tudnivalók</h3>
-            <p>  
-              <a href="https://nimbus.elte.hu/hallgatok/Szakdolgozattal_kapcsolatos_tudnivalok.pdf" class="darkgreen" target="_blank">Szakdolgozati követelmények és tudnivalók (pdf)</a> A szakdolgozatokat a klasszikus 
-              mintának megfelelően fekete kötésben kell leadni, a papírlapok kétoldalas 
-              nyomtatásúak. A kötésen a SZAKDOLGOZAT megnevezés, a dolgozat írójának neve 
-              és az évszám szerepel az alábbi minta elrendezésében: <a href="https://nimbus.elte.hu/hallgatok/szakd_kotes.png" class="darkgreen" >MINTA</a> .
-            </p>
-            <p>
-              A dolgozat címlapjára két javasolt elrendezés: <a href="https://nimbus.elte.hu/hallgatok/cimlap_szakdolgozat.docx" class="darkgreen">CÍMLAP1</a> , <a href="https://nimbus.elte.hu/hallgatok/cimlap2_szakdolgozat.docx" class="darkgreen">CÍMLAP2</a>. Ettől eltérő lehet, de minden, 
-              a mintákon szereplő információnak rajta kell lennie.
-            </p> 
-            <p>Szakdolgozati témára a neptunban kell jelentkezni.</p>
-            <p>A szakdolgozati konzultáció, diplomamunkához kapcsolódó szaklaboratórium jegyeit a témavezető, 
-              illetve a tanszéki konzulens viszi fel a Neptunba.</p>
-            <p><a href="https://nimbus.elte.hu/hallgatok/konz_Bsc.docx" class="darkgreen">Szerkeszthető konzultációs adatlap BSc-n</a></p>
-          </div>
-          <div class="msc">
-            <h3>MSc diplomamunka tudnivalók</h3>
-            <p>  
-              <a href="https://nimbus.elte.hu/hallgatok/Diplomamunkaval_kapcsolatos_tudnivalok.pdf" class="darkgreen" target="_blank">Diplomamunka követelmények és tudnivalók (pdf)</a> A szakdolgozatokat a klasszikus 
-              mintának megfelelően fekete kötésben kell leadni, a papírlapok kétoldalas 
-              nyomtatásúak. A kötésen a DIPLOMAMUNKA megnevezés, a dolgozat írójának neve 
-              és az évszám szerepel a szakdolgozati mintához hasonlóan.
-            </p>
-            <p>
-              A dolgozat címlapjára két javasolt elrendezés: <a href="https://nimbus.elte.hu/hallgatok/cimlap_diplomamunka.docx" class="darkgreen">CÍMLAP1</a> , <a href="https://nimbus.elte.hu/hallgatok/cimlap2_diplomamunka.docx" class="darkgreen">CÍMLAP2</a>. Ettől eltérő lehet, de minden, 
-              a mintákon szereplő információnak rajta kell lennie.
-            </p> 
-            <p>Diplomamunka témára a neptunban kell jelentkezni.</p>
-            <p>A szakdolgozati konzultáció, diplomamunkához kapcsolódó szaklaboratórium jegyeit a témavezető, 
-              illetve a tanszéki konzulens viszi fel a Neptunba.</p>
-            <p><a href="https://nimbus.elte.hu/hallgatok/konz_MSc.docx" class="darkgreen">Szerkeszthető konzultációs adatlap MSc-n</a></p>
-          </div>
+        <div class="snipet">
+          <em id="noID"></em><p>,</p>
+          <p id="editorID"></p><p>,</p>
+          <em id="yearID"></em><p>,</p>
+          <a id="titleID" href=""></a>
         </div>
-        <div class="zarovizsga">
-          <h2>Záróvizsga tudnivalók</h2>
-          <p><a href="https://nimbus.elte.hu/hallgatok/BSc-zvtetelek_meteo.pdf" class="darkgreen" target="_blank">BSc</a> és <a href="https://nimbus.elte.hu/hallgatok/MSc_tetelek_uj.pdf" class="darkgreen" target="_blank">MSc</a> záróvizsga tételek</p>
-          <ul>
-            <li><span class="lightgreen">&#x2022;</span>
-              A záróvizsga beosztás általában aszerint történik, hogy a témavezető vagy 
-              belső konzulens melyik bizottságban található. Nagyon egyenlőtlen eloszlás 
-              esetén eltérésre kell számítani.
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              A záróvizsga előtt kb. egy héttel időbeosztást teszünk közzé, mely csak 
-              hozzávetőleges, a megadott időponthoz képest legalább 30-40 perccel korábban 
-              kérjük a hallgatók megjelenését.
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              A záróvizsgán a szakdolgozat/diplomamunka tartalmát előadás formájában kell 
-              prezentálni. Az előadás hossza 10-12 perc, melyet a vizsgabizottság kérdései követnek. 
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              Az előadást, a technikai problémák elkerülése végett <em>pptx</em> (2010-es verzió) 
-              vagy <em>pdf</em> formátumban készítsétek el. Amennyiben animációt is bemutatnátok, 
-              hozzátok el azt külön fájlként is. 
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              Mindkét képzés (BSc, MSc) esetén két tételt kapnak a hallgatók. A tételek 
-              kidolgozására rendelkezésre álló idő minimum 20 perc, de a vizsga menetrendjétől 
-              függően ez hosszabb is lehet. 
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              BSc államvizsgán a védés és a vizsga egyszerre zajlik (először védés, utána a vizsga felelet).
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              MSc államvizsgán a nyári időszakban, a védés külön napon történik mindkét vizsgabizottság 
-              tagjai előtt, a vizsga pedig bizottságokra bontva másnap. Téli időszakban a védés és a 
-              vizsga egyszerre zajlik (először védés, utána a vizsga felelet). 
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              A téli félévben, a hallgatói létszámra való tekintettel csak az egyik vizsgabizottság vizsgáztat.
-            </li>
-            <li><span class="lightgreen">&#x2022;</span>
-              2021/2022-től kezdődően nincsen állandósított bizottsági összetétel. A résztvevők személye és 
-              száma mindig az aktuális félév hallgatóinak létszámához igazodik.
-            </li>
-          </ul>
-        </div>
-
       </div>
     </main>                                                                          
 
+    <script>
+      $( "#noID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #noID" );
+      $( "#editorID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #editorID" );
+      $( "#titleID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #titleID" );
+      $( "#yearID" ).load("oktatas/metfuzet/EMF034/EMF34.htm #yearID" );
+      document.getElementById("titleID").setAttribute("href", "index.html");
+    
+    </script>
     <!--------------------------- FOOTER ----------------------->
     <footer>
       <div class="footer_container">
