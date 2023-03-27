@@ -1,3 +1,25 @@
 #pageContainer{
   text-align: center;
 }
+
+.actual{
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+@media (min-width:1200px) {
+  .actual {
+    float: right;
+    width: 650px;
+  }
+
+  #pageContainer{
+    text-align: left;
+  }
+}
+
+#news1{
+  width: 100%;
+  margin: auto 0;
+}

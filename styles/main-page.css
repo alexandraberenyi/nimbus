@@ -1,4 +1,5 @@
 
+/*WEATHER WIDGET*/
 .weather-background-wrap{
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -147,4 +148,74 @@
   .redirect{
     margin-bottom: 10px;
   }
+}
+
+/* CONTENT*/
+.content{
+  background-color: aqua;
+  padding: 10px 0px;
+}
+
+.box{
+  flex-grow: 1;
+}
+
+.box1{
+  background-color: blue;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.box2{
+  background-color: pink;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+@media (min-width:1100px) {
+  .content{
+    display: flex;
+  }
+
+  .box2{
+    width: 500px;
+  }
+}
+
+/* NEWS */
+.news-container{
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.redirect-placeholder{
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(255,255,255,1) 60%, rgba(16, 40, 48, 0));
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.redirect-placeholder i{
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5em;
+  color: rgba(40, 96, 112, 1);
+
+}
+
+.redirect-placeholder i:hover{
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5em;
+  color: rgba(40, 96, 112, .5);
+  transform: translateY(-8px);
+  transition: 0.4s ease 0s;
 }
