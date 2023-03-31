@@ -1,0 +1,24 @@
+.query{
+  display: flex;
+  justify-content: center;
+}
+
+select{
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(93, 150, 148, 1);
+  background-color: rgb(241, 240, 240);
+}
+
+option{
+  border: none;
+  background-color: white;
+}
+
+.content{
+  overflow: auto;
+  min-width: 100vh;
+}
+

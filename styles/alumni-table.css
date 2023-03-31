@@ -1,0 +1,24 @@
+.content table{
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.content table,.content th,.content td {
+  padding: 10px;
+}
+
+.content th{
+  background-color: rgba(93, 150, 148, .6);
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 10px rgb(97, 97, 97);
+}
+
+.content table a{
+  font-weight: 700;
+  color: rgba(40, 96, 112, 1);
+}
+
+.content tr:nth-child(odd) {
+  background-color: #eceaea;
+}
