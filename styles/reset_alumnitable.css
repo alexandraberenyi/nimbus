@@ -291,7 +291,7 @@
   html input[type="button"], /* 1 */
   input[type="reset"],
   input[type="submit"] {
-	-webkit-appearance: button; /* 2 */
+	appearance: button; /* 2 */
 	cursor: pointer; /* 3 */
   }
   
@@ -355,7 +355,7 @@
    */
   
   input[type="search"] {
-	-webkit-appearance: textfield; /* 1 */
+	appearance: textfield; /* 1 */
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box; /* 2 */
 	box-sizing: content-box;
