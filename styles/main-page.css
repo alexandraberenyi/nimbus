@@ -155,10 +155,6 @@
   padding: 10px 0px;
 }
 
-.box{
-  flex-grow: 1;
-}
-
 .box1{
   width: 90%;
   margin: 0 auto;
@@ -235,10 +231,24 @@
 }
 
 @media (min-width:600px) {
+.content{
+  background-color: aqua;
+}
+
+  .box1{
+    min-width: 200px;
+  }
+
+  .box2{
+    margin: 0px;
+    background-color: aquamarine;
+    max-width: 70%;
+  }
+
   .subbox{
     margin: 0px auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 80%;
   }
 }
 
