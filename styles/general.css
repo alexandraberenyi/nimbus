@@ -80,3 +80,73 @@ li{
         padding-bottom: 30px;
     }
 }
+
+.content .butcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.content .langbut{
+    border: none;
+    padding: 8px 15px;
+    margin: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(40, 96, 112, 1);
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.content .langbut:hover{
+    transform: scale(1.1, 1.1);
+}
+.complex-table{
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    word-wrap:break-word;
+}
+
+.complex-table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.complex-table caption{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.resimage-container img{
+    width: 100%;
+}
+
+@media (min-width:800px) {
+    .complex-table{
+        width: 700px;
+        margin: 20px auto;
+    }
+
+    .resimage-container{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .resimage-container img{
+        width: 600px;
+    }
+
+}
+
+.complex-table tr.trhead{
+    background-color: rgba(93, 150, 148, .5);
+}
+
+.table-cont{
+    padding: 5px;
+    overflow: scroll;
+}
+
+

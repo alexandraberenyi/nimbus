@@ -19,7 +19,7 @@
     padding-top: 30px;
 }
 
-.box:hover {
+.link:hover {
     transform: scale(1.05, 1.05);  
 }
 
