@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src = "../scripts/nav_index.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/general.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/logo_remove.css"> 
+  
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <!--icons(font-awesome)-->
+    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+  
+    <!--favicon-->
+    <link rel="icon" href="../elte.ico">
+    <title>ELTE Meteorológiai Tanszék</title>
+
+  </head>
+  
+  <body>
+    <div class="top_head">
+      <!--------------------------- FEJLEC ----------------------->   
+      <header id="header_id" class="header_class">
+        <div class="headbar">
+          <div class="language hbcont">
+            <a href="index.html" class="link_light active">Magyar</a>
+            <a href="index_en.html" class="link_light">English</a>
+          </div>
+          <div class="searchbar hbcont"  id="mobileSearch">
+            <form method="get" action="http://www.google.com/search" target="_blank">
+              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input name="domains" value="nimbus.elte.hu" type="hidden">
+              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+            </form>   
+          </div>
+          <div class="ext_links hbcont">
+            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+          </div>
+        </div>
+        <div class="main-head" id="main-head_id">
+          <div class="logo-cont head-cont">
+            <a href="../index.html"><img id="logo_id" class = "logo" src="../elte_logo.png" alt="logo"></a>
+          </div><!--white space reset
+          --><div class="elte-met head-cont">
+            <div class="main_text" >
+                <ul>
+                <li><h1 class="elte" >ELTE TTK</h1></li>
+                <li><h1 > Meteorológiai Tanszék</h1></li>
+                </ul>
+            </div>
+          </div>
+          <div class="head-contact">
+            <div class="cont_text">
+            <ul>
+              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------- MENU ----------------------->
+      <nav>
+        <div class="mobile_logo" id="mobile_logo_id">
+          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+        </div>
+      <div class="topnav" id="mobileTopnav">
+        <a href="news.html">Hírek</a>
+        <div class="dropdwn">
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+            <a href="bsc_info.html">BSc tudástár</a>
+            <a href="msc_info.html">MSc tudástár</a>
+            <a href="phd_info.html">PhD képzés</a>
+            <a href="for_students.html">Ismertető a képzésről</a>
+            <a href="mentor.html">Mentorálási program</a>
+            <a href="tdk.html">TDK</a>
+            <a href="erasmus.html">Erasmus</a>
+            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+          </div>   
+        </div>
+        <a href="research.html">Kutatás</a>
+        <a href="staff.html">Munkatársak</a>
+        <div class="dropdwn">
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+            <a href="contact.html">Elérhetőség</a>
+            <a href="history.html">Történet</a>
+            <a href="alumni.html">Végzett hallgatók</a>
+            <a href="trips.html">Kirándulások</a>
+            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+      </div>
+      </nav>
+
+    </div>
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc" id="currloc_id">
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Végzett hallgatók</a> > <a href="research.html" class="link_light">Doktori oklevelet szerzettek</a>
+    </div>
+
+
+    <!--------------------------- TORZS ----------------------->
+    <main>
+      <div class="content">
+        <h1>Doktori oklevelet szerzettek</h1>
+        <h3>Az ELTE-n és jogelődein doktori oklevelet szerzett meteorológusok és klimatológusok</h3>
+        <table>
+          <thead >
+            <tr><th >Év</th>
+              <th s>Név</th>
+              <th>A disszertáció címe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr> 
+              <td>1885</td>
+              <td>Thirring Gusztáv</td>
+              <td>Sopron és környékének hőmérsékleti viszonyai. Adalékok Magyarország éghajlati viszonyainak ismeretéhez</td>
+            </tr>
+            <tr> 
+              <td> 
+                1893
+              </td>
+              <td> 
+                Anderkó Aurél
+              </td>
+              <td> 
+                A " qu" és "pu" függvényekről
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1893
+              </td>
+              <td> 
+                Steiner  Lajos
+              </td>
+              <td> 
+                Két kúpszelet szimultán invariáns jellegű képződményeiről
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1906
+              </td>
+              <td> 
+                Lasz Samu
+              </td>
+              <td> 
+                A magmamozgások
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1906
+              </td>
+              <td> 
+                Massány Ernő
+              </td>
+              <td> 
+                A légköri nedvesség meghatározásának különböző módjai különös tekintettel a párateltség hiányára
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1906
+              </td>
+              <td> 
+                Sávoly Ferenc
+              </td>
+              <td> 
+                A levegőnedvesség higienikus jelentősége
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1907
+              </td>
+              <td> 
+                Jánosi Imre
+              </td>
+              <td> 
+                Időmeghatározás fonalháromszöggel
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1914
+              </td>
+              <td> 
+                Hille Alfréd
+              </td>
+              <td> 
+                Az 1905. évi szeptember 4-i calabriai rengés
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1925
+              </td>
+              <td> 
+                Száva-Kováts József
+              </td>
+              <td> 
+                A júniusi hőmérsékletcsökkenés okairól
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1926
+              </td>
+              <td> 
+                Aujeszky László
+              </td>
+              <td> 
+                Lehet-e emberi beavatkozással, ha igen, milyen, módon és mily irányban az alföldi mezőgazdálkodás biztosabb alapokra fektetése érdekében az éghajlati viszonyokra befolyást gyakorolni?
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1928
+              </td>
+              <td> 
+                Bencsik Béla
+              </td>
+              <td>&nbsp; </td>
+            </tr>
+            <tr> 
+              <td> 
+                1933
+              </td>
+              <td> 
+                Boldog Gyula
+              </td>
+              <td> 
+                A légnedvesség Brazíliában
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1934
+              </td>
+              <td> 
+                Berkes Zoltán
+              </td>
+              <td>&nbsp; </td>
+            </tr>
+            <tr> 
+              <td> 
+                1934
+              </td>
+              <td> 
+                Kakas József
+              </td>
+              <td> 
+                A légnedvesség változékonysága Európában
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1938
+              </td>
+              <td> 
+                Bognár Kálmán
+              </td>
+              <td> 
+                A látástávolság Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1941
+              </td>
+              <td> 
+                Béll Béla
+              </td>
+              <td> 
+                A szabad légkör hőmérséklete Budapest fölött
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1942
+              </td>
+              <td> 
+                Ozorai Zoltán
+              </td>
+              <td> 
+                Vizsgálatok a Rossi-görbe második maximumáról                 
+              </td>
+            </tr>
+            <tr> 
+              <td>1944</td>
+              <td> 
+                Ballenegger Katalin
+              </td>
+              <td> 
+                Perturbáció és predisszociáció a nitrogéndioxid molekula sávos színképén
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1944
+              </td>
+              <td> 
+                Dési Frigyes
+              </td>
+              <td> 
+                A nedves hőmérséklet alkalmazása a zivatarelemzésben
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1946
+              </td>
+              <td> 
+                Dobosi Zoltán
+              </td>
+              <td> 
+                Felhőmagasságok évi járása Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1949
+              </td>
+              <td> 
+                Csizsinszky Márta
+              </td>
+              <td> 
+                Légtömegek Budapest fölött
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1949
+              </td>
+              <td> 
+                Kallós Imre
+              </td>
+              <td> 
+                Európa téli évszakának dinamikus klimatológiája
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1950
+              </td>
+              <td> 
+                Takács Lajos
+              </td>
+              <td> 
+                Nedvességszámoló tárcsa
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1959
+              </td>
+              <td> 
+                Péczely György
+              </td>
+              <td>&nbsp; </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Antal Emánuel
+              </td>
+              <td> 
+                Az evapotranspiráció meghatározása az energiaháztartás módszerével és a turbulens diffúziós módszerrel
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Czelnai Rudolf
+              </td>
+              <td> 
+                Mérőműszerek a meteorológiai hőmérők tehetetlenségi együtthatójának meghatározására
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Mészáros Ernő
+              </td>
+              <td> 
+                Az esőcseppek spektrális eloszlása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Örményi Imre
+              </td>
+              <td> 
+                Vérkeringési és idegrendszeri vizsgálatok az advektív-dinamikus analízis tükrében
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Rákóczi Ferenc
+              </td>
+              <td> 
+                A hőmérsékleti szélsőértékek előrejelzési módszereiről
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1961
+              </td>
+              <td> 
+                Szepesi Dezső
+              </td>
+              <td> 
+                A Kárpát-medence hegységeinek orografikus csapadékkeltő hatásáról
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1962
+              </td>
+              <td> 
+                Cseh Éva
+              </td>
+              <td> 
+                Az alsó  troposzféra hideggócainak vizsgálata a Kárpátok környezetében
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1962
+              </td>
+              <td> 
+                Felméry László
+              </td>
+              <td> 
+                Vizsgálatok a talaj-közeli légrétegek nedvesség-viszonyairól
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1962
+              </td>
+              <td> 
+                Gubola Mária
+              </td>
+              <td> 
+                Fülledtségi viszonyok Budapesten 1931-1960
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Ambrózy Pál
+              </td>
+              <td> 
+                Vizsgálatok Bulejev barotróp geopotenciál előrejelzési módszerével kapcsolatban
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Császár Margit
+              </td>
+              <td> 
+                Ciklonképződés az Alpok lee oldalán
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Koppány György
+              </td>
+              <td> 
+                A légnyomás 24 órás erős változásai a Sziklás-hegység és Nyugat-Szibéria közötti területen
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Kozma Ferenc
+              </td>
+              <td> 
+                A talajközeli légrétegek éjszakai hőmérsékleti viszonyai
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Tárkányi Zsuzsanna
+              </td>
+              <td> 
+                A Kárpát-medence homályossági viszonyainak vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Tóth Pál
+              </td>
+              <td> 
+                A szabadlégköri hőmérsékleti advekció magassági eloszlása és a termikus szél viszonyainak vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Varga-Haszonits Zoltán
+              </td>
+              <td> 
+                A talajművelés hatása a talajhőmérsékletre
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1963
+              </td>
+              <td> 
+                Wirth Endre
+              </td>
+              <td> 
+                Jégkristályok vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1965
+              </td>
+              <td> 
+                Probáld Ferenc
+              </td>
+              <td> 
+                A nagyváros éghajlati sajátosságai
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1965
+              </td>
+              <td> 
+                Tänczer Tibor
+              </td>
+              <td> 
+                A légköri divergencia vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1965
+              </td>
+              <td> 
+                Tóth Erzsébet
+              </td>
+              <td> 
+                Turbulens átviteli folyamatok a talajközeli légrétegben
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1966
+              </td>
+              <td> 
+                Endrődi Gabriella
+              </td>
+              <td> 
+                A hideg légtavak kialakulása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1968
+              </td>
+              <td> 
+                Götz Gusztáv
+              </td>
+              <td> 
+                A légköri konvekció mechanizmusa
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1969
+              </td>
+              <td> 
+                Adámy László
+              </td>
+              <td> 
+                A Budapest-Ferihegyi Repülőtér ködviszonyainak szinoptikus vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1969
+              </td>
+              <td> 
+                Major György
+              </td>
+              <td> 
+                A cirkumszoláris sugárzás és szerepe az aktinometrikus méréseknél
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1970
+              </td>
+              <td> 
+                Borbély Edit
+              </td>
+              <td> 
+                A tropopauza vizsgálata Budapest fölött
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1970
+              </td>
+              <td> 
+                Bónis Katalin
+              </td>
+              <td> 
+                A légköri vízgőz kondenzációjának kinetikája
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1970
+              </td>
+              <td> 
+                Hirling György
+              </td>
+              <td> 
+                A légkör vertikális szerkezete a kelet-antarktiszi Mirnij kutatóállomás fölött 1965-ben
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1971
+              </td>
+              <td> 
+                Böjti Béla
+              </td>
+              <td> 
+                A viharos balatoni időjárási helyzeteket kiváltó anticiklon orr-helyzetek jellemszámai, módszer a viharállapot kategorikus előrejelzéséhez
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1972
+              </td>
+              <td> 
+                Csomor Mihály
+              </td>
+              <td> 
+                A zúzmara Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1972
+              </td>
+              <td> 
+                Illés László
+              </td>
+              <td> 
+                A Kárpátok hatása a nyomás, a szél és a hőmérséklet északi és északkeleti anticiklonális időjárási helyzetekben
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1972
+              </td>
+              <td> 
+                Stollár András
+              </td>
+              <td>&nbsp; </td>
+            </tr>
+            <tr> 
+              <td> 
+                1973
+              </td>
+              <td> 
+                Simon Antal
+              </td>
+              <td> 
+                A légköri elektromos tér változásai Budapesten
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1974
+              </td>
+              <td> 
+                Miskolci Ferenc
+              </td>
+              <td> 
+                A légköri CO<sub>2</sub> átbocsátásával kapcsolatos vizsgálatok műholdas hőmérsékleti szondázás céljából
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1974
+              </td>
+              <td> 
+                Várhelyi András
+              </td>
+              <td> 
+                A Mátra- és a Bükk-hegység hóviszonyai
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1974
+              </td>
+              <td> 
+                Wágner Magdolna
+              </td>
+              <td> 
+                Hőmérséklet jellemszámok gyakorisági eloszlásainak sajátosságai
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1975
+              </td>
+              <td> 
+                Ajtay Ágnes
+              </td>
+              <td> 
+                A burgonya agroklimatológiai viszonyai Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1976
+              </td>
+              <td> 
+                Dávid Aranka
+              </td>
+              <td> 
+                A Fertő-tó sugárzásháztartása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1976
+              </td>
+              <td> 
+                Koflanovits Erika
+              </td>
+              <td> 
+                A csapadékmennyiség változékonyságának elemzése Közép-Európában
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1976
+              </td>
+              <td> 
+                Molnár Gyula
+              </td>
+              <td> 
+                Egyszerűsített módszer a légkör függőleges hőmérséklet-eloszlásának gyors meghatározására műholdas sugárzásadatokból
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1977
+              </td>
+              <td> 
+                Fekete Ilona
+              </td>
+              <td> 
+                A felhőzet statisztikai és genetikai vizsgálata térben folyamatos megfigyelések alapján, különös tekintettel az anticiklonokra
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1977
+              </td>
+              <td> 
+                Kmetykó Katalin
+              </td>
+              <td> 
+                A napraforgó fejlődésének és terméshozamának agroklimatológiai feltételei Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td>1978</td>
+              <td>
+              Bartholy Judit
+              </td>
+              <td>Abszolút topográfia mezők statisztikai tulajdonságainak  számítógépes vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1978
+              </td>
+              <td> 
+                Dunkel Zoltán
+              </td>
+              <td> 
+                A szennyezőanyagok terjedésének vizsgálata szélcsatornában
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1978
+              </td>
+              <td> 
+                Kaba Magdolna
+              </td>
+              <td> 
+                A hazai távprognosztikai kutatások jelenlegi helyzetének és távlati fejlesztési irányainak elemzése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1979
+              </td>
+              <td> 
+                Mika János
+              </td>
+              <td> 
+                Egy kapcsolt óceán-légkör modell éghajlat elméleti vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1979
+              </td>
+              <td> 
+                Paál Anikó
+              </td>
+              <td> 
+                A sugárzási egyenleg meghatározása műholdas mérésekből
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1979
+              </td>
+              <td> 
+                Schiller István
+              </td>
+              <td> 
+                A légköri kénsavgőz és vízgőz együttes kondenzációjának termodinamikája
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1980
+              </td>
+              <td> 
+                Bartha Imre
+              </td>
+              <td> 
+                Azori anticiklon orr-helyzetek felismerése analógia-kereső mátrixokkal
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1980
+              </td>
+              <td> 
+                Horváth László
+              </td>
+              <td> 
+                Repülőgép-dobálások nagy magasságban (8–20 km)
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1980
+              </td>
+              <td> 
+                Karácsony János
+              </td>
+              <td> 
+                Az elemi szabad vízfelület párolgása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1981
+              </td>
+              <td> 
+                Bálint Julianna
+              </td>
+              <td> 
+                Az időjárással kapcsolatos népi megfigyelések valóságtartalma, a megfelelő makroszinoptikus helyzetek
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1981
+              </td>
+              <td> 
+                Horváth László
+              </td>
+              <td> 
+                A csapadékvíz kémiai összetétele Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1982
+              </td>
+              <td> 
+                Haszpra László
+              </td>
+              <td> 
+                Csapadékkémiai állomáshálózatok sűrűségének meghatározása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1982
+              </td>
+              <td> 
+                Hont László
+              </td>
+              <td> 
+                Meteorológiai idősorok spektrálanalízise
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1983
+              </td>
+              <td> 
+                Kalmár Györgyné
+              </td>
+              <td> 
+                Cirkulációs módszer a fagykárt okozó későtavaszi lehűlések előrejelzésére
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1983
+              </td>
+              <td> 
+                Koós-Hutás István
+              </td>
+              <td> 
+                Vizsgálatok a Balaton jégviszonyairól
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1983
+              </td>
+              <td> 
+                Máté Anna
+              </td>
+              <td> 
+                Az 500 mb-os hemiszférikus mező természetes ortogonális sorfejtése és néhány meteorológiai következmény
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Cseh Sándor
+              </td>
+              <td> 
+                A nedves levegő nedvességi karakterisztikáinak vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Gyöngyösi György
+              </td>
+              <td> 
+                A levegő kéndioxid szennyezettsége Budapesten
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Hunkár Márta
+              </td>
+              <td> 
+                A napsugárzás és a növényállományok viszonya különös tekintettel a fotoszintetikusan aktív sugárzás kukorica állományba történő behatolására és hasznosulására
+              </td>
+            </tr>
+            <tr> 
+              <td>1984</td>
+              <td> 
+                Ketskeméty László
+              </td>
+              <td> 
+                Többsávos digitális mûholdképek számítógépes clusterezése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                László István
+              </td>
+              <td> 
+                A rövidhullámú sugárzás terjedése optikailag vékony atmoszférában
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Pintér Ferenc
+              </td>
+              <td> 
+                Nagyméretű meteorológiai adatbázisok jellemzése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Posza István
+              </td>
+              <td>&nbsp; </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Tőkei László
+              </td>
+              <td> 
+                Az évi iőjárás természetes szakaszai Magyarországon
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1984
+              </td>
+              <td> 
+                Zoltán Csaba
+              </td>
+              <td> 
+                Egydimenziós stacionárius jet-modell a zivatarfelhők feláramlási csatornájának leírására
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1985
+              </td>
+              <td> 
+                Matyasovszky István
+              </td>
+              <td> 
+                Meteorológiai idősorok modellezése ARMA folyamatok segítségével
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1985
+              </td>
+              <td> 
+                Rimek Ilona
+              </td>
+              <td> 
+                A középtroposzféra trópuson kívüli cirkulációjának objektív analízise
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1985
+              </td>
+              <td> 
+                Takács Miklós
+              </td>
+              <td> 
+                Porszennyeződés városi léptékű transzmissziójának kísérleti vizsgálata
+              </td>
+            </tr>
+            <tr> 
+              <td>1985</td>
+              <td>
+              Tóth Zoltán
+              </td>
+              <td>Objektív, analógiákat fölhasználó 30 napos időjárás előrejelző módszer</td>
+            </tr>
+            <tr> 
+              <td> 
+                1986
+              </td>
+              <td> 
+                Mekis Éva
+              </td>
+              <td> 
+                Kvantitatív hidrológiai célú rövidtávu numerikus csapadékelőrejelzés sztochasztikus módszerrel
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1987
+              </td>
+              <td> 
+                Putsay Mária
+              </td>
+              <td> 
+                A rövidhullámú spektrum-tartományban készített műholdképek légkör okozta torzulásának kiküszöbölése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1987
+              </td>
+              <td> 
+                Weidinger Tamás
+              </td>
+              <td> 
+                A talajközeli légréteg klimatológiai és dinamikai sajátosságai a szarvasi toronymérések alapján
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1987
+              </td>
+              <td> 
+                Zuleta Padilla, César Alonso
+              </td>
+              <td> 
+                A csapadékmérő hálózat optimalizációjának vizsgálata Ecuador területére
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1988
+              </td>
+              <td> 
+                Maller Aranka
+              </td>
+              <td> 
+                A középtroposzféra stacionárius hullámainak prognosztizálása mezoszinoptikus statisztikai módszerrel
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1991
+              </td>
+              <td> 
+                Bonta Imre
+              </td>
+              <td> 
+                Nagy csapadékot adó mezoléptékû rendszerek vizsgálata a Duna és a Tisza vízgyûjtő területén 
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1992
+              </td>
+              <td> 
+                Gyuró György
+              </td>
+              <td> 
+                Rövidtávú előrejelzések a lineáris egyensúlyi modellel
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1993
+              </td>
+              <td> 
+                Nemes Csaba
+              </td>
+              <td> 
+                A kukorica terméseredménye és az aszály
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1996
+              </td>
+              <td> 
+                Csiszár Iván
+              </td>
+              <td> 
+                Potenciális hibák az alacsonyszintű rétegfelhőzet effektív cseppméretének műholdas sugárzásmérésekből történő meghatározásakor
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1996
+              </td>
+              <td> 
+                Horányi András
+              </td>
+              <td> 
+                Frontális hullámok érzékenység-vizsgálata az adjungált módszer segítségével
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                1999
+              </td>
+              <td> 
+                Kádár Barbara 
+              </td>
+              <td> 
+                Quantitative dynamics of Hamiltonian atmospheric model equation
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2000
+              </td>
+              <td> 
+                Baranka Györgyi
+              </td>
+              <td> 
+                Légszennyező anyagok előrejelzése Budapesten
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2000
+              </td>
+              <td> 
+                Borbás Éva
+              </td>
+              <td> 
+                Meteorológiai adatok új forrása: a Globális Helymeghatározó Rendszer
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2002
+              </td>
+              <td> 
+                Barcza Zoltán
+              </td>
+              <td> 
+                Long term atmosphere/biosphere exchange of CO<sub>2</sub> in Hungary
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2003
+              </td>
+              <td> 
+                Diószeghy Márta
+              </td>
+              <td> 
+                Operatív automatikus osztályozás METEOSAT meteorológiai műholdképeken
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2003
+              </td>
+              <td> 
+                Gyarmati Györgyi
+              </td>
+              <td> 
+                Lokális előrejelezhetőségi kísérletek a légkör egy egyszerű modelljével
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2003
+              </td>
+              <td> 
+                Mészáros Róbert
+              </td>
+              <td> 
+                A felszín közeli ózon száraz ülepedésének meghatározása különböző felszín típusok felett
+              </td>
+            </tr>
+            <tr> 
+              <td>2003</td>
+              <td>
+              Pongrácz Rita
+              </td>
+              <td>
+              A nagytérségű cirkuláció (ENSO, NAO) együttes hatása a regionális éghajlati paraméterekre
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2003
+              </td>
+              <td> 
+                Dobi Ildikó
+              </td>
+              <td> 
+                Napi meteorológiai idősorok többdimenziós sztochasztikus modellezése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2004
+              </td>
+              <td> 
+                Ferenczi Zita
+              </td>
+              <td> 
+                Puff modell meteorológiai processzorának előállítása
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2004
+              </td>
+              <td> 
+                Havasi Ágnes
+              </td>
+              <td> 
+                Operator splitting methods and their applications in air pollution modelling
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2004
+              </td>
+              <td> 
+                Radics Kornélia
+              </td>
+              <td> 
+                A szélenergia hasznosításának lehetőségei Magyarországon: hazánk szélklímája, a rendelkezésre álló szélenergia becslése és modellezése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2005
+              </td>
+              <td> 
+                Lakatos Mónika
+              </td>
+              <td> 
+                Extrém meteorológiai jelenségek matematikai modellezése
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2005
+              </td>
+              <td> 
+                Wantuch Ferenc
+              </td>
+              <td> 
+                A Kárpát-medence villámainak meteorológiai vizsgálata objektív mérések alapján
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2006
+              </td>
+              <td> 
+                Kerényi Judit
+              </td>
+              <td> 
+                Szárazföld radiációs hőmérsékletének meghatározása NOAA/AVHRR műholdas adatok alapján
+              </td>
+            </tr>
+            <tr> 
+              <td>2007</td>
+              <td>
+              Csomós Petra
+                </td>
+              <td>
+              <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=8249">Theoretical and numerical analysis of operator splitting procedures</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2008
+              </td>
+              <td> 
+                Dombai Ferenc
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=510">Hazai villámlás lokalizációs és radar adatok összehasonlító elemzése</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2008
+              </td>
+              <td> 
+                Hirsch Tamás
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=412">Téli magyarországi nagy csapadékos helyzetek vizsgálata és előrejelzése</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2009
+              </td>
+              <td> 
+                Drucza Miklós
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=1655">A párolgás és a talaj vízháztartási tulajdonságainak modellezése: magyarországi esettanulmányok</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+              2009
+              </td>
+              <td>
+              Szabó Elemér
+              </td>
+              <td>
+              <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=3795">A környezeti mutatók képzésének alapelvei és alkalmazásának lehetőségei</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2010
+              </td>
+              <td> 
+                Dezső Zsuzsanna
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=4066">A magyarországi és közép-európai nagyvárosokban kialakuló városi hősziget vizsgálata finom felbontású műholdképek alapján</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2010
+              </td>
+              <td> 
+                Hágel Edit
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=4198">Development and operational application of a short-range ensemble prediction system based on the ALADIN limited area model</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+              2012
+              </td>
+              <td>
+              Torma Csaba
+              </td>
+              <td>
+              <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=8639">Átlagos és szélsőséges hőmérsékleti és csapadék viszonyok modellezése a Kárpát-medencére a XXI. századra a RegCM regionális klímamodell alkalmazásával</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2012
+              </td>
+              <td> 
+                Kern Anikó
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=9256">NDVI vegetációs index előállítása távérzékelt AVHRR és MODIS adatok alapján</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2012
+              </td>
+              <td> 
+                Bölöni Gergely
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=9854">Background error estimation in an atmospheric limited area model</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2013
+              </td>
+              <td> 
+                Pieczka Ildikó
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=10318">A Kárpát-medence térségére vonatkozó éghajlati szcenáriók elemzése a PRECIS finom felbontású regionális klímamodell felhasználásával</a>
+              </td>
+            </tr>   
+            <tr> 
+              <td> 
+                2013
+              </td>
+              <td> 
+                Breuer Hajnalka
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=10348">A talaj hidrofizikai tulajdonságainak hatása a konvektív csapadékra és a vízmérleg egyes összetevőire: meteorológiai és klimatológiai vizsgálatok Magyarországon</a>
+              </td>
+            </tr>      
+            <tr> 
+              <td> 
+                2014
+              </td>
+              <td> 
+                Gelybó Györgyi
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=13172">Mezőgazdasági területek produktivitásának becslése műholdas és felszíni mérések alapján</a>
+              </td>
+            </tr>
+            <tr> 
+              <td> 
+                2014
+              </td>
+              <td> 
+                Kugler Szilvia
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=13539">A Balaton és légkör közötti nitrogénforgalom meghatározása</a>
+              </td>
+            </tr>     
+            <tr> 
+              <td> 
+                2015
+              </td>
+              <td> 
+                Szépszó Gabriella
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=13889">A REMO regionális éghajlati modellen alapuló klímadinamikai vizsgálatok a Kárpát-medence éghajlatának jellemzésére</a>
+              </td>
+            </tr>                     
+            <tr> 
+              <td> 
+                2015
+              </td>
+              <td> 
+                Seres András Tamás
+              </td>
+              <td> 
+                <a  href="http://www.doktori.hu/index.php?menuid=193&amp;vid=14107">Zivatarklimatológiai elemzések és a nagy csapadékhozamú, konvektív jelenségek, időszakok vizsgálata Magyarországon</a>
+              </td>
+            </tr>                      
+            <tr> 
+              <td> 
+                2015
+              </td>
+              <td> 
+                Nagy Júlia Anna
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=15780">A klímaváltozás várható regionális hatása az Európában vadon élő emlősök élőhelyére RCM szimulációk felhasználásával</a>
+              </td>
+            </tr>                      
+            <tr> 
+              <td> 
+                2015
+              </td>
+              <td> 
+                Péliné Németh Csilla
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=15816">A regionális szélklíma tendenciáinak elemzése a globális klímaváltozás függvényében</a>
+              </td>
+            </tr>                      
+            <tr> 
+              <td> 
+                2016
+              </td>
+              <td> 
+                Bordás Árpád
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=16404">Egydimenziós határréteg modell fejlesztése és a turbulens kicserélődési folyamatok vizsgálata</a>
+              </td>
+            </tr>                      
+            <tr> 
+              <td> 
+                2016
+              </td>
+              <td> 
+                Kelemen Fanni Dóra
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=16521">Dynamical analyses and sensitivity studies of regional climate model results</a>
+              </td>
+            </tr>                                                   
+            <tr> 
+              <td> 
+                2016
+              </td>
+              <td> 
+                Dobor Laura
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=16608">Az éghajlatváltozás lehetséges hatásai a mezőgazdasági szénmérlegre és produktivitásra Magyarországon</a>
+              </td>
+            </tr>                                                   
+            <tr> 
+              <td> 
+                2017
+              </td>
+              <td> 
+                Lábó Eszter
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=17536">A hosszúhullámú sugárzás stratocumulus felhőben történő terjedésének numerikus modellezése</a>
+              </td>
+            </tr>                                                   
+            <tr> 
+              <td> 
+                2018
+              </td>
+              <td> 
+                Leelőssy Ádám
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=18185">Szennyezőanyagok légköri koncentrációját előrejelző modellrendszer fejlesztése és alkalmazása</a>
+              </td>
+            </tr>                                                   
+            <tr> 
+              <td> 
+                2019
+              </td>
+              <td> 
+                Kis Anna
+              </td>
+              <td> 
+                <a  href="https://doktori.hu/index.php?menuid=193&amp;lang=HU&amp;vid=19424">Csapadékextrémumok múltbeli tendenciái, jövőre becsült változásai és hidrológiai hatásai</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>2019</td>
+              <td>Somfalvi-Tóth Katalin</td>
+              <td> 
+                <a  href="#">A nagyfeszültségű felsővezeték hálózatot érő veszélyes tapadó hó felhalmozódások vizsgálata, modellezése és integrálása az előrejelzői gyakorlatba</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>2019</td>
+              <td>Mona Tamás</td>
+              <td> 
+                <a  href="#">Sekély és mély konvekciós folyamatok vizsgálata</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>2020</td>
+              <td>Göndöcs Júlia</td>
+              <td> 
+                <a  href="#">A regionális éghajlatváltozás hatásainak megjelenése városi környezetben - budapesti városi hősziget vizsgálata</a>
+              </td>
+            </tr>
+            <tr> 
+              <td>2022</td>
+              <td>Kristóf Erzsébet</td>
+              <td> 
+                <a  href="#">Éghajlati modellek validálása légköri oszcillációs, cirkulációs folyamatokkal</a>
+              </td>
+            </tr>  
+            <tr> 
+              <td>2023</td>
+              <td>Dian Csenge Márta</td>
+              <td> 
+                <a  href="#">A változó városi környezet klimatikus és energetikai szempontú elemzése és modellezése</a>
+              </td>
+            </tr>                                                  
+          </tbody>
+        </table>
+      </div>
+    </main>                                                                          
+
+    <!--------------------------- FOOTER ----------------------->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_contact">
+          <h1>ELTE Meteorológiai Tanszék</h1>
+          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+          <p><span>Telefon:</span> 06 (1) 372-2945</p>
+          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+        </div><!--white space reset
+        --><div class="pagemap">
+          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+        </div><!--white space reset
+        --><div class="webmaestros">
+          <p><span>Webmesterek: </p></span>
+          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+          <p>© 2022 ELTE Meteorológiai Tanszék</p>
+          <p>Minden jog fenntartva.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
+

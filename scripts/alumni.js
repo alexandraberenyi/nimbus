@@ -12,4 +12,7 @@ function optionListing(currentYear){
 function openInNewTab(obj){
   console.log(obj.value)
   $( "#alumniContainer" ).load( obj.value );
+
+  var phd = document.querySelector(".direct_container");
+  phd.style.display = "none";
 }
