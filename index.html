@@ -1,268 +1,268 @@
 <!DOCTYPE html>
 <html lang="hu">
 
-  <head>
-    <!--meta tag-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--JS-->
-    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script src ="scripts/nav_index.js" defer></script>
-    <script src ="scripts/jszip.js" defer></script>
-    <script src ="scripts/suncalc.js" defer></script>
-    <script src ="scripts/weather-widget.js" defer></script>
-    
-
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/mobile_logo.css"> 
-    <link rel="stylesheet" type="text/css" href="styles/main-page.css">
-    <link rel="stylesheet" type="text/css" href="styles/news.css">     
-    <link rel="stylesheet" href="weather-icons-master/css/weather-icons.css">
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-     
-    <!--icons(font-awesome)-->
-    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
-    
+  <!--JS-->
+  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src ="scripts/nav_index.js" defer></script>
+  <script src ="scripts/jszip.js" defer></script>
+  <script src ="scripts/suncalc.js" defer></script>
+  <script src ="scripts/weather-widget.js" defer></script>
   
-    <!--favicon-->
-    <link rel="icon" href="elte.ico">
-    <title>ELTE Meteorológiai Tanszék</title>
 
-  </head>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/mobile_logo.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/main-page.css">
+  <link rel="stylesheet" type="text/css" href="styles/news.css">     
+  <link rel="stylesheet" href="weather-icons-master/css/weather-icons.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
   
-  <body>
-    <div class="top_head">
-      <!--------------------------- FEJLEC ----------------------->   
-      <header id="header_id" class="header_class">
-        <div class="headbar">
-          <div class="language hbcont">
-            <a href="index.html" class="link_light active">Magyar</a>
-            <a href="index_en.html" class="link_light">English</a>
-          </div>
-          <div class="searchbar hbcont"  id="mobileSearch">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
-              <button type="submit"><i class="fa fa-search"></i></button>
-              <input name="domains" value="nimbus.elte.hu" type="hidden">
-              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
-            </form>   
-          </div>
-          <div class="ext_links hbcont">
-            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
-            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
-          </div>
+
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
+
+</head>
+
+<body>
+  <div class="top_head">
+    <!--------------------------- FEJLEC ----------------------->   
+    <header id="header_id" class="header_class">
+      <div class="headbar">
+        <div class="language hbcont">
+          <a href="index.html" class="link_light active">Magyar</a>
+          <a href="index_en.html" class="link_light">English</a>
+        </div>
+        <div class="searchbar hbcont"  id="mobileSearch">
+          <form method="get" action="http://www.google.com/search" target="_blank">
+            <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input name="domains" value="nimbus.elte.hu" type="hidden">
+            <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+          </form>   
+        </div>
+        <div class="ext_links hbcont">
+          <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+          <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+        </div>
+      </div><!--white space reset
+      --><div class="main-head" id="main-head_id">
+        <div class="logo-cont head-cont">
+          <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
         </div><!--white space reset
-        --><div class="main-head" id="main-head_id">
-          <div class="logo-cont head-cont">
-            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
-          </div><!--white space reset
-          --><div class="elte-met head-cont">
-            <div class="main_text" >
-                <ul>
-                <li><h1 class="elte" >ELTE TTK</h1></li>
-                <li><h1 > Meteorológiai Tanszék</h1></li>
-                </ul>
-            </div>
-          </div>
-          <div class="head-contact">
-            <div class="cont_text">
-            <ul>
-              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
-              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
-              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
-              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
-            </ul>
-            </div>
+        --><div class="elte-met head-cont">
+          <div class="main_text" >
+              <ul>
+              <li><h1 class="elte" >ELTE TTK</h1></li>
+              <li><h1 > Meteorológiai Tanszék</h1></li>
+              </ul>
           </div>
         </div>
-      </header>
-
-      <!--------------------------- MENU ----------------------->
-      <nav>
-        <div class="mobile_logo" id="mobile_logo_id">
-          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
-        </div>
-      <div class="topnav" id="mobileTopnav">
-        <a href="news.html">Hírek</a>
-        <div class="dropdwn">
-          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
-            <a href="bsc_info.html">BSc tudástár</a>
-            <a href="msc_info.html">MSc tudástár</a>
-            <a href="phd_info.html">PhD képzés</a>
-            <a href="for_students.html">Ismertető a képzésről</a>
-            <a href="mentor.html">Mentorálási program</a>
-            <a href="tdk.html">TDK</a>
-            <a href="erasmus.html">Erasmus</a>
-            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
-            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
-            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
-          </div>   
-        </div>
-        <a href="research.html">Kutatás</a>
-        <a href="staff.html">Munkatársak</a>
-        <div class="dropdwn">
-          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
-            <a href="contact.html">Elérhetőség</a>
-            <a href="history.html">Történet</a>
-            <a href="alumni.html">Végzett hallgatók</a>
-            <a href="trips.html">Kirándulások</a>
-            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+        <div class="head-contact">
+          <div class="cont_text">
+          <ul>
+            <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+            <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+            <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+            <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+          </ul>
           </div>
-        </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</i></a>
+        </div>
       </div>
-      </nav>
+    </header>
 
+    <!--------------------------- MENU ----------------------->
+    <nav>
+      <div class="mobile_logo" id="mobile_logo_id">
+        <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+      </div>
+    <div class="topnav" id="mobileTopnav">
+      <a href="news.html">Hírek</a>
+      <div class="dropdwn">
+        <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+          <a href="bsc_info.html">BSc tudástár</a>
+          <a href="msc_info.html">MSc tudástár</a>
+          <a href="phd_info.html">PhD képzés</a>
+          <a href="for_students.html">Ismertető a képzésről</a>
+          <a href="mentor.html">Mentorálási program</a>
+          <a href="tdk.html">TDK</a>
+          <a href="erasmus.html">Erasmus</a>
+          <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+          <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+          <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+        </div>   
+      </div>
+      <a href="research.html">Kutatás</a>
+      <a href="staff.html">Munkatársak</a>
+      <div class="dropdwn">
+        <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+          <a href="contact.html">Elérhetőség</a>
+          <a href="history.html">Történet</a>
+          <a href="alumni.html">Végzett hallgatók</a>
+          <a href="trips.html">Kirándulások</a>
+          <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+        </div>
+      </div> 
+      <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</i></a>
     </div>
-    <!-------------------------- LOCATION --------------------->
+    </nav>
 
-    <div class="currloc" id="currloc_id">
-      <a href="index.html" class="link_light">Főoldal</a>
+  </div>
+  <!-------------------------- LOCATION --------------------->
+
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a>
+  </div>
+
+
+  <!--------------------------- TORZS ----------------------->
+  <main>
+    <div class="widget-image">
+      <div class="weather-background-wrap">
+        <div class="weather-background"  id="widgetImageId"></div>
+      </div>
+      <div class="widget-placeholder"></div>
+      <div class="widget">
+        <h2>Jelenlegi időjárás a Lágymányosi Campuson</h2>
+        <div class="weather">
+        <!--EXTERNAL HTML CODE-->
+          <div class = "mettable">
+            <div class="jelen" id="jelenID">
+              <i id = "jelenimg" class = "wi wi-day-sunny"></i> <span id = "jelenido"></span> 
+            </div>
+            <div class="weather-data" id="weatherData">
+              <div class="ws"><i class = "wi wi-thermometer"></i> Hőmérséklet: <span id = "ta"></span> </div>
+              <div class="ws"><i class = "wi wi-strong-wind"></i> Szélsebesség:<span id = "fs"></span></div>
+              <div class="ws"><i class = "wi wi-strong-wind"></i> Szélirány: <span id = "fsd"></span></div>
+              <div class="ws"><i class = "wi wi-strong-wind"></i> Széllökés: <span id = "fx"></span></div>
+              <div class="ws"><i class = "wi wi-barometer"></i> Műszerszinti légnyomás: <span id = "p"></span></div>
+            </div>  
+          </div>
+          <div class = "astronomy">
+            <div class = "astronomy-item">
+              <i class = "wi wi-sunrise"></i>
+              <span id="sunrise"></span>
+            </div>
+            <div class = "astronomy-item">
+              <i class = "wi wi-sunset"></i>
+              <span id="sunset"></span>
+            </div>
+            <div class = "astronomy-item">
+              <i class="wi wi-day-sunny" id="moonimg" ></i>
+              <!--img src="#" style="width:2em;height:2em;padding-right:5px;" id = "moonimg"/-->
+              <span id="moon"></span>
+            </div>
+          </div>
+          <div class="redirect">
+            <a href="http://vcsicsi.elte.hu/" target="_blank">Tovább a jelenidő oldalra</a>
+          </div>
+        <!--END--> 
+        </div>
+        <p class="data-source" id="dataSource"></p> 
+      </div>
     </div>
-
-
-    <!--------------------------- TORZS ----------------------->
-    <main>
-      <div class="widget-image">
-        <div class="weather-background-wrap">
-          <div class="weather-background"  id="widgetImageId"></div>
-        </div>
-        <div class="widget-placeholder"></div>
-        <div class="widget">
-          <h2>Jelenlegi időjárás a Lágymányosi Campuson</h2>
-          <div class="weather">
-          <!--EXTERNAL HTML CODE-->
-            <div class = "mettable">
-              <div class="jelen" id="jelenID">
-                <i id = "jelenimg" class = "wi wi-day-sunny"></i> <span id = "jelenido"></span> 
-              </div>
-              <div class="weather-data" id="weatherData">
-                <div class="ws"><i class = "wi wi-thermometer"></i> Hőmérséklet: <span id = "ta"></span> </div>
-                <div class="ws"><i class = "wi wi-strong-wind"></i> Szélsebesség:<span id = "fs"></span></div>
-                <div class="ws"><i class = "wi wi-strong-wind"></i> Szélirány: <span id = "fsd"></span></div>
-                <div class="ws"><i class = "wi wi-strong-wind"></i> Széllökés: <span id = "fx"></span></div>
-                <div class="ws"><i class = "wi wi-barometer"></i> Műszerszinti légnyomás: <span id = "p"></span></div>
-              </div>  
-            </div>
-            <div class = "astronomy">
-              <div class = "astronomy-item">
-                <i class = "wi wi-sunrise"></i>
-                <span id="sunrise"></span>
-              </div>
-              <div class = "astronomy-item">
-                <i class = "wi wi-sunset"></i>
-                <span id="sunset"></span>
-              </div>
-              <div class = "astronomy-item">
-                <i class="wi wi-day-sunny" id="moonimg" ></i>
-                <!--img src="#" style="width:2em;height:2em;padding-right:5px;" id = "moonimg"/-->
-                <span id="moon"></span>
-              </div>
-            </div>
-            <div class="redirect">
-              <a href="http://vcsicsi.elte.hu/" target="_blank">Tovább a jelenidő oldalra</a>
-            </div>
-          <!--END--> 
-          </div>
-          <p class="data-source" id="dataSource"></p> 
-        </div>
-      </div>
-      <p class = "image-source" id="imageSource"></p>
-      <div class="content">
-        <div class="box1 box">
-          <div class="news-container">
-            <div id="news1" class="news"></div>
-            <div class="redirect-placeholder">
-              <a href="news.html"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-            </div>
+    <p class = "image-source" id="imageSource"></p>
+    <div class="content">
+      <div class="box1 box">
+        <div class="news-container">
+          <div id="news1" class="news"></div>
+          <div class="redirect-placeholder">
+            <a href="news.html"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="box2 box">
-          <a href=""><div class="subbox" id="subbox1">
-            <img src="./media/campus.jpg" alt="">
-            <div class="text">
-              <h6>Középiskolásoknak</h6>
-              <p>
-                Érdekel a földtudomány és a meteorológia? Szeretnéd tudni, hogyan
-                válhat belőled meteorológus? Itt minden információt összegyűjtöttünk neked.
-              </p>
-            </div>
-          </div></a> 
-          <a href=""><div class="subbox" >
-            <img src="./media/merohaz.jpg" alt="">
-            <div class="text">
-              <h6>Szakirányválasztás</h6>
-              <p>
-                Blabla
-              </p>
-            </div>
-          </div></a>
-          <a href=""><div class="subbox" id="subbox2">
-            <img src="./media/konyvek.jpg" alt="">
-            <div class="text">
-              <h6>Szakdolgozat és záróvizsga</h6>
-              <p>
-                Blabla
-              </p>
-            </div>
-          </div></a>
-          <a href=""><div class="subbox">
-            <img src="./media/mediciklon.jfif" alt="">
-            <div class="text">
-              <h6>Meteorológus MSc felvételi</h6>
-              <p>
-                Blabla
-              </p>
-            </div>
-          </div></a>
-        </div>
       </div>
-    </main>                                                                       
-
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
-        </div><!--white space reset
-        --><div class="pagemap">
-          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
-        </div>
+      <div class="box2 box">
+        <a href=""><div class="subbox" id="subbox1">
+          <img src="./media/campus.jpg" alt="">
+          <div class="text">
+            <h6>Középiskolásoknak</h6>
+            <p>
+              Érdekel a földtudomány és a meteorológia? Szeretnéd tudni, hogyan
+              válhat belőled meteorológus? Itt minden információt összegyűjtöttünk neked.
+            </p>
+          </div>
+        </div></a> 
+        <a href=""><div class="subbox" >
+          <img src="./media/merohaz.jpg" alt="">
+          <div class="text">
+            <h6>Szakirányválasztás</h6>
+            <p>
+              Blabla
+            </p>
+          </div>
+        </div></a>
+        <a href=""><div class="subbox" id="subbox2">
+          <img src="./media/konyvek.jpg" alt="">
+          <div class="text">
+            <h6>Szakdolgozat és záróvizsga</h6>
+            <p>
+              Blabla
+            </p>
+          </div>
+        </div></a>
+        <a href=""><div class="subbox">
+          <img src="./media/mediciklon.jfif" alt="">
+          <div class="text">
+            <h6>Meteorológus MSc felvételi</h6>
+            <p>
+              Blabla
+            </p>
+          </div>
+        </div></a>
       </div>
-    </footer>
-    <script>
-      $( "#news1" ).load( "news.html #news1" );
-    </script>
+    </div>
+  </main>                                                                       
 
-  </body>
+  <!--------------------------- FOOTER ----------------------->
+  <footer>
+    <div class="footer_container">
+      <div class="footer_contact">
+        <h1>ELTE Meteorológiai Tanszék</h1>
+        <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+        <p><span>Telefon:</span> 06 (1) 372-2945</p>
+        <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+        <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+      </div><!--white space reset
+      --><div class="pagemap">
+        <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+        <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+        <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+        <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+      </div><!--white space reset
+      --><div class="webmaestros">
+        <p><span>Webmesterek: </p></span>
+        <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+        <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+        <p>© 2022 ELTE Meteorológiai Tanszék</p>
+        <p>Minden jog fenntartva.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $( "#news1" ).load( "news.html #news1" );
+  </script>
+
+</body>
 
 </html>

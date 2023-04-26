@@ -1,1292 +1,1292 @@
 <!DOCTYPE html>
 <html lang="hu">
 
-  <head>
-    <!--meta tag-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "scripts/nav_index.js" defer></script>
-    <script src = "scripts/easter_egg.js" defer></script>
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src = "scripts/nav_index.js" defer></script>
+  <script src = "scripts/easter_egg.js" defer></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
-    <link rel="stylesheet" type="text/css" href="styles/staff.css">  
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
+  <link rel="stylesheet" type="text/css" href="styles/staff.css">  
 
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
   
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-    
-    <!--icons(font-awesome)-->
-    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
-  
-    <!--favicon-->
-    <link rel="icon" href="elte.ico">
-    <title>ELTE Meteorológiai Tanszék</title>
-  
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
 
-  </head>
-  
-  <body>
-    <div class="top_head">
-      <!--------------------------- FEJLEC ----------------------->   
-      <header id="header_id" class="header_class">
-        <div class="headbar">
-          <div class="language hbcont">
-            <a href="index.html" class="link_light active">Magyar</a>
-            <a href="index_en.html" class="link_light">English</a>
-          </div>
-          <div class="searchbar hbcont"  id="mobileSearch">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
-              <button type="submit"><i class="fa fa-search"></i></button>
-              <input name="domains" value="/nimbus.elte.hu" type="hidden">
-              <input name="sitesearch" value="/nimbus.elte.hu" type="hidden">
-            </form>   
-          </div>
-          <div class="ext_links hbcont">
-            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
-            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
-          </div>
-        </div>
-        <div class="main-head" id="main-head_id">
-          <div class="logo-cont head-cont">
-            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
-          </div><!--white space reset
-          --><div class="elte-met head-cont">
-            <div class="main_text" >
-                <ul>
-                <li><h1 class="elte" >ELTE TTK</h1></li>
-                <li><h1 > Meteorológiai Tanszék</h1></li>
-                </ul>
-            </div>
-          </div>
-          <div class="head-contact">
-            <div class="cont_text">
-            <ul>
-              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
-              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
-              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
-              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <!--------------------------- MENU ----------------------->
-      <nav>
-        <div class="mobile_logo" id="mobile_logo_id">
-          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
-        </div>
-      <div class="topnav" id="mobileTopnav">
-        <a href="news.html">Hírek</a>
-        <div class="dropdwn">
-          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
-            <a href="bsc_info.html">BSc tudástár</a>
-            <a href="msc_info.html">MSc tudástár</a>
-            <a href="phd_info.html">PhD képzés</a>
-            <a href="for_students.html">Ismertető a képzésről</a>
-            <a href="mentor.html">Mentorálási program</a>
-            <a href="tdk.html">TDK</a>
-            <a href="erasmus.html">Erasmus</a>
-            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
-            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
-            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
-          </div>   
-        </div>
-        <a href="research.html">Kutatás</a>
-        <a href="staff.html">Munkatársak</a>
-        <div class="dropdwn">
-          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
-            <a href="contact.html">Elérhetőség</a>
-            <a href="history.html">Történet</a>
-            <a href="alumni.html">Végzett hallgatók</a>
-            <a href="trips.html">Kirándulások</a>
-            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
-      </div>
-      </nav>
-
-    </div>
-    <!-------------------------- LOCATION --------------------->
-
-    <div class="currloc" id="currloc_id">
-      <a href="index.html" class="link_light">Főoldal</a> > <a href="staff.html" class="link_light">Munkatársak</a>
-    </div>
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
 
 
-    <!--------------------------- TORZS ----------------------->
-    <main>
-      <div class="content">
-        <h1>Munkatársaink</h1>
-        <h2 id="staff">Oktatók</h2>
-        <div class = "staff_container">
-          <div class="staff" id="meszaros_robert">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/meszaros_robert.jpg" alt="Mészáros Róbert">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~mrobi/" target="_blank">Mészáros Róbert</a></h3>
-                  <p>tanszékvezető egyetemi docens</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.112</p>
-                  <p><span>Telefon/mellék: </span>6603</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@trebor.sorazsem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>nyomanyag-terjedési modellek, felszín-bioszféra-légkör kölcsönhatások modellezése, meteorológiai műszertan</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011579&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="bartholy_judit">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/bartholy judit.jpg" alt="Bartholy Judit">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="bartholy.html">Bartholy Judit</a></h3>
-                  <p>professor emeritus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.115</p>
-                  <p><span>Telefon/mellék: </span>6608</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@tiduj.ylohtrab</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>klimatológia, a globális klímaváltozás lokális hatásainak elemzése, megújuló energiaforrások</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003656&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="weidinger_tamas">
-            <div class="pic-cont">
-              <a href="javascript:void(0);" onclick='easterEgg("weidinger_tamas_ee")' class="cursor"><img src="./media/staff_kepek/weidinger_tamas.jpg" alt="Weidinger Tamás"></a>
-              <a href="javascript:void(0);" onclick='easterEggRemove("weidinger_tamas_ee")'><img src="./media/staff_kepek/weidinger_tamas_ee.jpg" class="easter_egg" id="weidinger_tamas_ee"></a>
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="./weidinger.html">Weidinger Tamás</a></h3>
-                  <p>egyetemi docens</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.123</p>
-                  <p><span>Telefon/mellék: </span>6612</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@idiew</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>mikrometeorológia (mérés és modellezés), határréteg modellezés, turbulencia-számítás, általános meteorológia</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003401&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="barcza_zoltan">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/barcza_zoltan.jpg" alt="Barcza Zoltán">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="http://bzoli.web.elte.hu/index_hun.html" target="_blank">Barcza Zoltán</a></h3>
-                  <p>egyetemi docens</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.110</p>
-                  <p><span>Telefon/mellék: </span>6605</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@azcrab.natloz</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>a számítástechnika meteorológiai alkalmazásai, a felszín-bioszféra-légkör kölcsönhatások elemzése, a légköri szén-dioxid</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011134&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="pongracz_rita">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/pongracz_rita.jpg" alt="Pongrácz Rita">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~prita/index-h.html" target="_blank">Pongrácz Rita</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.116</p>
-                  <p><span>Telefon/mellék: </span>6609</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@atir.zcargnop</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>klasszikus és statisztikus klimatológia, ENSO jelenségkör, globális éghajlatváltozás lokális hatásainak vizsgálata</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011580&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="soosne_dezso_zsuzsanna">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/soosne_dezso_zsuzsanna.jpg" alt="Sooósné Dezső Zuzsanna">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Soósné Dezső Zsuzsanna</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.131</p>
-                  <p><span>Telefon/mellék: </span>6615</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@oszed.annaszusz</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>szinoptikus meteorológia, városklimatológiai, városi hősziget műholdas elemzése</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10020721&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="torma_csaba">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/torma_csaba.jpg" alt="Torma Csaba">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://sites.google.com/view/csaba-zsolt-torma?pli=1" target="_blank">Torma Csaba</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.131</p>
-                  <p><span>Telefon/mellék: </span>6615</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@amrot.tlosz.abasc</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>Regionális éghajlatmodellek összehasonlító vizsgálata a Kárpát-medence térségére. A modellfelbontás hatása az éghajlati projekciók optimalizálásában.</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10019288&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <a href="https://www.researchgate.net/profile/Csaba-Torma" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="https://scholar.google.hu/citations?user=Pi56z5QAAAAJ&hl=hu&oi=ao" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="https://orcid.org/0000-0002-4240-0788" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="https://www.scopus.com/authid/detail.uri?authorId=36605242400" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="breuer_hajnalka">
-            <div class="pic-cont">
-              <a href="javascript:void(0);" onclick='easterEgg("breuer_hajnalka_ee")' class="cursor"><img src="./media/staff_kepek/breuer_hajnalka.jpg" alt="Breuer Hajnalka"></a>
-              <a href="javascript:void(0);" onclick='easterEggRemove("breuer_hajnalka_ee")'><img src="./media/staff_kepek/breuer_hajnalka_ee.jpg" class="easter_egg" id="breuer_hajnalka_ee"></a>
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~bhajni/" target="_blank">Breuer Hajnalka</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.117</p>
-                  <p><span>Telefon/mellék: </span>6610</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@aklanjah.reuerb</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>felszín-légkör kölcsönhatások vizsgálata mezoskálájú modellekben, dinamikus alapú éghajlat-osztályozás</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025473&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="pieczka_ildiko">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/pieczka_ildiko.jpg" alt="Pieczka Ildikó">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~pieczka/" target="_blank">Pieczka Ildikó</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.130</p>
-                  <p><span>Telefon/mellék: </span>6616</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@okidli.akzceip</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>numerikus modellezés, fizikai klimatológia</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025625&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="leelosy_adam">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/leelossy_adam.jpg" alt="Leelőssy Ádám">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="http://leeladam.web.elte.hu/" target="_blank">Leelőssy Ádám</a></h3>
-                  <p>egyetemi adjunktus</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.109</p>
-                  <p><span>Telefon/mellék: </span>-</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@yssoleel.mada</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>szinoptikus meteorológia, általános meteorológia, szennyezőanyag terjedési modellek.</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030136&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="kristof_erzsebet">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="Kristóf Erzsébet">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="http://ekristof86.web.elte.hu/" target="_blank">Kristóf Erzsébet</a></h3>
-                  <p>tanársegéd</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.118</p>
-                  <p><span>Telefon/mellék: </span>6617</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@68fotsirke</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>légköri távkapcsolatok, oszcillációs jelenségek</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055707&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <!--<div class="staff" id="staff_neve">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Gipsz Jakab</a></h3>
-                  <p>karbantartó</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.666</p>
-                  <p><span>Telefon/mellék: </span>6666</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@tem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          -->
+</head>
+
+<body>
+  <div class="top_head">
+    <!--------------------------- FEJLEC ----------------------->   
+    <header id="header_id" class="header_class">
+      <div class="headbar">
+        <div class="language hbcont">
+          <a href="index.html" class="link_light active">Magyar</a>
+          <a href="index_en.html" class="link_light">English</a>
         </div>
-        <h2 id="re_staff">Nyugdíjas Oktatók</h2>
-        <div class="staff_container">
-          <div class="staff no_picture" id="tasnadi_peter">
-            <div class="pic-cont">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Tasnádi Péter</a></h3>
-                  <p>egyetemi tanár</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.123</p>
-                  <p><span>Telefon/mellék: </span>6612</p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>dinamikus meteorológia, a frontok és a légtömegek korszerű elmélete, potenciális örvényesség vizsgálata, oktatás-módszertan</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10006357&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff no_picture" id="prager_tamas">
-            <div class="pic-cont">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Práger Tamás</a></h3>
-                  <p>egyetemi docens</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.117</p>
-                  <p><span>Telefon/mellék: </span>6610</p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10005819&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff no_picture" id="bogardi_istvan">
-            <div class="pic-cont">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Bogárdi István</a></h3>
-                  <p>egyetemi tanár</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.114</p>
-                  <p><span>Telefon/mellék: </span>6607</p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="acs_ferenc">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/acs_ferenc.jpg" alt="Ács Ferenc">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Ács Ferenc</a></h3>
-                  <p>egyetemi docens</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.114</p>
-                  <p><span>Telefon/mellék: </span>6607</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffts@sca</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>agrometeorológia, mikrometeorológia, légkörfizika</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000754&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <a href="https://www.researchgate.net/profile/Ferenc-Acs-3" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
+        <div class="searchbar hbcont"  id="mobileSearch">
+          <form method="get" action="http://www.google.com/search" target="_blank">
+            <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input name="domains" value="/nimbus.elte.hu" type="hidden">
+            <input name="sitesearch" value="/nimbus.elte.hu" type="hidden">
+          </form>   
         </div>
-        <h2 id="ext_staff">Külsős Oktatók</h2>
-        <div class="staff_container_row">
-          <div class="staff row" id="haszpra_laszlo">
-            <div class="staff_info row">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~haszpra/haszpra/cv.htm">Haszpra László</a></h3>
-                  <p>címzetes egyetemi tanár, OMSZ</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.113</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001303&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff row" id="geresdi_istvan">
-            <div class="staff_info row">
-              <div class="staff-head st">
-                  <h3><a href="https://www.ttk.pte.hu/karunkrol/a-kar-munkatarsai/dr-geresdi-istvan">Geresdi István</a></h3>
-                  <p>egyetemi tanár, PTE TTK</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.113</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003034&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff row" id="horvath_akos">
-            <div class="staff_info row">
-              <div class="staff-head st">
-                  <h3><a href="#">Horváth Ákos</a></h3>
-                  <p>címzetes egyetemi docens, OMSZ</p>
-              </div> 
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10007991&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff row" id="szepszo_gabriella">
-            <div class="staff_info row">
-              <div class="staff-head st">
-                  <h3><a href="http://tir.web.elte.hu/">Szépszó Gabriella</a></h3>
-                  <p>tudományos munkatárs, OMSZ</p>
-              </div> 
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043830&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 id="res">Kutatók</h2>
-        <div class="staff_container">
-          <div class="staff" id="kis_anna">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/kis_anna.jpg" alt="Kis Anna">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="https://nimbus.elte.hu/~kisanna/" target="_blank">Kis Anna</a></h3>
-                  <p>tudományos munkatárs</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.116</p>
-                  <p><span>Telefon/mellék: </span>6609</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@tgaqaik</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span>klasszikus éghajlattan, regionális éghajlati modellek adatfeldolgozása, csatolt éghajlati hidrológiai modellek</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10039498&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="kalmar_timea">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/kalmar_timea.jpg" alt="Kalmár Tímea">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Kalmár Tímea</a></h3>
-                  <p>tudományos segédmunkatárs</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.130</p>
-                  <p><span>Telefon/mellék: </span>6616</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@ramlak.aemit</bdo></p>
-              </div>
-              <div class="staff-res st">
-                  <p><span>Kutatási terület: </span> regionális éghajlati modellezés, összetett időjárási és éghajlati események vizsgálata</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10060846" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <a href="https://www.researchgate.net/profile/Timea-Kalmar" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="https://orcid.org/0000-0003-0405-4404" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 id="phd">PhD hallgatók</h2>
-        <div class="staff_container">
-          <div class="staff" id="berenyi_alexandra">
-            <div class="pic-cont">
-              <a href="javascript:void(0);" onclick='easterEgg("berenyi_alexandra_ee")' class="cursor"><img src="./media/staff_kepek/berenyi_alexandra.jpg" alt="Berényi Alexandra"></a>
-              <a href="javascript:void(0);" onclick='easterEggRemove("berenyi_alexandra_ee")'><img src="./media/staff_kepek/berenyi_alexandra_ee.JPG" class="easter_egg" id="berenyi_alexandra_ee"></a>
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Berényi Alexandra</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.117</p>
-                  <p><span>Telefon/mellék: </span>6610</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@aiynereb</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
-                <p><span>Kutatási téma: </span>Csapadékmezők regionális változásának szezonális mintázata és szélsőségei Európában</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069771&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="david_reka_agnes">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/david_reka.jpeg" alt="Dávid Réka Ágnes">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Dávid Réka Ágnes</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.110</p>
-                  <p><span>Telefon/mellék: </span>6605</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@akerdivad</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Barcza Zoltán</p>
-                <p><span>Kutatási téma: </span>A növényzet fenológai ciklusának vizsgálata Közép-Európában</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10070103&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="varga_akos_janos">
-            <div class="pic-cont">
-              <a href="javascript:void(0);" onclick='easterEgg("varga_akos_ee")' class="cursor"><img src="./media/staff_kepek/varga_akos.jpg" alt="Varga Ákos János"></a>
-              <a href="javascript:void(0);" onclick='easterEggRemove("varga_akos_ee")'><img src="./media/staff_kepek/varga_akos_ee.jpg" class="easter_egg" id="varga_akos_ee"></a>
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Varga Ákos János</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.617</p>
-                  <p><span>Telefon/mellék: </span>6610</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@49sokav</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Breuer Hajnalka, Horváth Ákos</p>
-                <p><span>Kutatási téma: </span>A WRF regionális éghajlati modellként történő alkalmazása a Kárpát-medence térségére</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10067144&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="varga-balogh_adrienn">
-            <div class="pic-cont">
-              <a href="javascript:void(0);" onclick='easterEgg("varga-balogh_adrienn_ee")' class="cursor"><img src="./media/staff_kepek/varga-balogh_adrienn.jpg" alt="Varga-Balogh Adrienn"></a>
-              <a href="javascript:void(0);" onclick='easterEggRemove("varga-balogh_adrienn_ee")'><img src="./media/staff_kepek/varga-balogh_adrienn_ee.jpg" class="easter_egg" id="varga-balogh_adrienn_ee"></a>
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Varga-Balogh Adrienn</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.109</p>
-                  <p><span>Telefon/mellék: </span>-</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@irdahgolab</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Mészáros Róbert</p>
-                <p><span>Kutatási téma: </span>Idősor alapú rövid- és ultrarövidtávú meteorológiai előrejelzések fejlesztése gépi tanulással</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069312&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="abderrahmane_mendyl">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="Abderrahmane Mendyl">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Abderrahmane Mendyl</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.123</p>
-                  <p><span>Telefon/mellék: </span>6612</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Weidinger Tamás</p>
-                <p><span>Kutatási téma: </span>-</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Abderrahmane%20Mendyl" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="peter_musymi">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/peter_musymi.jpg" alt="Peter Musyimi">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Peter Musyimi</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.123</p>
-                  <p><span>Telefon/mellék: </span>6612</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@retepimiysum</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Weidinger Tamás, Székely Balázs</p>
-                <p><span>Kutatási téma: </span>Potential and real evapotranspiration modeling and climate indices analysis for different regions of Kenya</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084937&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="arun_gandhi">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="Arun Gandhi">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Arun Gandhi</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.123</p>
-                  <p><span>Telefon/mellék: </span>6612</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@emnitsebnura</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Weidinger Tamás</p>
-                <p><span>Kutatási téma: </span>-</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Arun%20Gandhi" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="helga_chauke">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/helga_chauke.jpg" alt="Chauke Helga">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Helga Chauke</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.130</p>
-                  <p><span>Telefon/mellék: </span>6616</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@321-lraep</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Pongrácz Rita</p>
-                <p><span>Kutatási téma: </span>The effect of climate change on viniculture in the Western Cape of South Africa</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="dolgos_emilia">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/dolgos_emilia.jpg" alt="Dolgos Emília">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Dolgos Emília</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.618</p>
-                  <p><span>Telefon/mellék: </span>6617</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@80ailime</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
-                <p><span>Kutatási téma: </span>Változó légköri cirkuláció, a mediterrán ciklonok jellemzőinek módosulása a globális éghajlatváltozás következtében</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="incze_dora">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/incze_dora.jpg" alt="Incze Dóra">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Incze Dóra</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.109</p>
-                  <p><span>Telefon/mellék: </span>-</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@odni</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Fodor Nándor, Barcza Zoltán</p>
-                <p><span>Kutatási téma: </span>A vízmérleg komponenseinek in situ mérésekkel és in silico kísérletekkel történő vizsgálata</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083559&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="fejes_lilian">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/fejes_lilian.jpg" alt="Fejes Lilian">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Fejes Lilian</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@nejaljal</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Talamon Attila, Pongrácz Rita</p>
-                <p><span>Kutatási téma: </span>A napenergia-termelésre alkalmas építmények és erőművek működési és biztonsági hatásvizsgálata az éghajlatváltozás várható következményeinek figyelembevételével</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10079313&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="herincs_david">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/herincs_david.jpg" alt="Hérincs Dávid">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Hérincs Dávid</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.618</p>
-                  <p><span>Telefon/mellék: </span>6617</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@dscnireh</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Soósná Dezső Zsuzsanna</p>
-                <p><span>Kutatási téma: </span>A mediterrán térség - kiemelten szubtrópusi és trópusi karakterisztikájú - ciklonjainak vizsgálata</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084663&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="simon_csilla">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/simon_csilla.jpg" alt="Simon Csilla">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Simon Csilla</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.131</p>
-                  <p><span>Telefon/mellék: </span>6615</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@85ssullisc</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Torma Csaba, Kis Anna</p>
-                <p><span>Kutatási téma: </span>Éghajlati szélsőségek vizsgálata regionális klímamodellek nyers és hibakorrigált adatai alapján a Kárpát-medence térségére</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10085266&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="szabo_peter">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/szabo_peter.jpg" alt="Szabó Péter">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Szabó Péter</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@8tepbazs</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
-                <p><span>Kutatási téma: </span>Éghajlati attribúció – karakterisztikus indikátorok és az antropogén éghajlatváltozás kapcsolata Magyarország térségében</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-           <div class="staff" id="szalkai_zsofia">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/szalkai_zsofia.jpg" alt="Szalkai Zsófia">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Szalkai Zsófia</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.114</p>
-                  <p><span>Telefon/mellék: </span>6607</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@acicifosz</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Ács Ferenc</p>
-                <p><span>Kutatási téma: </span>Az emberi termikus éghajlat jellemzése mezo és globális léptékben egy ruházati ellenállás modell alapján</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10086689&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="vincze_csilla">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/vincze_csilla.jpg" alt="vincze_csilla">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Vincze Csilla</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.609</p>
-                  <p><span>Telefon/mellék: </span>-</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@isciscv</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Mészáros Róbert</p>
-                <p><span>Kutatási téma: </span>Az időjárás hatása a méhek méztermelésére</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="gula_miklos">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="Gula Miklós">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Gula Miklós</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.609</p>
-                  <p><span>Telefon/mellék: </span>-</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Mészáros Róbert</p>
-                <p><span>Kutatási téma: </span>A felszínközeli ózon növényzetkárosító hatásának becslése Magyarországi növényállományokra</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="horvath_krisztina">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/horvath_krisztina.jpg" alt="Horváth Krisztina">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Horváth Krisztina</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@44446n</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Mészáros Róbert</p>
-                <p><span>Kutatási téma: </span>Lehetséges klímastratégiák eredményességének becslése Magyarország területén</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="komjati_kornel">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/komjati_kornel.jpg" alt="Komjáti Kornél">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Komjáti Kornél</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@leenrokk</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Csirmaz Kálmán, Breuer Hajnalka</p>
-                <p><span>Kutatási téma: </span>Szupercellák és sekély baroklin zónák kapcsolata a Kárpát-medencében</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087561&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="molnar_csilla">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/molnar_csilla.jpg" alt="staffname">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Molnár Csilla</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@50ullisc</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Soósné Dezső Zsuzsanna, Leelőssy Ádám</p>
-                <p><span>Kutatási téma: </span>Tudománykommunikációs eszközök és közönségpreferenciák a médiameteorológiában</p>
-              </div>
-              <!--<div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>-->
-            </div>
-          </div>
-          <div class="staff" id="szentes_oliver">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/szentes_oliver.jpg" alt="Szentes Olivér">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Szentes Olivér</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@kaerbiet</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Pongrácz rita, Lakatos Mónika</p>
-                <p><span>Kutatási téma: </span>Reprezentatív középhőmérséklet és csapadékösszeg adatbázis létrehozása és elemzése Magyarországra a mérések kezdetétől napjainkig.</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10074963&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="tordai_agoston">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="Tordai Ágoston">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Tordai Ágoston</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.666</p>
-                  <p><span>Telefon/mellék: </span>6666</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Mészáros Róbert</p>
-                <p><span>Kutatási téma: </span>-</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078175&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="toth_helga">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/toth_helga.jpg" alt="Tóth Helga">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Tóth Helga</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@aglehhtot</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Breuer Hajnalka, Szintai Balázs</p>
-                <p><span>Kutatási téma: </span>Felszíni folyamatok és asszimilációs eljárások fejlesztése mezoskálájú numerikus előrejelzői modellben</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10081328&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="staff" id="zempleni_zsuzsanna">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/zempleni_zsuzsanna.jpg" alt="Zempléni Zsuzsanna">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Zempléni Zsuzsanna</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.14</p>
-                  <p><span>Telefon/mellék: </span>6607</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@iszuszz</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>Breuer Hajnalka</p>
-                <p><span>Kutatási téma: </span>A napenergia és a szélenergia potenciál közeljövőre vonatkozó éghajlati változásainak vizsgálata regionális klímaszimulációk alapján.</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087957&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <!--<div class="staff" id="staff_neve">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Gipsz Jakab</a></h3>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.666</p>
-                  <p><span>Telefon/mellék: </span>6666</p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
-              </div>
-              <div class="staff-res st">
-                <p><span>Témavezető: </span>témavezető</p>
-                <p><span>Kutatási téma: </span>ide jön a doktori disszertáció címe</p>
-              </div>
-              <div class="staff-pub st">
-                  <p><span>Publikációk: </span></p>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                  <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
-              </div>
-            </div>
-          </div>-->
-        </div>
-        <h2>Hivatal</h2>
-        <div class="staff_container">
-          <div class="staff" id="demkune_jenei_zsuzsanna">
-            <div class="pic-cont">
-              <img src="./media/staff_kepek/demkune_jenei_zsuzsanna.jpg" alt="Demkuné Jenei Zsuzsanna">
-            </div>
-            <div class="staff_info">
-              <div class="staff-head st">
-                  <h3><a href="#">Demkuné Jenei Zsuzsanna</a></h3>
-                  <p>ügyviteli alkalmazott</p>
-              </div> 
-              <div class="staff-contact st">
-                  <p><span>Iroda: </span>6.611</p>
-                  <p><span>Telefon/mellék: </span>+36-1-372-2945, +36-1-372-2500 / 6645 </p>
-                  <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@ienej.annaszusz</bdo></p>
-              </div>
-            </div>
-          </div>
+        <div class="ext_links hbcont">
+          <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+          <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
         </div>
       </div>
-    </main>                                                                          
-
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+      <div class="main-head" id="main-head_id">
+        <div class="logo-cont head-cont">
+          <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
         </div><!--white space reset
-        --><div class="pagemap">
-          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
+        --><div class="elte-met head-cont">
+          <div class="main_text" >
+              <ul>
+              <li><h1 class="elte" >ELTE TTK</h1></li>
+              <li><h1 > Meteorológiai Tanszék</h1></li>
+              </ul>
+          </div>
+        </div>
+        <div class="head-contact">
+          <div class="cont_text">
+          <ul>
+            <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+            <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+            <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+            <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+          </ul>
+          </div>
         </div>
       </div>
-    </footer>
+    </header>
 
-  </body>
+    <!--------------------------- MENU ----------------------->
+    <nav>
+      <div class="mobile_logo" id="mobile_logo_id">
+        <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+      </div>
+    <div class="topnav" id="mobileTopnav">
+      <a href="news.html">Hírek</a>
+      <div class="dropdwn">
+        <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+          <a href="bsc_info.html">BSc tudástár</a>
+          <a href="msc_info.html">MSc tudástár</a>
+          <a href="phd_info.html">PhD képzés</a>
+          <a href="for_students.html">Ismertető a képzésről</a>
+          <a href="mentor.html">Mentorálási program</a>
+          <a href="tdk.html">TDK</a>
+          <a href="erasmus.html">Erasmus</a>
+          <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+          <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+          <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+        </div>   
+      </div>
+      <a href="research.html">Kutatás</a>
+      <a href="staff.html">Munkatársak</a>
+      <div class="dropdwn">
+        <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+          <a href="contact.html">Elérhetőség</a>
+          <a href="history.html">Történet</a>
+          <a href="alumni.html">Végzett hallgatók</a>
+          <a href="trips.html">Kirándulások</a>
+          <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+        </div>
+      </div> 
+      <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+    </div>
+    </nav>
+
+  </div>
+  <!-------------------------- LOCATION --------------------->
+
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a> > <a href="staff.html" class="link_light">Munkatársak</a>
+  </div>
+
+
+  <!--------------------------- TORZS ----------------------->
+  <main>
+    <div class="content">
+      <h1>Munkatársaink</h1>
+      <h2 id="staff">Oktatók</h2>
+      <div class = "staff_container">
+        <div class="staff" id="meszaros_robert">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/meszaros_robert.jpg" alt="Mészáros Róbert">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~mrobi/" target="_blank">Mészáros Róbert</a></h3>
+                <p>tanszékvezető egyetemi docens</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.112</p>
+                <p><span>Telefon/mellék: </span>6603</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@trebor.sorazsem</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>nyomanyag-terjedési modellek, felszín-bioszféra-légkör kölcsönhatások modellezése, meteorológiai műszertan</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011579&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="bartholy_judit">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/bartholy judit.jpg" alt="Bartholy Judit">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="bartholy.html">Bartholy Judit</a></h3>
+                <p>professor emeritus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.115</p>
+                <p><span>Telefon/mellék: </span>6608</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@tiduj.ylohtrab</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>klimatológia, a globális klímaváltozás lokális hatásainak elemzése, megújuló energiaforrások</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003656&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="weidinger_tamas">
+          <div class="pic-cont">
+            <a href="javascript:void(0);" onclick='easterEgg("weidinger_tamas_ee")' class="cursor"><img src="./media/staff_kepek/weidinger_tamas.jpg" alt="Weidinger Tamás"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("weidinger_tamas_ee")'><img src="./media/staff_kepek/weidinger_tamas_ee.jpg" class="easter_egg" id="weidinger_tamas_ee"></a>
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="./weidinger.html">Weidinger Tamás</a></h3>
+                <p>egyetemi docens</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.123</p>
+                <p><span>Telefon/mellék: </span>6612</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@idiew</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>mikrometeorológia (mérés és modellezés), határréteg modellezés, turbulencia-számítás, általános meteorológia</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003401&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="barcza_zoltan">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/barcza_zoltan.jpg" alt="Barcza Zoltán">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="http://bzoli.web.elte.hu/index_hun.html" target="_blank">Barcza Zoltán</a></h3>
+                <p>egyetemi docens</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.110</p>
+                <p><span>Telefon/mellék: </span>6605</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@azcrab.natloz</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>a számítástechnika meteorológiai alkalmazásai, a felszín-bioszféra-légkör kölcsönhatások elemzése, a légköri szén-dioxid</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011134&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="pongracz_rita">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/pongracz_rita.jpg" alt="Pongrácz Rita">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~prita/index-h.html" target="_blank">Pongrácz Rita</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.116</p>
+                <p><span>Telefon/mellék: </span>6609</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@atir.zcargnop</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>klasszikus és statisztikus klimatológia, ENSO jelenségkör, globális éghajlatváltozás lokális hatásainak vizsgálata</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011580&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="soosne_dezso_zsuzsanna">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/soosne_dezso_zsuzsanna.jpg" alt="Sooósné Dezső Zuzsanna">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Soósné Dezső Zsuzsanna</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.131</p>
+                <p><span>Telefon/mellék: </span>6615</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@oszed.annaszusz</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>szinoptikus meteorológia, városklimatológiai, városi hősziget műholdas elemzése</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10020721&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="torma_csaba">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/torma_csaba.jpg" alt="Torma Csaba">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://sites.google.com/view/csaba-zsolt-torma?pli=1" target="_blank">Torma Csaba</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.131</p>
+                <p><span>Telefon/mellék: </span>6615</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@amrot.tlosz.abasc</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>Regionális éghajlatmodellek összehasonlító vizsgálata a Kárpát-medence térségére. A modellfelbontás hatása az éghajlati projekciók optimalizálásában.</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10019288&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Csaba-Torma" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="https://scholar.google.hu/citations?user=Pi56z5QAAAAJ&hl=hu&oi=ao" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="https://orcid.org/0000-0002-4240-0788" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=36605242400" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="breuer_hajnalka">
+          <div class="pic-cont">
+            <a href="javascript:void(0);" onclick='easterEgg("breuer_hajnalka_ee")' class="cursor"><img src="./media/staff_kepek/breuer_hajnalka.jpg" alt="Breuer Hajnalka"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("breuer_hajnalka_ee")'><img src="./media/staff_kepek/breuer_hajnalka_ee.jpg" class="easter_egg" id="breuer_hajnalka_ee"></a>
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~bhajni/" target="_blank">Breuer Hajnalka</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.117</p>
+                <p><span>Telefon/mellék: </span>6610</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@aklanjah.reuerb</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>felszín-légkör kölcsönhatások vizsgálata mezoskálájú modellekben, dinamikus alapú éghajlat-osztályozás</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025473&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="pieczka_ildiko">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/pieczka_ildiko.jpg" alt="Pieczka Ildikó">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~pieczka/" target="_blank">Pieczka Ildikó</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.130</p>
+                <p><span>Telefon/mellék: </span>6616</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@okidli.akzceip</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>numerikus modellezés, fizikai klimatológia</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025625&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="leelosy_adam">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/leelossy_adam.jpg" alt="Leelőssy Ádám">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="http://leeladam.web.elte.hu/" target="_blank">Leelőssy Ádám</a></h3>
+                <p>egyetemi adjunktus</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.109</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@yssoleel.mada</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>szinoptikus meteorológia, általános meteorológia, szennyezőanyag terjedési modellek.</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030136&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="kristof_erzsebet">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="Kristóf Erzsébet">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="http://ekristof86.web.elte.hu/" target="_blank">Kristóf Erzsébet</a></h3>
+                <p>tanársegéd</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.118</p>
+                <p><span>Telefon/mellék: </span>6617</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@68fotsirke</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>légköri távkapcsolatok, oszcillációs jelenségek</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055707&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <!--<div class="staff" id="staff_neve">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Gipsz Jakab</a></h3>
+                <p>karbantartó</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.666</p>
+                <p><span>Telefon/mellék: </span>6666</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@tem</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+      <h2 id="re_staff">Nyugdíjas Oktatók</h2>
+      <div class="staff_container">
+        <div class="staff no_picture" id="tasnadi_peter">
+          <div class="pic-cont">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Tasnádi Péter</a></h3>
+                <p>egyetemi tanár</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.123</p>
+                <p><span>Telefon/mellék: </span>6612</p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>dinamikus meteorológia, a frontok és a légtömegek korszerű elmélete, potenciális örvényesség vizsgálata, oktatás-módszertan</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10006357&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff no_picture" id="prager_tamas">
+          <div class="pic-cont">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Práger Tamás</a></h3>
+                <p>egyetemi docens</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.117</p>
+                <p><span>Telefon/mellék: </span>6610</p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10005819&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff no_picture" id="bogardi_istvan">
+          <div class="pic-cont">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Bogárdi István</a></h3>
+                <p>egyetemi tanár</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.114</p>
+                <p><span>Telefon/mellék: </span>6607</p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>Ide jön a kutatási téma</p>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="acs_ferenc">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/acs_ferenc.jpg" alt="Ács Ferenc">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Ács Ferenc</a></h3>
+                <p>egyetemi docens</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.114</p>
+                <p><span>Telefon/mellék: </span>6607</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffts@sca</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>agrometeorológia, mikrometeorológia, légkörfizika</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000754&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Ferenc-Acs-3" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 id="ext_staff">Külsős Oktatók</h2>
+      <div class="staff_container_row">
+        <div class="staff row" id="haszpra_laszlo">
+          <div class="staff_info row">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~haszpra/haszpra/cv.htm">Haszpra László</a></h3>
+                <p>címzetes egyetemi tanár, OMSZ</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.113</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001303&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff row" id="geresdi_istvan">
+          <div class="staff_info row">
+            <div class="staff-head st">
+                <h3><a href="https://www.ttk.pte.hu/karunkrol/a-kar-munkatarsai/dr-geresdi-istvan">Geresdi István</a></h3>
+                <p>egyetemi tanár, PTE TTK</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.113</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003034&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff row" id="horvath_akos">
+          <div class="staff_info row">
+            <div class="staff-head st">
+                <h3><a href="#">Horváth Ákos</a></h3>
+                <p>címzetes egyetemi docens, OMSZ</p>
+            </div> 
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10007991&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff row" id="szepszo_gabriella">
+          <div class="staff_info row">
+            <div class="staff-head st">
+                <h3><a href="http://tir.web.elte.hu/">Szépszó Gabriella</a></h3>
+                <p>tudományos munkatárs, OMSZ</p>
+            </div> 
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043830&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 id="res">Kutatók</h2>
+      <div class="staff_container">
+        <div class="staff" id="kis_anna">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/kis_anna.jpg" alt="Kis Anna">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="https://nimbus.elte.hu/~kisanna/" target="_blank">Kis Anna</a></h3>
+                <p>tudományos munkatárs</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.116</p>
+                <p><span>Telefon/mellék: </span>6609</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@tgaqaik</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span>klasszikus éghajlattan, regionális éghajlati modellek adatfeldolgozása, csatolt éghajlati hidrológiai modellek</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10039498&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="kalmar_timea">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/kalmar_timea.jpg" alt="Kalmár Tímea">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Kalmár Tímea</a></h3>
+                <p>tudományos segédmunkatárs</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.130</p>
+                <p><span>Telefon/mellék: </span>6616</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@ramlak.aemit</bdo></p>
+            </div>
+            <div class="staff-res st">
+                <p><span>Kutatási terület: </span> regionális éghajlati modellezés, összetett időjárási és éghajlati események vizsgálata</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10060846" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Timea-Kalmar" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="https://orcid.org/0000-0003-0405-4404" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 id="phd">PhD hallgatók</h2>
+      <div class="staff_container">
+        <div class="staff" id="berenyi_alexandra">
+          <div class="pic-cont">
+            <a href="javascript:void(0);" onclick='easterEgg("berenyi_alexandra_ee")' class="cursor"><img src="./media/staff_kepek/berenyi_alexandra.jpg" alt="Berényi Alexandra"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("berenyi_alexandra_ee")'><img src="./media/staff_kepek/berenyi_alexandra_ee.JPG" class="easter_egg" id="berenyi_alexandra_ee"></a>
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Berényi Alexandra</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.117</p>
+                <p><span>Telefon/mellék: </span>6610</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@aiynereb</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
+              <p><span>Kutatási téma: </span>Csapadékmezők regionális változásának szezonális mintázata és szélsőségei Európában</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069771&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="david_reka_agnes">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/david_reka.jpeg" alt="Dávid Réka Ágnes">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Dávid Réka Ágnes</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.110</p>
+                <p><span>Telefon/mellék: </span>6605</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@akerdivad</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Barcza Zoltán</p>
+              <p><span>Kutatási téma: </span>A növényzet fenológai ciklusának vizsgálata Közép-Európában</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10070103&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="varga_akos_janos">
+          <div class="pic-cont">
+            <a href="javascript:void(0);" onclick='easterEgg("varga_akos_ee")' class="cursor"><img src="./media/staff_kepek/varga_akos.jpg" alt="Varga Ákos János"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("varga_akos_ee")'><img src="./media/staff_kepek/varga_akos_ee.jpg" class="easter_egg" id="varga_akos_ee"></a>
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Varga Ákos János</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.617</p>
+                <p><span>Telefon/mellék: </span>6610</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ffats@49sokav</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Breuer Hajnalka, Horváth Ákos</p>
+              <p><span>Kutatási téma: </span>A WRF regionális éghajlati modellként történő alkalmazása a Kárpát-medence térségére</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10067144&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="varga-balogh_adrienn">
+          <div class="pic-cont">
+            <a href="javascript:void(0);" onclick='easterEgg("varga-balogh_adrienn_ee")' class="cursor"><img src="./media/staff_kepek/varga-balogh_adrienn.jpg" alt="Varga-Balogh Adrienn"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("varga-balogh_adrienn_ee")'><img src="./media/staff_kepek/varga-balogh_adrienn_ee.jpg" class="easter_egg" id="varga-balogh_adrienn_ee"></a>
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Varga-Balogh Adrienn</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.109</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@irdahgolab</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Mészáros Róbert</p>
+              <p><span>Kutatási téma: </span>Idősor alapú rövid- és ultrarövidtávú meteorológiai előrejelzések fejlesztése gépi tanulással</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069312&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="abderrahmane_mendyl">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="Abderrahmane Mendyl">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Abderrahmane Mendyl</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.123</p>
+                <p><span>Telefon/mellék: </span>6612</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Weidinger Tamás</p>
+              <p><span>Kutatási téma: </span>-</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Abderrahmane%20Mendyl" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="peter_musymi">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/peter_musymi.jpg" alt="Peter Musyimi">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Peter Musyimi</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.123</p>
+                <p><span>Telefon/mellék: </span>6612</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@retepimiysum</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Weidinger Tamás, Székely Balázs</p>
+              <p><span>Kutatási téma: </span>Potential and real evapotranspiration modeling and climate indices analysis for different regions of Kenya</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084937&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="arun_gandhi">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="Arun Gandhi">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Arun Gandhi</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.123</p>
+                <p><span>Telefon/mellék: </span>6612</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@emnitsebnura</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Weidinger Tamás</p>
+              <p><span>Kutatási téma: </span>-</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Arun%20Gandhi" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="helga_chauke">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/helga_chauke.jpg" alt="Chauke Helga">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Helga Chauke</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.130</p>
+                <p><span>Telefon/mellék: </span>6616</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@321-lraep</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Pongrácz Rita</p>
+              <p><span>Kutatási téma: </span>The effect of climate change on viniculture in the Western Cape of South Africa</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="dolgos_emilia">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/dolgos_emilia.jpg" alt="Dolgos Emília">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Dolgos Emília</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.618</p>
+                <p><span>Telefon/mellék: </span>6617</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@80ailime</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
+              <p><span>Kutatási téma: </span>Változó légköri cirkuláció, a mediterrán ciklonok jellemzőinek módosulása a globális éghajlatváltozás következtében</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="incze_dora">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/incze_dora.jpg" alt="Incze Dóra">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Incze Dóra</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.109</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@odni</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Fodor Nándor, Barcza Zoltán</p>
+              <p><span>Kutatási téma: </span>A vízmérleg komponenseinek in situ mérésekkel és in silico kísérletekkel történő vizsgálata</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083559&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="fejes_lilian">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/fejes_lilian.jpg" alt="Fejes Lilian">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Fejes Lilian</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@nejaljal</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Talamon Attila, Pongrácz Rita</p>
+              <p><span>Kutatási téma: </span>A napenergia-termelésre alkalmas építmények és erőművek működési és biztonsági hatásvizsgálata az éghajlatváltozás várható következményeinek figyelembevételével</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10079313&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="herincs_david">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/herincs_david.jpg" alt="Hérincs Dávid">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Hérincs Dávid</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.618</p>
+                <p><span>Telefon/mellék: </span>6617</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@dscnireh</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Soósná Dezső Zsuzsanna</p>
+              <p><span>Kutatási téma: </span>A mediterrán térség - kiemelten szubtrópusi és trópusi karakterisztikájú - ciklonjainak vizsgálata</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084663&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="simon_csilla">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/simon_csilla.jpg" alt="Simon Csilla">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Simon Csilla</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.131</p>
+                <p><span>Telefon/mellék: </span>6615</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@85ssullisc</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Torma Csaba, Kis Anna</p>
+              <p><span>Kutatási téma: </span>Éghajlati szélsőségek vizsgálata regionális klímamodellek nyers és hibakorrigált adatai alapján a Kárpát-medence térségére</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10085266&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="szabo_peter">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/szabo_peter.jpg" alt="Szabó Péter">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Szabó Péter</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@8tepbazs</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Bartholy Judit, Pongrácz Rita</p>
+              <p><span>Kutatási téma: </span>Éghajlati attribúció – karakterisztikus indikátorok és az antropogén éghajlatváltozás kapcsolata Magyarország térségében</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+          <div class="staff" id="szalkai_zsofia">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/szalkai_zsofia.jpg" alt="Szalkai Zsófia">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Szalkai Zsófia</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.114</p>
+                <p><span>Telefon/mellék: </span>6607</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@acicifosz</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Ács Ferenc</p>
+              <p><span>Kutatási téma: </span>Az emberi termikus éghajlat jellemzése mezo és globális léptékben egy ruházati ellenállás modell alapján</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10086689&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="vincze_csilla">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/vincze_csilla.jpg" alt="vincze_csilla">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Vincze Csilla</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.609</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@isciscv</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Mészáros Róbert</p>
+              <p><span>Kutatási téma: </span>Az időjárás hatása a méhek méztermelésére</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="gula_miklos">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="Gula Miklós">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Gula Miklós</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.609</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Mészáros Róbert</p>
+              <p><span>Kutatási téma: </span>A felszínközeli ózon növényzetkárosító hatásának becslése Magyarországi növényállományokra</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="horvath_krisztina">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/horvath_krisztina.jpg" alt="Horváth Krisztina">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Horváth Krisztina</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@44446n</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Mészáros Róbert</p>
+              <p><span>Kutatási téma: </span>Lehetséges klímastratégiák eredményességének becslése Magyarország területén</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="komjati_kornel">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/komjati_kornel.jpg" alt="Komjáti Kornél">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Komjáti Kornél</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@leenrokk</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Csirmaz Kálmán, Breuer Hajnalka</p>
+              <p><span>Kutatási téma: </span>Szupercellák és sekély baroklin zónák kapcsolata a Kárpát-medencében</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087561&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="molnar_csilla">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/molnar_csilla.jpg" alt="staffname">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Molnár Csilla</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@50ullisc</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Soósné Dezső Zsuzsanna, Leelőssy Ádám</p>
+              <p><span>Kutatási téma: </span>Tudománykommunikációs eszközök és közönségpreferenciák a médiameteorológiában</p>
+            </div>
+            <!--<div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>-->
+          </div>
+        </div>
+        <div class="staff" id="szentes_oliver">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/szentes_oliver.jpg" alt="Szentes Olivér">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Szentes Olivér</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@kaerbiet</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Pongrácz rita, Lakatos Mónika</p>
+              <p><span>Kutatási téma: </span>Reprezentatív középhőmérséklet és csapadékösszeg adatbázis létrehozása és elemzése Magyarországra a mérések kezdetétől napjainkig.</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10074963&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="tordai_agoston">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="Tordai Ágoston">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Tordai Ágoston</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>-</p>
+                <p><span>Telefon/mellék: </span>-</p>
+                <p><span>Email:</span> <bdo dir="rtl"> -</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Mészáros Róbert</p>
+              <p><span>Kutatási téma: </span>Városi levegőminőség finom tér- és időbeli felbontású vizsgálata</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078175&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="toth_helga">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/toth_helga.jpg" alt="Tóth Helga">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Tóth Helga</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@aglehhtot</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Breuer Hajnalka, Szintai Balázs</p>
+              <p><span>Kutatási téma: </span>Felszíni folyamatok és asszimilációs eljárások fejlesztése mezoskálájú numerikus előrejelzői modellben</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10081328&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="staff" id="zempleni_zsuzsanna">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/zempleni_zsuzsanna.jpg" alt="Zempléni Zsuzsanna">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Zempléni Zsuzsanna</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.14</p>
+                <p><span>Telefon/mellék: </span>6607</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@iszuszz</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>Breuer Hajnalka</p>
+              <p><span>Kutatási téma: </span>A napenergia és a szélenergia potenciál közeljövőre vonatkozó éghajlati változásainak vizsgálata regionális klímaszimulációk alapján.</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087957&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <!--<div class="staff" id="staff_neve">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Gipsz Jakab</a></h3>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.666</p>
+                <p><span>Telefon/mellék: </span>6666</p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.tneduts@tem</bdo></p>
+            </div>
+            <div class="staff-res st">
+              <p><span>Témavezető: </span>témavezető</p>
+              <p><span>Kutatási téma: </span>ide jön a doktori disszertáció címe</p>
+            </div>
+            <div class="staff-pub st">
+                <p><span>Publikációk: </span></p>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <h2>Hivatal</h2>
+      <div class="staff_container">
+        <div class="staff" id="demkune_jenei_zsuzsanna">
+          <div class="pic-cont">
+            <img src="./media/staff_kepek/demkune_jenei_zsuzsanna.jpg" alt="Demkuné Jenei Zsuzsanna">
+          </div>
+          <div class="staff_info">
+            <div class="staff-head st">
+                <h3><a href="#">Demkuné Jenei Zsuzsanna</a></h3>
+                <p>ügyviteli alkalmazott</p>
+            </div> 
+            <div class="staff-contact st">
+                <p><span>Iroda: </span>6.611</p>
+                <p><span>Telefon/mellék: </span>+36-1-372-2945, +36-1-372-2500 / 6645 </p>
+                <p><span>Email:</span> <bdo dir="rtl"> uh.etle.ktt@ienej.annaszusz</bdo></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>                                                                          
+
+  <!--------------------------- FOOTER ----------------------->
+  <footer>
+    <div class="footer_container">
+      <div class="footer_contact">
+        <h1>ELTE Meteorológiai Tanszék</h1>
+        <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+        <p><span>Telefon:</span> 06 (1) 372-2945</p>
+        <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+        <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+      </div><!--white space reset
+      --><div class="pagemap">
+        <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+        <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+        <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+        <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+      </div><!--white space reset
+      --><div class="webmaestros">
+        <p><span>Webmesterek: </p></span>
+        <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+        <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+        <p>© 2022 ELTE Meteorológiai Tanszék</p>
+        <p>Minden jog fenntartva.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 
 </html>
