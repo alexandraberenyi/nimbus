@@ -7,8 +7,8 @@ function weatherWidget(){
     const code = 44505,
         code2 = 44527;
 
-    let url= 'http://terkeptar.elte.hu/~saman/get.php?url=https://odp.met.hu/climate/observations_hungary/10_minutes/now/HABP_10M_'+code+'_now.zip';    
-    let url2= 'http://terkeptar.elte.hu/~saman/get.php?url=https://odp.met.hu/climate/observations_hungary/hourly/now/HABP_1H_'+code2+'_now.zip';    
+    let url= 'http://berenyia.web.elte.hu/nimbus_prot/php/get.php?url=https://odp.met.hu/climate/observations_hungary/10_minutes/now/HABP_10M_'+code+'_now.zip';    
+    let url2= 'http://berenyia.web.elte.hu/nimbus_prot/php/get.php?url=https://odp.met.hu/climate/observations_hungary/hourly/now/HABP_1H_'+code2+'_now.zip';    
 
     let currentHour = new Date().getHours();
 

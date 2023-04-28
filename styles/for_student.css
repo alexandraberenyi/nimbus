@@ -149,3 +149,90 @@ main span {
     font-size: .9em;
     font-style: italic;
 }
+
+.content li{
+    padding: 10px;
+}
+
+.jobs{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.jobs-image{
+    height: 150px;
+    width: 150px;
+}
+
+.jobs-image img{
+    height: 150px;
+    width: auto;  
+}
+
+.jobs-text {
+    width: calc(100% - 170px);
+    margin: 10px 0px;
+}
+
+.jobs-text p{
+   padding: 2px 0px;
+}
+
+.social-cont{
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.7);
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: rgba(93, 150, 148, .4);
+}
+
+.soc-img{
+    margin: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top:20px;
+
+}
+
+.soc-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.soc-text{
+    width: 100%;
+    padding:20px;
+}
+
+@media (min-width:700px) {
+    .social-cont{
+        width: 100%;
+        
+        box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.7);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .soc-img{
+        margin: 10px;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .soc-img img{
+        width: 100%;
+    }
+
+    .soc-text{
+        width: 69%;
+    }
+}
+
+
+
+

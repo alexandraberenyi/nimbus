@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src = "scripts/nav_index.js" defer></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+  
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
+
+</head>
+
+<body>
+  <div class="top_head">
+    <!--------------------------- FEJLEC ----------------------->   
+    <header id="header_id" class="header_class">
+      <div class="headbar">
+        <div class="language hbcont">
+          <a href="index.html" class="link_light active">Magyar</a>
+          <a href="index_en.html" class="link_light">English</a>
+        </div>
+        <div class="searchbar hbcont"  id="mobileSearch">
+          <form method="get" action="http://www.google.com/search" target="_blank">
+            <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input name="domains" value="nimbus.elte.hu" type="hidden">
+            <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+          </form>   
+        </div>
+        <div class="ext_links hbcont">
+          <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+          <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+        </div>
+      </div>
+      <div class="main-head" id="main-head_id">
+        <div class="logo-cont head-cont">
+          <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+        </div><!--white space reset
+        --><div class="elte-met head-cont">
+          <div class="main_text" >
+              <ul>
+              <li><h1 class="elte" >ELTE TTK</h1></li>
+              <li><h1 > Meteorológiai Tanszék</h1></li>
+              </ul>
+          </div>
+        </div>
+        <div class="head-contact">
+          <div class="cont_text">
+          <ul>
+            <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+            <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+            <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+            <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--------------------------- MENU ----------------------->
+    <nav>
+      <div class="mobile_logo" id="mobile_logo_id">
+        <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+      </div>
+    <div class="topnav" id="mobileTopnav">
+      <a href="news.html">Hírek</a>
+      <div class="dropdwn">
+        <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+          <a href="bsc_info.html">BSc tudástár</a>
+          <a href="msc_info.html">MSc tudástár</a>
+          <a href="phd_info.html">PhD képzés</a>
+          <a href="for_students.html">Ismertető a képzésről</a>
+          <a href="mentor.html">Mentorálási program</a>
+          <a href="tdk.html">TDK</a>
+          <a href="erasmus.html">Erasmus</a>
+          <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+          <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+          <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+        </div>   
+      </div>
+      <a href="research.html">Kutatás</a>
+      <a href="staff.html">Munkatársak</a>
+      <div class="dropdwn">
+        <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+          <a href="contact.html">Elérhetőség</a>
+          <a href="history.html">Történet</a>
+          <a href="alumni.html">Végzett hallgatók</a>
+          <a href="trips.html">Kirándulások</a>
+          <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+        </div>
+      </div> 
+      <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+    </div>
+    </nav>
+
+  </div>
+  <!-------------------------- LOCATION --------------------->
+
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a> > <a href="research.html" class="link_light"> A Tanszékről</a> > <a href="research.html" class="link_light">Történet</a>
+  </div>
+
+
+  <!--------------------------- TORZS ----------------------->
+  <main>
+    <div class="content">
+      <h1>A Meteorológiai tanszék rövid története</h1>
+      <h2>A kezdetek</h2>
+
+      <p>
+        A meteorológia - annak kutatása és oktatása - akkor indulhatott fejlődésnek, 
+        amikor megkezdődtek a rendszeres meteorológiai megfigyelések. Az első lépéseket 
+        nálunk 1753- ban tették meg a Nagyszombati Egyetemen, ahol Weiss Ferenc rendszeres 
+        időjárási feljegyzéseket készített. Az egyetem Budára helyezésével ezek a Várban 
+        az Egyetemi Csillagdában folytatódtak. Az észleléseket 1818-ig a Várban, ettől 
+        kezdve a csillagda Gellérthegyen épült új épületében végezték 1848-ig. 1870-ben 
+        az MTA kezdeményezésére megalapították a Magyar Királyi Országos Meteorológiai 
+        és Földdelejességi - később Földmágnességi - Intézetet. Ezzel egyidőben már 
+        felmerült az egyetemi tanszék létesítésének a kérdése is.
+      </p>
+
+      <p>
+        A századforduló után 1906-ban Héjas Endre sürgette a Budapesti Tudományegyetemen 
+        egy önálló meteorológia tanszék létesítését. 1919-ben ismét felmerült egy önálló
+        meteorológia tanszék létesítésének gondolata, annál is inkább mert e tudományt, 
+        igaz más kurzusok keretében, már oktatták az Egyetemen. A fizikai és a leíró földrajz
+        keretében Lóczy Lajos előadásaiban helyet kapott a meteorológia, Kövesligethy Radó 
+        pedig már 1890 óta rendszeresen tartott előadásokat "Meteorológia" címen. Hasonló 
+        módon Czirbusz Géza professzor is adott elő klimatológiát, hol önnállóan, hol a 
+        leíró földrajz részeként. Klupathy Jenő ugyancsak hirdetett a meteorológia körébe 
+        tartozó előadásokat. Az Egyetem gondoskodott arról, hogy a meteorológiának magantanára 
+        legyen, és több ízben felvetődött egy állandó tanszék kérdése, de megoldást nem nyert.
+      </p>
+
+      <p>
+        A Magyar Meteorológiai Társaság 1926. évi közgyűlésén ismét elhangzott előterjesztés 
+        egy önálló meteorológia tanszék ügyében, de sem ez, sem az 1938-ban megismételt lépések 
+        nem vezettek eredményre. A közel két évtizedes mozgalom, amelyet a Magyar Meteorológiai 
+        Társaság indított el, végülis 1945-ben járt sikerrel.
+      </p>
+
+      <h2>A Tanszék megalakulása</h2>
+
+      <p>
+        A budapesti Pázmány Péter (később Eötvös Loránd) Tudományegyetemen a meteorológia 
+        tárgykörében 1945-ben létesült tanszék a Légkörtani és Éghajlattani Tanszék nevet kapta, 
+        vezetésével Száva-Kováts Józsefet bízták meg. A tanszék szervezetileg a Bölcsészettudományi 
+        Karhoz tartozott és a Múzeum körút-i főépületben kapott helyet.
+      </p>
+
+      <p>
+        1949-ben az egyetemet átszervezték, és létrehozták az önálló Természettudományi Kart,
+        amely a Bölcsészettudományi Kar 22 tanszékét és intézetét, a Botanikus Kertet, a 
+        Fizikai- Kémiai Intézetet valamint az Embertani Intézetet foglalta magában. 1953-tól 
+        a tanszék új neve Meteorológia Tanszék
+      </p>
+
+      <p>
+        A Tanszéket 1945 és 1953 között Száva-Kováts József vezette. 1953-ban koholt vádak 
+        alapján elbocsátották, és bebörtönözték. 1953-tól 1970-ig a tanszékvezetői tisztet 
+        Dési Frigyes töltötte be. Dobosi Zoltánt 1970-ben bízták meg a tanszék vezetésével. 
+        A tanszék irányítását 1983-ban Rákóczi Ferenc vette át. Rákóczi professzor úr 
+        nyugállományba vonulásával Bartholy Judit került a tanszék élére.
+      </p>
+
+      <p>
+        1986-1998 szeptemberéig a tanszék az Egyetem Ludovika téri épületében volt található. 
+        Ekkor a Tanszék átköltözött Lágymányosra.
+      </p>
+
+      <h2>Egyetemi meteorológis képzés a Meteorológai Tanszéken</h2>
+
+      <p>
+        Jóllehet 1945-ben megalakult a tanszék, de a meteorológus képzésre még öt évet 
+        kellett várni. Az első meteorológus hallgatókat 1950-ben vették fel, a képzési 
+        kurzus 4 és fél éves volt, azaz az első meteorológus diplomákat 1954 szeptemberében 
+        vehették kézbe a hallgatók. Ez a képzési szakasz négy évfolyam kibocsátása után lezárult. 
+        1954 és 1957 között 113 diplomás meteorológus került ki az egyetemről. A képzést az 
+        elméleti és gyakorlati tárgyak egyensúlya jellemezte és színvonala a kor szintjén állott. 
+        A tanszemélyzet létszáma nem volt elegendő arra, hogy minden tantárgy oktatását és 
+        gyakorlat vezetését ellássa, ezért szükséges volt az Országos Meteorológiai Intézet 
+        szakembereinek az oktatási munkába való bevonása. Ez a tendencai a mai napig is jellemző.
+      </p>
+
+      <P>
+        A meteorológusok ilyen gyors ütemű képzése az úgynevezett "megemelt 5 éves terv"-nek 
+        volt köszönhető és félő volt, hogy a szakma telítődik. Olyan stratégiát kellett kidolgozni, 
+        amely biztosítja a szakember utánpótlást, egyben nem állítja a végzős hallgatókat 
+        elhelyezkedési nehézségek elé. Erre alkalom is nyílt, mert 1957-től az egyetemi képzést 
+        5 évre emelték fel, ez a mai napig érvényben van.
+      </P>
+
+      <P>
+        Az új képzési formában a matematikus, fizikus, matematika-fizika és földrajz szakos 
+        hallgatók speciális képzési formaként felvehették a meteorológiát. A vállalkozó 
+        hallgatók harmadéves korukig plusz óraszámban hallgattak meteorológiai tárgyakat 
+        és ekkor döntöttek, hogy kívánnak-e meteorológus diplomát szerezni. Harmadéves
+        koruktól - megemelkedvén a heti meteorológiai órák száma - alapszakjukon 
+        órakedvezményt kaptak és kettős diplomával végeztek. Ez az oktatási forma 
+        1958-ban indult be, így 5 évig, 1962-ig a Kar nem adott ki meteorológus diplomát. 
+        Ebben a képzési formában, amely 1980-ban zárult, 92 kettős diplomájú szakembert 
+        képzett ki a tanszék.
+      </P>
+
+      <P>
+        1980-81-től ismét egyszakos meteorológiai diplomákat állít ki az Egyetem. 
+        Ugyanis, bár a kettős diplomával rendelkezők szakmai színvonala kielégítő volt 
+        és kiállta a gyakorlat próbáját, mégis a meteorológiában bekövetkezett fejlődésnek 
+        (számítástechnika, űrtechnika) az oktatásban is tükröződnie kellett, és ez új 
+        diszciplinák: numerikus előrejelzés, műholdmeteorológia, környezetvédelem stb. 
+        bevezetését tette szükségessé. Ez már megoldhatatlannak bizonyult a korábbi 
+        kereteken belül.
+      </P>
+
+      <P>
+        2006-ban bevezetésre került a Bologna-rendszer, így a meteorológus képzés újra
+        két szinten folyik 5 éven keresztül. Az első BSc képzés 2006-ban indult, a hallgatók földtudomány,
+        fizika és környezettan alapszakos tanulmányaik alatt meteorológus specializációt
+        választhatnak, mely során kötelező óraszámban tanulják a meteorológiát.
+        Az első MSc képzés 2009-ben indult el, melynek elvégzésekor a hallgatók Okleveles 
+        Meteorológus diplomát kapnak kézhez, amely az országban egyedül a tanszéken szerezhető meg.
+      </P>
+
+      <p style="text-align: center;">
+        <span class="darkgreen">Forrás:</span>
+        <em style="font-style: italic;"> Fejezetek a magyar meteorológia történetéből 1971-1995, OMSZ, Budapest, 1995</em></p>
+    </div>
+  </main>                                                                          
+
+  <!--------------------------- FOOTER ----------------------->
+  <footer>
+    <div class="footer_container">
+      <div class="footer_contact">
+        <h1>ELTE Meteorológiai Tanszék</h1>
+        <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+        <p><span>Telefon:</span> 06 (1) 372-2945</p>
+        <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+        <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+      </div><!--white space reset
+      --><div class="pagemap">
+        <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+        <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+        <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+        <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+      </div><!--white space reset
+      --><div class="webmaestros">
+        <p><span>Webmesterek: </p></span>
+        <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+        <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+        <p>© 2022 ELTE Meteorológiai Tanszék</p>
+        <p>Minden jog fenntartva.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

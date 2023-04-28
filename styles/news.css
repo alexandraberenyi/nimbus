@@ -1,3 +1,4 @@
+
 #pageContainer{
   text-align: center;
 }
@@ -22,4 +23,8 @@
 #news1{
   width: 100%;
   margin: auto 0;
+}
+
+.actual p{
+  padding-bottom: 0px;
 }

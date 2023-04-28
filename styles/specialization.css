@@ -1,0 +1,65 @@
+/*Általános stílusbeállítások*/
+.content{
+  background-color:none;
+  position: relative;
+  z-index: 100;
+  height: auto;
+}
+
+.wrap {
+  position: relative;
+  z-index: 100;
+}
+
+.box{
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: rgba(93, 150, 148, .8);
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.foldtud{
+  background-color: rgba(40, 96, 112, .7);
+}
+
+.main_drop{
+  height: 50px;
+  transition: 0.4s;
+}
+
+.left {
+  float: left;
+  display: table;
+  height: 100%;
+}
+
+.right {
+  float: right;
+  display: table;
+  height: 100%;
+}
+
+.left p, .right a{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 20px 0px 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.cont_dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+  margin-top: 0px;
+  color: white;
+  transition: 0.4s;
+}
+
+.foldtud span{
+  color: white;
+  font-weight: bolder;
+}

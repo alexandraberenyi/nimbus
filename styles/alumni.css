@@ -52,3 +52,11 @@ option{
       gap: 2%;
   }
 }
+
+
+.footnote_cont p{
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 0px;
+}

@@ -408,6 +408,7 @@ h1.elte{
 @media (max-height:350px) {
     .topnav.responsive {
         position: fixed;
+        z-index:999;
         top: 0;
         bottom: 0;
     }
@@ -415,11 +416,13 @@ h1.elte{
 
 .topnav.responsive.dp_resp1 {
     position: fixed;
+    z-index:999;
     bottom: 0;
 }
 
 .topnav.responsive.dp_resp2 {
     position: fixed;
+    z-index:999;
     bottom: 0;
 }
 
@@ -427,6 +430,7 @@ h1.elte{
     .topnav.responsive.dp_resp2{
         position: fixed;
         height:600px;
+        z-index:999;
     }
 }
 
@@ -434,6 +438,7 @@ h1.elte{
     .topnav.responsive.dp_resp1{
         position: fixed;
         height: 900px;
+        z-index:999;
     }
 }
 
@@ -747,7 +752,7 @@ footer {
     padding:20px;
     height: 320px;
     position: relative;
-    z-index: 999;
+    z-index: 50;
 }
 
 .pagemap {
