@@ -13,8 +13,6 @@ function openInNewTab(obj){
   console.log(obj.value)
   $( "#alumniContainer" ).load( obj.value );
 
-  var phd = document.querySelector(".direct_container");
   var footNote = document.querySelector(".footnote_cont");
-  phd.style.display = "none";
   footNote.style.display = "none";
 }

@@ -8,13 +8,13 @@
 
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "scripts/nav_index.js" defer></script>
+    <script src = "../scripts/nav_index.js" defer></script>
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/general.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/logo_remove.css"> 
   
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
     <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
   
     <!--favicon-->
-    <link rel="icon" href="elte.ico">
+    <link rel="icon" href="../elte.ico">
     <title>ELTE Meteorológiai Tanszék</title>
 
   </head>
@@ -55,7 +55,7 @@
         </div>
         <div class="main-head" id="main-head_id">
           <div class="logo-cont head-cont">
-            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+            <a href="../index.html"><img id="logo_id" class = "logo" src="../elte_logo.png" alt="logo"></a>
           </div><!--white space reset
           --><div class="elte-met head-cont">
             <div class="main_text" >
@@ -124,46 +124,99 @@
     <!-------------------------- LOCATION --------------------->
 
     <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="mentor.html" class="link_light">Mentorálási program</a>
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Kutatás</a> > <a href="research.html" class="link_light">Kutatási területek</a>
     </div>
 
 
     <!--------------------------- TORZS ----------------------->
     <main>
       <div class="content">
-        <h1>Mentor rendszer meteorológus hallgatóknak</h1>
-        <h2>Miért van külön "mentorság" a Meteorológiai Tanszéken?</h2>
+        <h1 style="font-size: 1.5em;">WRF modell kutatási alkalmazása: regionális klíma- és időjárásmodellezés</h1>
+        <h2>Vezető kutató: <a href="https://nimbus.elte.hu/~bhajni/" class="darkgreen" target="_blank">dr. Breuer Hajnalka</a></h2>
         <p>
-          A Meteorológiai Tanszéken a hallgatók és az oktatók közti kapcsolat 
-          és a hallgatói közösség fenntartása kis létszámú szak révén erős 
-          múlttal rendelkezik. A kétszintű képzéssel, a hallgatói létszám 
-          növekedéssel és az elektronikus ügyintézéssel azonban a hallgatóinkról 
-          egyre kevesebb órákon kívüli kapcsolat van.
-        </p>
-        <p>Általános problémák:</p>
-        <p>
-          - Az alapképzésben egyre több hallgató ragadt bent és ennek 
-          adminisztratív / képzési okait is szerettünk volna feltárni.
+          A WRF modellt operatív időjárási-előrejelzési céllal és kutatási célú időjárási vizsgálatokhoz
+          fejlesztették ki. Kutatási céllal különböző területek vagy időjárási jelenségek vizsgálhatók
+          segítségével.
         </p>
         <p>
-          - A hallgatók információi a képzési rendszerről, kötelező 
-          teljesítésekről, témaválasztásról, lehetőségekről meglehetősen hiányosak 
-          voltak.
+          Ilyen lokális kutatási jellegű szimulációkat végeztünk az Atacama-expedíció által a Föld egyik
+          legszárazabb pontján végrehajtott mérések reprodukálhatóságának céljából. Az extrém száraz
+          éghajlat több, a modell talajnedvesség és talajhőmérséklet számító algoritmusának pontatlanságára
+          mutatott rá. (Breuer et al., 2019)
         </p>
         <p>
-          A 2011-2012-es tanévtől kezdődően ezért az akkori témavezető, Dr. Bartholy Judit 
-          kezdeményezésére egy külön mentor rendszer (Mentor v2) kialakítását kezdtük el. 
+          Budapest városklímájának becslésére is készültek 1,1 km térbeli felbontású szimulációk (Göndöcs et
+          al., 2017). A város mesterséges felszíne miatt a lakosság jobban ki van téve a nyári hőhullámok
+          okozta hőstressznek, hiszen a mesterséges felszínek nagyobb mértékben melegednek fel, nagyobb
+          mennyiségű hő képes csapdázódni az épületek között. A növényzet hiányában nincs természetes
+          párolgás sem, ami csökkentené a hőtöbbletet. Regionális éghajlati szimuláció alapján a WRF modell
+          segítségével a jövőre vonatkoztatva is vizsgáltuk a budapesti városklíma várható változását (Göndöcs,
+          2020). Kísérletként készítettünk szimulációkat arra vonatkozólag is, hogy a tervezett zöldfelület
+          növekedés milyen hatással van hőhullám idején a városi hősziget intenzitásra (Dolgos, 2021).
         </p>
-        <h2>Mi a mentor feladata?</h2>
-        <p>- Segítse a tanterv követelményeinek könnyebb betartását (kötelezően / szabadon választható tárgyak), a tantervben történő eligazodást.</p>
-        <p>- Esetleges követelményi, tárgyi előfeltételi problémák feltárása.</p>
-        <p>- Téma és témavezető választás/keresés segítése.</p>
-        <p>- Segítség egyéb felmerülő tanulmányi kérdésekben.</p>
-        <p>- Tanszéki információk továbbítása, hirdetése.</p>
-        <p>- Pályázati- és állás lehetőségek hirdetése, segítség (ha lehetséges) az adminisztrációban.</p>
-
-        <h2>Ha kérdésed van:</h2>
-        <p>Keresd <a href="https://nimbus.elte.hu/~bhajni/" class="darkgreen" target="_blank"><span> Breuer Hajnalkát.</span></a></p>
+        <p>
+          A 2010-es évek végétől megkezdtük a WRF modell, mint regionális klímamodell adaptációját. Ennek
+          segítségével a Kárpát-medence térségére rendelkezésre álló klímaszimulációk sorába állunk be, mely
+          segíthet egyértelműbbé tenni a várható változásokat. (Varga &amp; Breuer, 2020, 2022)
+        </p>
+        <p>
+          A WRF modellezéshez kötődően kiemelten foglalkozunk még a modell földfelszíni adatbázisának
+          fejlesztésén (Göndöcs et al., 2015; Zempléni, 2020). Mivel a modellben elavult, durva felbontású (&gt;10
+          km) az adatbázis, ezért frissítésre szorul. Ennek nem csak a nagyfelbontású, városklíma
+          szimulációknál van jelentősége, hanem hosszabb távon a hő- és vízháztartás egyensúlyára is, mely a
+          klímamodellezés számára kiemelten fontos.
+        </p>
+        <p>
+          A hallgatók számára mindig van lehetőség akár új, kizárólag diplomamunka számára végzett
+          vizsgálatokra, amelyek későbbiekben kiterjeszthetők doktori témákká. A fenti témakörökön kívül az
+          alábbi témakörökben történtek alkalmazások hallgatókkal: stabil-izotóp-összetételt meghatározó
+          légköri folyamatok elemzése, határréteg és köd modellezésének lehetőségei, jegesedés előrejelzés
+          lehetőségei.
+        </p>
+        <p>
+          <span class="darkgreen">Irodalom:</span>
+        </p>
+        <p class="citation">
+          Breuer, H., Berényi, A., Mari, L., Nagy, B., Szalai, Z., Tordai, A., &amp; Weidinger, T. (2020). Analog site
+          experiment in the High Andes-Atacama region: surface energy budget components on Ojos del
+          Salado from field measurements and WRF simulations. <em style="font-style: italic;">Astrobiology,</em> 20(6), 684-700.
+          <a href="https://doi.org/10.1089/ast.2019.2024" class="darkgreen" target="_blank"><span>DOI</span></a> 
+        </p>
+        <p class="citation">
+          Dolgos, E., 2021: Budapest tervezett zöldfelület-rendszer fejlesztésének hatása a városklímára nyári
+          hőhullám idején. MSc diplomamunka. ELTE, Budapest. 49 p.
+        </p>
+        <p class="citation">
+          Göndöcs, J., Breuer, H., Horváth, Á., Ács, F., &amp; Rajkai, K. (2015). Numerical study of the effect of soil
+          texture and land use distribution on the convective precipitation. <em style="font-style: italic;">Hungarian Geographical Bulletin,</em>
+          64(1), 3-15.
+          <a href="https://doi.org/10.15201/hungeobull.64.1.1" class="darkgreen" target="_blank"><span>DOI</span></a> 
+        </p>
+        <p class="citation">
+          Göndöcs, J., 2020: A regionális éghajlatváltozás hatásainak megjelenése városi környezetben –
+          budapesti városi hősziget vizsgálata. PhD disszertáció. ELTE, Budapest. 149 p.
+        </p>
+        <p class="citation">
+          Göndöcs, J., Breuer, H., Pongrácz, R., &amp; Bartholy, J. (2017). Urban heat island mesoscale modelling
+          study for the Budapest agglomeration area using the WRF model. <em style="font-style: italic;">Urban climate,</em>  21, 66-86.
+          <a href="https://doi.org/10.1016/j.uclim.2017.05.005" class="darkgreen" target="_blank"><span>DOI</span></a> 
+        </p>
+        <p class="citation">
+          Varga, Á. J., &amp; Breuer, H. (2020). Sensitivity of simulated temperature, precipitation, and global
+          radiation to different WRF configurations over the Carpathian Basin for regional climate applications.
+          <em style="font-style: italic;">Climate Dynamics,</em> 55(9-10), 2849-2866.
+          <a href="https://doi.org/10.1007/s00382-020-05416-x" class="darkgreen" target="_blank"><span>DOI</span></a> 
+        </p>
+        <p class="citation">
+          Varga, Á. J., &amp; Breuer, H. (2022). Evaluation of convective parameters derived from pressure level
+          and native ERA5 data and different resolution WRF climate simulations over Central Europe. <em style="font-style: italic;">Climate
+          Dynamics,</em> 58(5-6), 1569-1585
+          <a href="https://doi.org/10.1007/s00382-021-05979-3" class="darkgreen" target="_blank"><span>DOI</span></a> 
+        </p>
+        <p class="citation">
+          Zempléni., Zs., 2020: Felszíni tulajdonságok hatása éghajlati modellben. BSc szakdolgozat. ELTE,
+          Budapest. 50 p.
+        </p>
       </div>
     </main>                                                                          
 

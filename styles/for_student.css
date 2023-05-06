@@ -110,7 +110,6 @@
 
 #main2 {
     background-image: url(../media/DSCF0606.JPG);
-    background-attachment:fixed;
     background-position: center center;
 }
 
@@ -165,6 +164,7 @@ main span {
 .jobs-image{
     height: 150px;
     width: 150px;
+    background-color: aqua;
 }
 
 .jobs-image img{

@@ -6,6 +6,7 @@ a[href^=tel] {
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    overflow: scroll;
     /*height: 100vh;*/
 }
 
@@ -26,6 +27,14 @@ body {
     line-height: normal;
     text-align: justify;
     text-justify: inter-word;
+}
+
+@media (max-width:500px) {
+    .content p {
+        padding: 10px;
+        line-height: normal;
+        text-align: left;
+    }
 }
 
 .content h1{
@@ -107,4 +116,12 @@ li{
   .content tr:nth-child(odd) {
     background-color: #eceaea;
   }
-  
+ 
+ .yscrollable{
+    overflow-x: scroll;
+    transform: rotate(180deg);
+ }
+
+.yscrollable table{
+    transform: rotate(180deg);
+}

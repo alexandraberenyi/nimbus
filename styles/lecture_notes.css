@@ -23,8 +23,8 @@
   padding: 20px;
 }
 
-.subbox{
-
+.box p{
+  text-align: left;
 }
 
 @media (min-width:700px) {

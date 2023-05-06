@@ -62,7 +62,7 @@ body {
 
 /*-----FEJLEC-----*/
 
-header {
+.header_class {
     margin-top:60px;
 }
 
@@ -138,12 +138,24 @@ header {
         display: inline-block;
     }
 
+
     .searchbar {
         float: right;
         position: relative;
         top: .35em;
         right:20px;
         padding: 0px;
+        display: flex;
+        align-items:center;
+    }
+
+    .google-logo{
+        padding: 0px 5px;
+        width:28px;
+    }
+
+    .google-logo img{
+        width: 100%;
     }
 
     .searchbar button {
@@ -231,7 +243,7 @@ h1.elte{
 }
 
 @media (min-width:600px) {
-    header {
+    .header_class {
         margin-top: 0px;
     }
     
@@ -284,7 +296,7 @@ h1.elte{
 
 @media (min-width:950px) {
     
-    header {
+    .header_class {
         margin-top: 0px;
     }
     
@@ -365,7 +377,7 @@ h1.elte{
 }
 
 @media (min-width:600px) {
-    header{
+    .header_class{
         box-shadow: 0px 0px 8px rgba(0, 0, 0, .7);
     }
 
