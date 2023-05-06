@@ -1,0 +1,23 @@
+.box-container{
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.link{
+    background-color: rgba(93, 150, 148, 1);
+    padding: 15px;
+    margin: 15px 0px;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.link:hover{
+    background-color: rgba(40, 96, 112, 1);
+}
+
+a .link{
+  color: white;  
+  font-weight: 900;
+}

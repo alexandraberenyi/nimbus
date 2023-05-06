@@ -28,6 +28,7 @@ body {
         top: 0px;
         z-index: 999;
         width: 100%;
+        height: 180px;
     }
 
     .logo, .main_text, .main-head, .elte-met, .cont_text, .head-contact{
@@ -212,7 +213,6 @@ body {
 }
 
 .main_text {
-    padding-left:5%;
     display: table;
     width: 100%;
     height: 100%;
@@ -234,6 +234,10 @@ ul {
 h1.elte{
     font-size:8vw;
     font-weight: 300;
+}
+
+#elte-met-redirect{
+    color: white;
 }
 
 @media (max-width:950px) {
@@ -441,7 +445,7 @@ h1.elte{
 @media (min-height: 590px) {
     .topnav.responsive.dp_resp2{
         position: fixed;
-        height:600px;
+        height:540px;
         z-index:999;
     }
 }
@@ -449,7 +453,7 @@ h1.elte{
 @media (min-height: 890px) {
     .topnav.responsive.dp_resp1{
         position: fixed;
-        height: 900px;
+        height: 780px;
         z-index:999;
     }
 }
@@ -597,8 +601,8 @@ a .fa {
         text-align: center;
         color: white;
         font-size:16px;
-        padding-right: 19px;
-        padding-left: 19px;
+        padding-right: 29px;
+        padding-left: 29px;
         padding-bottom: 10px;
         padding-top: 10px;
         text-transform: uppercase;
@@ -622,12 +626,9 @@ a .fa {
         top: 36px;
     }
 
-    .dc_hall {
-        left: 77px;
-    }
 
     .dc_dept {
-        left: 455px;
+        left: 438px;
         width: 180px;
     }
 
@@ -789,6 +790,12 @@ footer {
 
 span {
     font-weight: 900; 
+}
+
+footer a:hover{
+    color: rgb(138, 201, 199);
+    transition: 0.2s;
+    font-weight: 900;
 }
 
 @media (max-width:950px) {
