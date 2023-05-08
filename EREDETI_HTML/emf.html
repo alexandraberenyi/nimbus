@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src = "scripts/nav_index.js" defer></script>
+  <script src = "scripts/emf.js" defer></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/logo_remove.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/emf_snipets.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+  
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
+
+</head>
+  
+  <body>
+    <div class="top_head">
+      <!--------------------------- FEJLEC ----------------------->   
+      <header id="header_id" class="header_class">
+        <div class="headbar">
+          <div class="language hbcont">
+            <a href="index.html" class="link_light active">Magyar</a>
+            <a href="index_en.html" class="link_light">English</a>
+          </div>
+          <div class="searchbar hbcont"  id="mobileSearch">
+            <form method="get" action="http://www.google.com/search" target="_blank">
+              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input name="domains" value="nimbus.elte.hu" type="hidden">
+              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+            </form>   
+          </div>
+          <div class="ext_links hbcont">
+            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+          </div>
+        </div>
+        <div class="main-head" id="main-head_id">
+          <div class="logo-cont head-cont">
+            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+          </div><!--white space reset
+          --><div class="elte-met head-cont">
+            <div class="main_text" >
+                <ul>
+                <li><h1 class="elte" >ELTE TTK</h1></li>
+                <li><h1 > Meteorológiai Tanszék</h1></li>
+                </ul>
+            </div>
+          </div>
+          <div class="head-contact">
+            <div class="cont_text">
+            <ul>
+              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------- MENU ----------------------->
+      <nav>
+        <div class="mobile_logo" id="mobile_logo_id">
+          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+        </div>
+      <div class="topnav" id="mobileTopnav">
+        <a href="news.html">Hírek</a>
+        <div class="dropdwn">
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+            <a href="bsc_info.html">BSc tudástár</a>
+            <a href="msc_info.html">MSc tudástár</a>
+            <a href="phd_info.html">PhD képzés</a>
+            <a href="for_students.html">Ismertető a képzésről</a>
+            <a href="mentor.html">Mentorálási program</a>
+            <a href="tdk.html">TDK</a>
+            <a href="erasmus.html">Erasmus</a>
+            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+          </div>   
+        </div>
+        <a href="research.html">Kutatás</a>
+        <a href="staff.html">Munkatársak</a>
+        <div class="dropdwn">
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+            <a href="contact.html">Elérhetőség</a>
+            <a href="history.html">Történet</a>
+            <a href="alumni.html">Végzett hallgatók</a>
+            <a href="trips.html">Kirándulások</a>
+            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+      </div>
+      </nav>
+
+    </div>
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc" id="currloc_id">
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="emf.html" class="link_light">A Tanszékről</a> > <a href="emf.html" class="link_light">Egyetemi Meteorológiai Füzetek</a>
+    </div>
+
+
+    <!--------------------------- TORZS ----------------------->
+    <main>
+      <div class="content">
+        <h1>Egyetemi Meteorológiai Füzetek</h1>
+        
+        <!--<div class="snipet">
+          <em id="noID"></em><p>,</p>
+          <p id="editorID"></p><p>,</p>
+          <em id="yearID"></em><p>,</p>
+          <a id="titleID" href=""></a>
+        </div>-->
+
+        <div class="snipet" id="EMF22">
+          <em id="noID">No. 22</em><p>,</p>
+          <p id="editorID">Weidinger Tamás, Tasnádi Péter és Bartholy Judit</p><p>,</p>
+          <em id="yearID">2008</em><p>,</p>
+          <p>Meteorológia és az alaptudományok. Az ELTE Meteorológus TDK Iskolája. 2008. augusztus 27-30. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF21">
+          <em id="noID">No. 21</em><p>,</p>
+          <p id="editorID">Weidinger Tamás, Tarczay Klára és Bartholy Judit</p><p>,</p>
+          <em id="yearID">2007</em><p>,</p>
+          <p>Mérések a lokális skálától a globális folyamatokig. De miért is? A Meteorológus TDK 2006. évi nyári iskola előadásainak összefoglalói, II. kötet.</p>
+        </div>
+
+        <div class="snipet" id="EMF20">
+          <em id="noID">No. 20</em><p>,</p>
+          <p id="editorID">Weidinger Tamás, Tarczay Klára és Bartholy Judit</p><p>,</p>
+          <em id="yearID">2006</em><p>,</p>
+          <p>Mérések a lokális skálától a globális folyamatokig. De miért is? Az ELTE Meteorológus TDK Iskolája. 2006. augusztus 28-31. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF19">
+          <em id="noID">No. 19</em><p>,</p>
+          <p id="editorID">Weidinger Tamás és Kugler Szilvia</p><p>,</p>
+          <em id="yearID">2004</em><p>,</p>
+          <p>A meteorológia és a társtudományok kapcsolata. Az ELTE Meteorológus TDK Iskolája. 2004. szeptember 6-9. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF18">
+          <em id="noID">No. 18</em><p>,</p>
+          <p id="editorID">Gyuró György</p><p>,</p>
+          <em id="yearID">2004</em><p>,</p>
+          <p>Száz éve született meg a légkörmodellezés alap­gondolata.</p>
+        </div>
+
+        <div class="snipet" id="EMF17">
+          <em id="noID">No. 17</em><p>,</p>
+          <p id="editorID">Weidinger Tamás, Bartholy Judit, Mészáros Róbert, Dezső Zsuzsanna és Pintér Krisztina</p><p>,</p>
+          <em id="yearID">2002</em><p>,</p>
+          <p>Az Időjárás előrejelzése. Az ELTE Meteorológus TDK Iskolája. 2002. szeptember 9-12. Az előadások össze­foglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF16">
+          <em id="noID">No. 16</em><p>,</p>
+          <p id="editorID">Gyuró György</p><p>,</p>
+          <em id="yearID">2001</em><p>,</p>
+          <p>Szinoptikus előadások. Az Országos Meteorológiai Szolgálat munkatársai számára tartott továbbképzési előadások szerkesztett változata.</p>
+        </div>
+
+        <div class="snipet" id="EMF15">
+          <em id="noID">No. 15</em><p>,</p>
+          <p id="editorID">Pongrácz Rita, Weidinger Tamás, Bartholy Judit és Mérszáros Róbert</p><p>,</p>
+          <em id="yearID">2000</em><p>,</p>
+          <p>A meteorológia alkalmazásai. Az ELTE Meteorológus TDK Nyári Iskolája. 2000. szeptember 4-7. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF14">
+          <em id="noID">No. 14</em><p>,</p>
+          <p id="editorID">Bartholy Judit és Radics Kornélia</p><p>,</p>
+          <em id="yearID">2000</em><p>,</p>
+          <p>A szélenergia-hasznosítás lehetőségei a Kárpát-medencében.</p>
+        </div>
+
+        <div class="snipet" id="EMF13">
+          <em id="noID">No. 13</em><p>,</p>
+          <p id="editorID">Kircsi Andrea és Pongrácz Rita</p><p>,</p>
+          <em id="yearID">1999</em><p>,</p>
+          <p>A meteorológus PhD-hallgatók II. országos konferenciája. 1999. szeptember 20-21. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF12">
+          <em id="noID">No. 12</em><p>,</p>
+          <p id="editorID">Pongrácz Rita és Szadányi Emese</p><p>,</p>
+          <em id="yearID">1999</em><p>,</p>
+          <p>Megújuló tantárgypedagógiák és módszertan a meteorológiai felsőoktatásban. 1999. május 31.-június 1. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF11">
+          <em id="noID">No. 11</em><p>,</p>
+          <p id="editorID">Radics Kornélia, Weidinger Tamás, Bartholy Judit és Mészáros Róbert</p><p>,</p>
+          <em id="yearID">1998</em><p>,</p>
+          <p>Az óceán időjárás- és éghajlatalakító szerepe. Az ELTE Meteorológus TDK Nyári Iskolája. 1998. szeptember 7-10. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF10">
+          <em id="noID">No. 10</em><p>,</p>
+          <p id="editorID">Mészáros Róbert, Weidinger Tamás, Bartholy Judit és Tóth Ágnes</p><p>,</p>
+          <em id="yearID">1997</em><p>,</p>
+          <p>Az óceán időjárás- és éghajlatalakító szerepe. Az ELTE Meteorológus TDK Nyári Iskolája. 1998. szeptember 7-10. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF9">
+          <em id="noID">No. 9</em><p>,</p>
+          <p id="editorID">Pongrácz Rita és Tóth Ágnes</p><p>,</p>
+          <em id="yearID">1997</em><p>,</p>
+          <p>A meteorológus PhD-hallgatók I. országos konferenciája. 1996. november 26-27. Az előadások összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF8">
+          <em id="noID">No. 8</em><p>,</p>
+          <p id="editorID">Bartholy Judit, Mészáros Róbert és Weidinger Tamás</p><p>,</p>
+          <em id="yearID">1996</em><p>,</p>
+          <p>Mérés, modellezés és a meteorológiai információk felhasználása. Az ELTE Meteorológus TDK Nyári Iskolája. 1996. szeptember 2-5. A Nyári Iskola előadásainak összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF7">
+          <em id="noID">No. 7</em><p>,</p>
+          <p id="editorID">Bartholy Judit és Weidinger Tamás</p><p>,</p>
+          <em id="yearID">1994</em><p>,</p>
+          <p>Nemzetközi tudományos együttműködések a meteorológiában. Magyarország részvétele a kutatási projektekben. Az ELTE Meteorológus TDK Nyári Iskolája. 1994. szeptember 5-7. A Nyári Iskola előadásainak összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF6">
+          <em id="noID">No. 6</em><p>,</p>
+          <p id="editorID">Szunyogh István</p><p>,</p>
+          <em id="yearID">1992</em><p>,</p>
+          <p>Emlékkötet Makainé Császár Margit, Erdős László és Felméry László docensek tiszteletére, I-II.</p>
+        </div>
+
+        <div class="snipet" id="EMF5">
+          <em id="noID">No. 5</em><p>,</p>
+          <p id="editorID">Bartholy Judit és Weidinger Tamás</p><p>,</p>
+          <em id="yearID">1992</em><p>,</p>
+          <p>A felszín-légkör kölcsönhatások, környezetvédelem. Az ELTE Meteorológus TDK Nyári Iskolája. 1992. szeptember 2-4. A Nyári Iskola előadásainak összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF4">
+          <em id="noID">No. 4</em><p>,</p>
+          <p id="editorID">Gyuró György, Bozó László, Matyasovszky István és Weidinger Tamás</p><p>,</p>
+          <em id="yearID">1992</em><p>,</p>
+          <p>Szakköri tematika középiskolásoknak meteorológiából és levegő-környezetvédelemből.</p>
+        </div>
+
+        <div class="snipet" id="EMF3">
+          <em id="noID">No. 3</em><p>,</p>
+          <p id="editorID">Gyuró György</p><p>,</p>
+          <em id="yearID">1990</em><p>,</p>
+          <p>Rövidtávú előrejelzések egy háromparaméteres modellcsaláddal.</p>
+        </div>
+
+        <div class="snipet" id="EMF2">
+          <em id="noID">No. 2</em><p>,</p>
+          <p id="editorID">Matyasovszky István, Weidinger Tamás és Gyuró György</p><p>,</p>
+          <em id="yearID">1990</em><p>,</p>
+          <p>Különböző típusú előrejelzések. Az ELTE Meteorológus TDK Nyári Iskolája. Balatonalmádi, 1990. augusztus 29-31. A Nyári Iskola előadásainak összefoglalói.</p>
+        </div>
+
+        <div class="snipet" id="EMF1">
+          <em id="noID">No. 1</em><p>,</p>
+          <p id="editorID">Rákóczi Ferenc és Weidinger Tamás</p><p>,</p>
+          <em id="yearID">1990</em><p>,</p>
+          <p>A II. Planetáris Határréteg Szeminárium előadásai. Debrecen, 1989. szeptember 14-15.</p>
+        </div>
+
+      </div>
+    </main>                                                                          
+
+    <!--<script>
+      $( "#noID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #noID" );
+      $( "#editorID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #editorID" );
+      $( "#titleID" ).load( "oktatas/metfuzet/EMF034/EMF34.htm #titleID" );
+      $( "#yearID" ).load("oktatas/metfuzet/EMF034/EMF34.htm #yearID" );
+      document.getElementById("titleID").setAttribute("href", "index.html");
+    
+    </script>-->
+    <!--------------------------- FOOTER ----------------------->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_contact">
+          <h1>ELTE Meteorológiai Tanszék</h1>
+          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+          <p><span>Telefon:</span> 06 (1) 372-2945</p>
+          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+        </div><!--white space reset
+        --><div class="pagemap">
+          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+        </div><!--white space reset
+        --><div class="webmaestros">
+          <p><span>Webmesterek: </p></span>
+          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+          <p>© 2022 ELTE Meteorológiai Tanszék</p>
+          <p>Minden jog fenntartva.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

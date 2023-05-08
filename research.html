@@ -1,353 +1,242 @@
 <!DOCTYPE html>
 <html lang="hu">
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <!--meta tag-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src = "scripts/nav_index.js" defer></script>
+  <script src = "scripts/research_filter.js" defer></script>
 
-    <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "scripts/nav_index.js" defer></script>
-    <script src = "scripts/research_filter.js" defer></script>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
+  <link rel="stylesheet" type="text/css" href="styles/research.css">
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
-    <link rel="stylesheet" type="text/css" href="styles/research.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
   
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-    
-    <!--icons(font-awesome)-->
-    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
-  
-    <!--favicon-->
-    <link rel="icon" href="elte.ico">
-    <title>ELTE Meteorológiai Tanszék</title>
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
 
-  </head>
-  
-  <body>
-    <div class="top_head">
-      <!--------------------------- FEJLEC ----------------------->   
-      <header id="header_id" class="header_class">
-        <div class="headbar">
-          <div class="language hbcont">
-            <a href="index.html" class="link_light active">Magyar</a>
-            <a href="index_en.html" class="link_light">English</a>
-          </div>
-          <div class="searchbar hbcont"  id="mobileSearch">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
-              <button type="submit"><i class="fa fa-search"></i></button>
-              <input name="domains" value="nimbus.elte.hu" type="hidden">
-              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
-            </form>   
-          </div>
-          <div class="ext_links hbcont">
-            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
-            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
-          </div>
-        </div>
-        <div class="main-head" id="main-head_id">
-          <div class="logo-cont head-cont">
-            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
-          </div><!--white space reset
-          --><div class="elte-met head-cont">
-            <div class="main_text" >
-                <ul>
-                <li><h1 class="elte" >ELTE TTK</h1></li>
-                <li><h1 > Meteorológiai Tanszék</h1></li>
-                </ul>
-            </div>
-          </div>
-          <div class="head-contact">
-            <div class="cont_text">
-            <ul>
-              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
-              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
-              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
-              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </header>
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
 
-      <!--------------------------- MENU ----------------------->
-      <nav>
-        <div class="mobile_logo" id="mobile_logo_id">
-          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
-        </div>
-      <div class="topnav" id="mobileTopnav">
-        <a href="news.html">Hírek</a>
-        <div class="dropdwn">
-          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
-            <a href="bsc_info.html">BSc tudástár</a>
-            <a href="msc_info.html">MSc tudástár</a>
-            <a href="phd_info.html">PhD képzés</a>
-            <a href="for_students.html">Ismertető a képzésről</a>
-            <a href="mentor.html">Mentorálási program</a>
-            <a href="tdk.html">TDK</a>
-            <a href="erasmus.html">Erasmus</a>
-            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
-            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
-            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
-          </div>   
-        </div>
-        <a href="research.html">Kutatás</a>
-        <a href="staff.html">Munkatársak</a>
-        <div class="dropdwn">
-          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
-            <a href="contact.html">Elérhetőség</a>
-            <a href="history.html">Történet</a>
-            <a href="alumni.html">Végzett hallgatók</a>
-            <a href="trips.html">Kirándulások</a>
-            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+</head>
+<body>  
+  <!--HEADER injection from header.html-->
+  <header></header>
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a> 
+  </div>
+  <!------------------------------------>
+  <!--CONTENT-->
+  <main>
+    <div class="content" id = "content_id">
+      <h1>Aktuális kutatási területek</h1>
+      <div class="direct_container">  
+        <a href="./kutatas/kut_palyazat.html">Elnyert kutatási pályázatok</a>
       </div>
-      </nav>
+      <div class="filter">
+        <div class="tag_filter" id="tagFilter">
+          <h5>Szűrés címkére:</h5>
+          <button class = "btn " onclick="filterSelection('all')"><div class="tag all alltag" id="mainTagAll"><p>Összes</p></div></button>
+          <button class = "btn " onclick="filterSelection('observ')"><div class="tag observ " id="mainTagObserv"><p>Mérés és megfigyelés</p></div></button>
+          <button class = "btn " onclick="filterSelection('modeling')"><div class="tag modeling " id="mainTagModeling"><p>Modellezés</p></div></button>
+          <button class = "btn " onclick="filterSelection('clim')"><div class="tag clim "  id="mainTagClim"><p>Klímakutatás</p></div></button>
+          <button class = "btn " onclick="filterSelection('hydro')"><div class="tag hydro "  id="mainTagHydro"><p>Hidrológia</p></div></button>
+          <button class = "btn " onclick="filterSelection('urban')"><div class="tag urban "  id="mainTagUrban"><p>Városklíma</p></div></button>
+          <button class = "btn " onclick="filterSelection('synop')"><div class="tag synop "  id="mainTagSynop"><p>Szinoptika</p></div></button>
+          <button class = "btn " onclick="filterSelection('bio')"><div class="tag bio "  id="mainTagBio"><p>Bioszféra</p></div></button>
+        </div>
+      </div>
+      <!---->
 
+      <a href="./kutatas/klimavaltozas/klimvalt_bart.html"><div class = "box link" id = "box12">
+        <div class="image_cont">
+          <img class = "image" src="kutatas/klimavaltozas/regcm_image001.gif">  
+        </div>
+        <h4>A Kárpát-medence éghajlatának múltbeli és jövőbeli tendenciái</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> Dr. Bartholy Judit, dr. Pongrácz Rita</p></div>
+        <div class = "tag_container jsmodeling jsclim" id="tagCont2">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag clim"><p>Klímakutatás</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="./kutatas/eghbiz_tcs.html" target="_blank"><div class = "box link" id = "box2">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>Éghajlati előrejelzésekkel kapcsolatos bizonytalanságok csökkentése regionális és lokális skálán</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Torma Csaba</p></div>
+        <div class = "tag_container jsmodeling jsclim" id="tagCont2">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag clim"><p>Klímakutatás</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="./kutatas/xxihidro_ka.html" target="_blank"><div class = "box link" id = "box3">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>A XXI. századra várható hidroklimatológiai változások és bizonytalanságainak elemzése éghajlati és hidrológiai modellek összekapcsolásával</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kis Anna</p></div>
+        <div class = "tag_container jsmodeling jsclim jshydro" id="tagCont3">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag clim"><p>Klímakutatás</p></div>
+          <div class="tag hydro"><p>Hidrológia</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="./kutatas/wrf_bh.html" target="_blank"><div class = "box link" id = "box4">
+        <div class="image_cont">
+          <img class = "image" src="media/research/correl6_viz_corine.png">  
+        </div>
+        <h4>WRF modell kutatási alkalmazása: regionális klíma- és időjárásmodellezés</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Breuer Hajnalka</p></div>
+        <div class = "tag_container jsclim jsmodeling jsurban" id="tagCont4">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag clim"><p>Klímakutatás</p></div>
+          <div class="tag urban"><p>Városklíma</p></div>
+        </div>
+      </div></a>
+      <!---->
+       <a href="./kutatas/humbio_acs/humbio_acs.html" target="_blank"><div class = "box link" id = "box11">
+        <div class="image_cont">
+          <img class = "image" src="kutatas/humbio_acs/fig4.png">  
+        </div>
+        <h4>Humán biometeorológiai adatgyűjtés, modellezés és időjárás-elemzés</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Ács Ferenc</p></div>
+        <div class = "tag_container jsmodeling jsobserv" id="tagCont11">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag observ"><p>Megfigyelés</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href=""><div class = "box" id = "box5">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>Városi hősziget vizsgálatok műholdas és állomási mérések alapján</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> Dr. Bartholy Judit, dr. Pongrácz Rita, Soósné dr. Dezső Zsuzsanna</p></div>
+        <div class = "tag_container jsobserv jsurban jssynop" id="tagCont5">
+          <div class="tag urban"><p>Városklíma</p></div>
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+          <div class="tag synop"><p>Szinoptika</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href=""><div class = "box" id = "box6">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>Időjárási szélsőségek szinoptikus-klimatológiai vizsgálata, előrejelezhetősége</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> Soósné dr. Dezső Zsuzsanna</p></div>
+        <div class = "tag_container jsclim jssynop" id="tagCont6">
+          <div class="tag clim"><p>Klímakutatás</p></div>
+          <div class="tag synop"><p>Szinoptika</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href=""><div class = "box" id = "box14">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>Légszennyezés-meteorológiai kutatások</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Mészáros Róbert</p></div>
+        <div class = "tag_container jsobserv jsmodeling" id="tagCont14">
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+          <div class="tag modeling"><p>Modellezés</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="https://nimbus.elte.hu/FORESEE/" target="_blank"><div class = "box link" id = "box7">
+        <div class="image_cont">
+          <img class = "image" src="media/research/forsee.png">  
+        </div>
+        <h4>FORSEE (Open Database for Climate Change Related Impact Studies in Central Europe)</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
+        <div class = "tag_container jsmodeling jsclim" id="tagCont7">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag clim"><p>Klímakutatás</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="https://nimbus.elte.hu/bbgc/" target="_blank"><div class = "box link" id = "box8">
+        <div class="image_cont">
+          <img class = "image" src="media/research/biokem.jpg">  
+        </div>
+        <h4>Biogeokémiai modellezés</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
+        <div class = "tag_container jsmodeling jsbio" id="tagCont8">
+          <div class="tag modeling"><p>Modellezés</p></div>
+          <div class="tag bio"><p>Bioszféra</p></div>
+        </div>
+      </div></a>
+      <!---->
+      <a href="https://nimbus.elte.hu/kutatas/sat/index.html" target="_blank"><div class = "box link" id = "box9">
+        <div class="image_cont">
+          <img class = "image" src="media/research/modis.jpg">  
+        </div>
+        <h4>Magyarország vegetációjának vizsgálata műholdas mérések alapján</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kern Anikó, dr. Barcza Zoltán</p></div>
+        <div class = "tag_container jsobserv jsbio" id="tagCont9">
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+          <div class="tag bio"><p>Bioszféra</p></div>
+        </div>
+      </div></a>
+      <a href="https://nimbus.elte.hu/hhs/" target="_blank"><div class = "box link" id = "box10">
+        <div class="image_cont">
+          <img class = "image" src="media/research/hhs.jpg">  
+        </div>
+        <h4>Magyarországi magas mérőtornyos és repülőgépes mérések Hegyhátsálon</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
+        <div class = "tag_container jsobserv" id="tagCont10">
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+        </div>
+      </div></a>
+      <a href=""><div class = "box" id = "box1">
+        <div class="image_cont">
+          <img class = "image" src="media/research/kutat_1.jpg">  
+        </div>
+        <h4>Meteorológiai prepocesszor zajterjedés modellezéséhez</h4>
+        <div class = "leadres"><p><span>Vezető kutató:</span> dr. Weidinger Tamás</p></div>
+        <div class = "tag_container jsobserv jsmodeling" id="tagCont1">
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+          <div class="tag modeling"><p>Modellezés</p></div>
+        </div>
+      </div></a>
+      <a href="https://nimbus.elte.hu/klima/allomas/index.html"><div class = "box link" id = "box13">
+        <div class="image_cont">
+          <img class = "image" src="media/research/muszerkert.jpg">  
+        </div>
+        <h4>Városklíma állomás a Meteorológiai Tanszéken</h4>
+        <div class = "tag_container jsobserv" id="tagCont1">
+          <div class="tag observ"><p>Műszeres mérés</p></div>
+        </div>
+      </div></a>
+      <!--
+      <a href=""><div class = "box" id = "box15">
+      </div></a>-->
     </div>
-    <!-------------------------- LOCATION --------------------->
+  </main>  
+  <!------------------------------------>
+  <!--FOOTER injection from footer.html-->
+  <footer></footer>
+  <!------------------------------------>
 
-    <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="research.html" class="link_light">Kutatás</a>
-    </div>
+  <script>
+    $( "header" ).load( "header.html" );
+    $( "footer" ).load( "footer.html #footer_prop" );
+  </script>
 
-    
-    <!--------------------------- TORZS ----------------------->
-    <main>
-      <div class="content" id = "content_id">
-        <h1>Aktuális kutatási területek</h1>
-        <div class="direct_container">  
-          <a href="./kutatas/kut_palyazat.html">Elnyert kutatási pályázatok</a>
-        </div>
-        <div class="filter">
-          <div class="tag_filter" id="tagFilter">
-            <h5>Szűrés címkére:</h5>
-            <button class = "btn " onclick="filterSelection('all')"><div class="tag all alltag" id="mainTagAll"><p>Összes</p></div></button>
-            <button class = "btn " onclick="filterSelection('observ')"><div class="tag observ " id="mainTagObserv"><p>Mérés és megfigyelés</p></div></button>
-            <button class = "btn " onclick="filterSelection('modeling')"><div class="tag modeling " id="mainTagModeling"><p>Modellezés</p></div></button>
-            <button class = "btn " onclick="filterSelection('clim')"><div class="tag clim "  id="mainTagClim"><p>Klímakutatás</p></div></button>
-            <button class = "btn " onclick="filterSelection('hydro')"><div class="tag hydro "  id="mainTagHydro"><p>Hidrológia</p></div></button>
-            <button class = "btn " onclick="filterSelection('urban')"><div class="tag urban "  id="mainTagUrban"><p>Városklíma</p></div></button>
-            <button class = "btn " onclick="filterSelection('synop')"><div class="tag synop "  id="mainTagSynop"><p>Szinoptika</p></div></button>
-            <button class = "btn " onclick="filterSelection('bio')"><div class="tag bio "  id="mainTagBio"><p>Bioszféra</p></div></button>
-          </div>
-        </div>
-        <!---->
-
-        <a href="./kutatas/klimavaltozas/klimvalt_bart.html"><div class = "box link" id = "box12">
-          <div class="image_cont">
-            <img class = "image" src="kutatas/klimavaltozas/regcm_image001.gif">  
-          </div>
-          <h4>A Kárpát-medence éghajlatának múltbeli és jövőbeli tendenciái</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> Dr. Bartholy Judit, dr. Pongrácz Rita</p></div>
-          <div class = "tag_container jsmodeling jsclim" id="tagCont2">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag clim"><p>Klímakutatás</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="./kutatas/eghbiz_tcs.html" target="_blank"><div class = "box link" id = "box2">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>Éghajlati előrejelzésekkel kapcsolatos bizonytalanságok csökkentése regionális és lokális skálán</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Torma Csaba</p></div>
-          <div class = "tag_container jsmodeling jsclim" id="tagCont2">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag clim"><p>Klímakutatás</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="./kutatas/xxihidro_ka.html" target="_blank"><div class = "box link" id = "box3">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>A XXI. századra várható hidroklimatológiai változások és bizonytalanságainak elemzése éghajlati és hidrológiai modellek összekapcsolásával</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kis Anna</p></div>
-          <div class = "tag_container jsmodeling jsclim jshydro" id="tagCont3">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag clim"><p>Klímakutatás</p></div>
-            <div class="tag hydro"><p>Hidrológia</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="./kutatas/wrf_bh.html" target="_blank"><div class = "box link" id = "box4">
-          <div class="image_cont">
-            <img class = "image" src="media/research/correl6_viz_corine.png">  
-          </div>
-          <h4>WRF modell kutatási alkalmazása: regionális klíma- és időjárásmodellezés</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Breuer Hajnalka</p></div>
-          <div class = "tag_container jsclim jsmodeling jsurban" id="tagCont4">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag clim"><p>Klímakutatás</p></div>
-            <div class="tag urban"><p>Városklíma</p></div>
-          </div>
-        </div></a>
-        <!---->
-         <a href="./kutatas/humbio_acs/humbio_acs.html" target="_blank"><div class = "box link" id = "box11">
-          <div class="image_cont">
-            <img class = "image" src="kutatas/humbio_acs/fig4.png">  
-          </div>
-          <h4>Humán biometeorológiai adatgyűjtés, modellezés és időjárás-elemzés</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Ács Ferenc</p></div>
-          <div class = "tag_container jsmodeling jsobserv" id="tagCont11">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag observ"><p>Megfigyelés</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href=""><div class = "box" id = "box5">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>Városi hősziget vizsgálatok műholdas és állomási mérések alapján</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> Dr. Bartholy Judit, dr. Pongrácz Rita, Soósné dr. Dezső Zsuzsanna</p></div>
-          <div class = "tag_container jsobserv jsurban jssynop" id="tagCont5">
-            <div class="tag urban"><p>Városklíma</p></div>
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-            <div class="tag synop"><p>Szinoptika</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href=""><div class = "box" id = "box6">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>Időjárási szélsőségek szinoptikus-klimatológiai vizsgálata, előrejelezhetősége</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> Soósné dr. Dezső Zsuzsanna</p></div>
-          <div class = "tag_container jsclim jssynop" id="tagCont6">
-            <div class="tag clim"><p>Klímakutatás</p></div>
-            <div class="tag synop"><p>Szinoptika</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href=""><div class = "box" id = "box14">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>Légszennyezés-meteorológiai kutatások</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Mészáros Róbert</p></div>
-          <div class = "tag_container jsobserv jsmodeling" id="tagCont14">
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-            <div class="tag modeling"><p>Modellezés</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="https://nimbus.elte.hu/FORESEE/" target="_blank"><div class = "box link" id = "box7">
-          <div class="image_cont">
-            <img class = "image" src="media/research/forsee.png">  
-          </div>
-          <h4>FORSEE (Open Database for Climate Change Related Impact Studies in Central Europe)</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
-          <div class = "tag_container jsmodeling jsclim" id="tagCont7">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag clim"><p>Klímakutatás</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="https://nimbus.elte.hu/bbgc/" target="_blank"><div class = "box link" id = "box8">
-          <div class="image_cont">
-            <img class = "image" src="media/research/biokem.jpg">  
-          </div>
-          <h4>Biogeokémiai modellezés</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
-          <div class = "tag_container jsmodeling jsbio" id="tagCont8">
-            <div class="tag modeling"><p>Modellezés</p></div>
-            <div class="tag bio"><p>Bioszféra</p></div>
-          </div>
-        </div></a>
-        <!---->
-        <a href="https://nimbus.elte.hu/kutatas/sat/index.html" target="_blank"><div class = "box link" id = "box9">
-          <div class="image_cont">
-            <img class = "image" src="media/research/modis.jpg">  
-          </div>
-          <h4>Magyarország vegetációjának vizsgálata műholdas mérések alapján</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Kern Anikó, dr. Barcza Zoltán</p></div>
-          <div class = "tag_container jsobserv jsbio" id="tagCont9">
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-            <div class="tag bio"><p>Bioszféra</p></div>
-          </div>
-        </div></a>
-        <a href="https://nimbus.elte.hu/hhs/" target="_blank"><div class = "box link" id = "box10">
-          <div class="image_cont">
-            <img class = "image" src="media/research/hhs.jpg">  
-          </div>
-          <h4>Magyarországi magas mérőtornyos és repülőgépes mérések Hegyhátsálon</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Barcza Zoltán</p></div>
-          <div class = "tag_container jsobserv" id="tagCont10">
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-          </div>
-        </div></a>
-        <a href=""><div class = "box" id = "box1">
-          <div class="image_cont">
-            <img class = "image" src="media/research/kutat_1.jpg">  
-          </div>
-          <h4>Meteorológiai prepocesszor zajterjedés modellezéséhez</h4>
-          <div class = "leadres"><p><span>Vezető kutató:</span> dr. Weidinger Tamás</p></div>
-          <div class = "tag_container jsobserv jsmodeling" id="tagCont1">
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-            <div class="tag modeling"><p>Modellezés</p></div>
-          </div>
-        </div></a>
-        <a href="https://nimbus.elte.hu/klima/allomas/index.html"><div class = "box link" id = "box13">
-          <div class="image_cont">
-            <img class = "image" src="media/research/muszerkert.jpg">  
-          </div>
-          <h4>Városklíma állomás a Meteorológiai Tanszéken</h4>
-          <div class = "tag_container jsobserv" id="tagCont1">
-            <div class="tag observ"><p>Műszeres mérés</p></div>
-          </div>
-        </div></a>
-        <!--
-        <a href=""><div class = "box" id = "box15">
-        </div></a>-->
-      </div>
-    </main>                                                                          
-
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
-        </div><!--white space reset
-        --><div class="pagemap">
-          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
-        </div>
-      </div>
-    </footer>
-
-  </body>
-
+</body>
 </html>

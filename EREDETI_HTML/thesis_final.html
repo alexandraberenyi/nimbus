@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src = "scripts/nav_index.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
+    <link rel="stylesheet" type="text/css" href="styles/thesis-final.css">  
+  
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <!--icons(font-awesome)-->
+    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+  
+    <!--favicon-->
+    <link rel="icon" href="elte.ico">
+    <title>ELTE Meteorológiai Tanszék</title>
+
+  </head>
+  
+  <body>
+    <div class="top_head">
+      <!--------------------------- FEJLEC ----------------------->   
+      <header id="header_id" class="header_class">
+        <div class="headbar">
+          <div class="language hbcont">
+            <a href="index.html" class="link_light active">Magyar</a>
+            <a href="index_en.html" class="link_light">English</a>
+          </div>
+          <div class="searchbar hbcont"  id="mobileSearch">
+            <form method="get" action="http://www.google.com/search" target="_blank">
+              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input name="domains" value="nimbus.elte.hu" type="hidden">
+              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
+            </form>   
+          </div>
+          <div class="ext_links hbcont">
+            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
+            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
+          </div>
+        </div>
+        <div class="main-head" id="main-head_id">
+          <div class="logo-cont head-cont">
+            <a href="index.html"><img id="logo_id" class = "logo" src="elte_logo.png" alt="logo"></a>
+          </div><!--white space reset
+          --><div class="elte-met head-cont">
+            <div class="main_text" >
+                <ul>
+                <li><h1 class="elte" >ELTE TTK</h1></li>
+                <li><h1 > Meteorológiai Tanszék</h1></li>
+                </ul>
+            </div>
+          </div>
+          <div class="head-contact">
+            <div class="cont_text">
+            <ul>
+              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
+              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
+              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
+              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--------------------------- MENU ----------------------->
+      <nav>
+        <div class="mobile_logo" id="mobile_logo_id">
+          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
+        </div>
+      <div class="topnav" id="mobileTopnav">
+        <a href="news.html">Hírek</a>
+        <div class="dropdwn">
+          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
+            <a href="bsc_info.html">BSc tudástár</a>
+            <a href="msc_info.html">MSc tudástár</a>
+            <a href="phd_info.html">PhD képzés</a>
+            <a href="for_students.html">Ismertető a képzésről</a>
+            <a href="mentor.html">Mentorálási program</a>
+            <a href="tdk.html">TDK</a>
+            <a href="erasmus.html">Erasmus</a>
+            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
+            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
+            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
+          </div>   
+        </div>
+        <a href="research.html">Kutatás</a>
+        <a href="staff.html">Munkatársak</a>
+        <div class="dropdwn">
+          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
+            <a href="contact.html">Elérhetőség</a>
+            <a href="history.html">Történet</a>
+            <a href="alumni.html">Végzett hallgatók</a>
+            <a href="trips.html">Kirándulások</a>
+            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+      </div>
+      </nav>
+
+    </div>
+    <!-------------------------- LOCATION --------------------->
+
+    <div class="currloc" id="currloc_id">
+        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Hallgatóknak</a> > <a href="erasmus.html" class="link_light">Szakdolgozat és záróvizsga tudnivalók</a>
+    </div>
+
+
+    <!--------------------------- TORZS ----------------------->
+    <main>
+      <div class="content">
+        <h1>Szakdolgozat és záróvizsga tudnivalók</h1>
+        <div class="kepzes-wrap">
+          <div class="bsc">
+            <h3>BSc szakdolgozat tudnivalók</h3>
+            <p>  
+              <a href="https://nimbus.elte.hu/hallgatok/Szakdolgozattal_kapcsolatos_tudnivalok.pdf" class="darkgreen" target="_blank">Szakdolgozati követelmények és tudnivalók (pdf)</a> A szakdolgozatokat a klasszikus 
+              mintának megfelelően fekete kötésben kell leadni, a papírlapok kétoldalas 
+              nyomtatásúak. A kötésen a SZAKDOLGOZAT megnevezés, a dolgozat írójának neve 
+              és az évszám szerepel az alábbi minta elrendezésében: <a href="https://nimbus.elte.hu/hallgatok/szakd_kotes.png" class="darkgreen" >MINTA</a> .
+            </p>
+            <p>
+              A dolgozat címlapjára két javasolt elrendezés: <a href="https://nimbus.elte.hu/hallgatok/cimlap_szakdolgozat.docx" class="darkgreen">CÍMLAP1</a> , <a href="https://nimbus.elte.hu/hallgatok/cimlap2_szakdolgozat.docx" class="darkgreen">CÍMLAP2</a>. Ettől eltérő lehet, de minden, 
+              a mintákon szereplő információnak rajta kell lennie.
+            </p> 
+            <p>Szakdolgozati témára a neptunban kell jelentkezni.</p>
+            <p>A szakdolgozati konzultáció, diplomamunkához kapcsolódó szaklaboratórium jegyeit a témavezető, 
+              illetve a tanszéki konzulens viszi fel a Neptunba.</p>
+            <p><a href="https://nimbus.elte.hu/hallgatok/konz_Bsc.docx" class="darkgreen">Szerkeszthető konzultációs adatlap BSc-n</a></p>
+          </div>
+          <div class="msc">
+            <h3>MSc diplomamunka tudnivalók</h3>
+            <p>  
+              <a href="https://nimbus.elte.hu/hallgatok/Diplomamunkaval_kapcsolatos_tudnivalok.pdf" class="darkgreen" target="_blank">Diplomamunka követelmények és tudnivalók (pdf)</a> A szakdolgozatokat a klasszikus 
+              mintának megfelelően fekete kötésben kell leadni, a papírlapok kétoldalas 
+              nyomtatásúak. A kötésen a DIPLOMAMUNKA megnevezés, a dolgozat írójának neve 
+              és az évszám szerepel a szakdolgozati mintához hasonlóan.
+            </p>
+            <p>
+              A dolgozat címlapjára két javasolt elrendezés: <a href="https://nimbus.elte.hu/hallgatok/cimlap_diplomamunka.docx" class="darkgreen">CÍMLAP1</a> , <a href="https://nimbus.elte.hu/hallgatok/cimlap2_diplomamunka.docx" class="darkgreen">CÍMLAP2</a>. Ettől eltérő lehet, de minden, 
+              a mintákon szereplő információnak rajta kell lennie.
+            </p> 
+            <p>Diplomamunka témára a neptunban kell jelentkezni.</p>
+            <p>A szakdolgozati konzultáció, diplomamunkához kapcsolódó szaklaboratórium jegyeit a témavezető, 
+              illetve a tanszéki konzulens viszi fel a Neptunba.</p>
+            <p><a href="https://nimbus.elte.hu/hallgatok/konz_MSc.docx" class="darkgreen">Szerkeszthető konzultációs adatlap MSc-n</a></p>
+          </div>
+        </div>
+        <div class="zarovizsga">
+          <h2>Záróvizsga tudnivalók</h2>
+          <p><a href="https://nimbus.elte.hu/hallgatok/BSc-zvtetelek_meteo.pdf" class="darkgreen" target="_blank">BSc</a> és <a href="https://nimbus.elte.hu/hallgatok/MSc_tetelek_uj.pdf" class="darkgreen" target="_blank">MSc</a> záróvizsga tételek</p>
+          <ul>
+            <li><span class="lightgreen">&#x2022;</span>
+              A záróvizsga beosztás általában aszerint történik, hogy a témavezető vagy 
+              belső konzulens melyik bizottságban található. Nagyon egyenlőtlen eloszlás 
+              esetén eltérésre kell számítani.
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              A záróvizsga előtt kb. egy héttel időbeosztást teszünk közzé, mely csak 
+              hozzávetőleges, a megadott időponthoz képest legalább 30-40 perccel korábban 
+              kérjük a hallgatók megjelenését.
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              A záróvizsgán a szakdolgozat/diplomamunka tartalmát előadás formájában kell 
+              prezentálni. Az előadás hossza 10-12 perc, melyet a vizsgabizottság kérdései követnek. 
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              Az előadást, a technikai problémák elkerülése végett <em>pptx</em> (2010-es verzió) 
+              vagy <em>pdf</em> formátumban készítsétek el. Amennyiben animációt is bemutatnátok, 
+              hozzátok el azt külön fájlként is. 
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              Mindkét képzés (BSc, MSc) esetén két tételt kapnak a hallgatók. A tételek 
+              kidolgozására rendelkezésre álló idő minimum 20 perc, de a vizsga menetrendjétől 
+              függően ez hosszabb is lehet. 
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              BSc államvizsgán a védés és a vizsga egyszerre zajlik (először védés, utána a vizsga felelet).
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              MSc államvizsgán a nyári időszakban, a védés külön napon történik mindkét vizsgabizottság 
+              tagjai előtt, a vizsga pedig bizottságokra bontva másnap. Téli időszakban a védés és a 
+              vizsga egyszerre zajlik (először védés, utána a vizsga felelet). 
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              A téli félévben, a hallgatói létszámra való tekintettel csak az egyik vizsgabizottság vizsgáztat.
+            </li>
+            <li><span class="lightgreen">&#x2022;</span>
+              2021/2022-től kezdődően nincsen állandósított bizottsági összetétel. A résztvevők személye és 
+              száma mindig az aktuális félév hallgatóinak létszámához igazodik.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </main>                                                                          
+
+    <!--------------------------- FOOTER ----------------------->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_contact">
+          <h1>ELTE Meteorológiai Tanszék</h1>
+          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
+          <p><span>Telefon:</span> 06 (1) 372-2945</p>
+          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
+          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
+        </div><!--white space reset
+        --><div class="pagemap">
+          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
+          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
+          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
+          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
+        </div><!--white space reset
+        --><div class="webmaestros">
+          <p><span>Webmesterek: </p></span>
+          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
+          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
+          <p>© 2022 ELTE Meteorológiai Tanszék</p>
+          <p>Minden jog fenntartva.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

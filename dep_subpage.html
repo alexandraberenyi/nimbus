@@ -6,27 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--JS-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src = "scripts/nav_index.js"></script>
-  <script src = "scripts/alumni.js"></script>
-  <!--<script src = "scripts/alumni-subpage.js" defer></script>-->
-
+  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script src ="./scripts/nav_index.js" defer></script>
+  
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/general.css">
-  <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/header_footer.css"> 
   <link rel="stylesheet" type="text/css" href="styles/logo_remove.css">
-  <link rel="stylesheet" type="text/css" href="styles/alumni.css">
-  <link rel="stylesheet" type="text/css" href="styles/alumni-table.css">   
+  <link rel="stylesheet" type="text/css" href="styles/menu_subpage.css">
 
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-  
+    
   <!--icons(font-awesome)-->
   <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
+  
 
   <!--favicon-->
   <link rel="icon" href="elte.ico">
@@ -43,29 +41,16 @@
   <!--CONTENT-->
   <main>
     <div class="content">
-      <h1>Végzett hallgatók</h1>
-      <div class="query">
-        <select id="optionContainer" onchange="openInNewTab(this)">
-          <option disabled selected value>Évfolyam ...</option>
-        </select>
-      </div>
-      <script>
-        optionListing(2023);
-      </script>
-      <div id="alumniContainer"></div>
-      <div class="direct_container">  
-        <a href="./alumni/phd.html">Doktori oklevelett szerzettek</a>
-      </div>
-      <div class="footnote_cont">
-        <p class="footnote">
-          Az esetleges hibákért elnézést kérünk.
-        </p>
-        <p>
-          Az adatok digitalizálását 2005-ig Pap Zsófia és Less Edit végezte. A doktori fokozatot szerzők listját Gyuró György állította össze.
-        </p>
+      <h1>A Tanszékről</h1>
+      <div class="box-container">
+        <a href="contact.html"><div class="link">Elérhetőség</div></a>
+        <a href="history.html"><div class="link">Történet</div></a>
+        <a href="alumni.html"><div class="link">Végzett hallgatók</div></a>
+        <a href="trips.html"><div class="link">Kirándulások</div></a>
+        <a href="emf.html"><div class="link">Egyetemi Meteorológiai Füzetek</div></a>
       </div>
     </div>
-  </main> 
+  </main>
   <!------------------------------------>
   <!--FOOTER injection from footer.html-->
   <footer></footer>
