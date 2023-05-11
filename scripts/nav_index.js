@@ -38,40 +38,27 @@ eventHallgatoknak.addEventListener("click", (e) => {
 })
 
 
-/*window.onclick = function(event) {
-  console.log("valami tortent");
-  if (!event.target.matches('.hallgatoknak')) {
-    var dropdowns = document.getElementsByClassName("dc_hall");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        document.getElementById("mobileTopnav").classList.remove("dp_resp1");
-      }
+//A menü összecsukása külső kattintásra
+document.addEventListener("click", (evt) => {
+  const navigEl = document.getElementById("mobileTopnav");
+  let targetEl = evt.target; // clicked element      
+  do {
+    if(targetEl == navigEl) {
+      // This is a click inside, does nothing, just return.
+      console.log("Clicked inside!");
+      return;
     }
-  }
-  if (!event.target.matches('.deptinfo')) {
-    var dropdowns = document.getElementsByClassName("dc_dept");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        document.getElementById("mobileTopnav").classList.remove("dp_resp2");
-      }
-    }
-  }
-}
-
-
-
-window.addEventListener("click", (event) => {
-  if(!event.target.matches(nodes)){
-    console.log("valami")
-  }
+    // Go up the DOM
+    targetEl = targetEl.parentNode;
+  } while (targetEl);
+  // This is a click outside.      
+  document.getElementById("mobileTopnav").classList.remove("responsive");
+  document.getElementById("dropd_oncl_stud").classList.remove("show");
+  document.getElementById("dropd_oncl_dep").classList.remove("show");
+  document.getElementById("mobileTopnav").classList.remove("dp_resp1");
+  document.getElementById("mobileTopnav").classList.remove("dp_resp2");
 });
-*/
+
 
 //ESEMÉNYEK GÖRGETÉSNÉL
 window.onscroll = function() {
@@ -148,4 +135,6 @@ window.onresize = function() {
   document.getElementById("mobileTopnav").classList.remove("responsive");
   document.getElementById("dropd_oncl_stud").classList.remove("show");
   document.getElementById("dropd_oncl_dep").classList.remove("show");
+  document.getElementById("mobileTopnav").classList.remove("dp_resp1");
+  document.getElementById("mobileTopnav").classList.remove("dp_resp2");
 };
