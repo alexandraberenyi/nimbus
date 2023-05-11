@@ -109,6 +109,7 @@
   font-weight: 700;
   text-shadow: none;
   border-radius: 20px;
+  white-space: nowrap;
 }
 
 .data-source {

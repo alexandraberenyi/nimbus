@@ -1,275 +1,166 @@
 <!DOCTYPE html>
 <html lang="hu">
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <!--meta tag-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "../../scripts/nav_index.js" defer></script>
 
-    <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "../../scripts/nav_index.js" defer></script>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/logo_remove.css">
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/logo_remove.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
   
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-    
-    <!--icons(font-awesome)-->
-    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
-  
-    <!--favicon-->
-    <link rel="icon" href="elte.ico">
-    <title>ELTE Meteorológiai Tanszék</title>
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
 
-  </head>
-  
-  <body>
-    <div class="top_head">
-      <!--------------------------- FEJLEC ----------------------->   
-      <header id="header_id" class="header_class">
-        <div class="headbar">
-          <div class="language hbcont">
-            <a href="index.html" class="link_light active">Magyar</a>
-            <a href="index_en.html" class="link_light">English</a>
-          </div>
-          <div class="searchbar hbcont"  id="mobileSearch">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
-              <button type="submit"><i class="fa fa-search"></i></button>
-              <input name="domains" value="nimbus.elte.hu" type="hidden">
-              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
-            </form>   
-          </div>
-          <div class="ext_links hbcont">
-            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
-            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
-          </div>
-        </div>
-        <div class="main-head" id="main-head_id">
-          <div class="logo-cont head-cont">
-            <a href="../../index.html"><img id="logo_id" class = "logo" src="../../elte_logo.png" alt="logo"></a>
-          </div><!--white space reset
-          --><div class="elte-met head-cont">
-            <div class="main_text" >
-                <ul>
-                <li><h1 class="elte" >ELTE TTK</h1></li>
-                <li><h1 > Meteorológiai Tanszék</h1></li>
-                </ul>
-            </div>
-          </div>
-          <div class="head-contact">
-            <div class="cont_text">
-            <ul>
-              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
-              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
-              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
-              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </header>
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
 
-      <!--------------------------- MENU ----------------------->
-      <nav>
-        <div class="mobile_logo" id="mobile_logo_id">
-          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
-        </div>
-      <div class="topnav" id="mobileTopnav">
-        <a href="news.html">Hírek</a>
-        <div class="dropdwn">
-          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
-            <a href="bsc_info.html">BSc tudástár</a>
-            <a href="msc_info.html">MSc tudástár</a>
-            <a href="phd_info.html">PhD képzés</a>
-            <a href="for_students.html">Ismertető a képzésről</a>
-            <a href="mentor.html">Mentorálási program</a>
-            <a href="tdk.html">TDK</a>
-            <a href="erasmus.html">Erasmus</a>
-            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
-            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
-            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
-          </div>   
-        </div>
-        <a href="research.html">Kutatás</a>
-        <a href="staff.html">Munkatársak</a>
-        <div class="dropdwn">
-          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
-            <a href="contact.html">Elérhetőség</a>
-            <a href="history.html">Történet</a>
-            <a href="alumni.html">Végzett hallgatók</a>
-            <a href="trips.html">Kirándulások</a>
-            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+</head>
+<body>  
+  <!--HEADER injection from header.html-->
+  <header></header>
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a> 
+  </div>
+  <!------------------------------------>
+  <!--CONTENT-->
+  <main>
+    <div class="content">
+      <h1 style="font-size: 1.5em;">Regionális klímamodellek adaptációja, parametrizációs kísérletei a Kárpát-medence térségére</h1>
+      <h2>Vezető kutató: <a href="#" class="darkgreen" target="_blank">Dr. Bartholy Judit</a></h2>
+      <p>
+        A meteorológiai mérések egyértelműen bizonyítják, hogy a földi klíma 
+        melegedett az elmúlt másfél évszázadban. Ennek hátterében valószínűsíthető, 
+        hogy az üvegházhatású gázok antropogén eredetű kibocsátásának növekedése 
+        áll. A 2007-es IPCC-jelentésben közzétett modell-szimulációk szerint 
+        több fokos globális melegedésre számíthatunk az évszázad végére. 
+        A jelenlegi globális modellekkel lehetetlen regionális térskálán is 
+        megfelelő pontosságú becsléseket készíteni. Egyrészt azért nem, mert 
+        e modellek területi felbontása általában durva, gyakran 150-250 km, 
+        ami azt jelenti, hogy egész Magyarországra mindössze néhány rácspont 
+        esik. Másrészt e közelítés nem tartalmazza a felszín s a domborzat 
+        kellően részletes adatait. A dinamikus közelítés keretein belül elsőként 
+        Giorgi (1990) és munkatársai fejlesztették ki az ún. beágyazott modellekkel 
+        való szimulációt. Ennek lényege, hogy a globális modellek eredményeit 
+        bemenő paraméterként felhasználva korlátos tartományú regionális 
+        modelleket futtatunk, melyek felbontása akár 10-25 km is lehet, s 
+        ez lehetővé teszi kisebb régiók pontosabb éghajlati leírását is.
+      </p>
+      <p>
+        Az elmúlt évtized során két regionális klímamodellt adaptáltunk az 
+        ELTE Meteorológiai Tanszéken, melyekkel számos modellszimulációt végeztünk. 
+        (Ezzel párhuzamosan az Országos Meteorológiai Szolgálatnál is folytak hasonló
+        kísérletek, melyek közös értékelése folyamatban van.) Az eredmények 
+        felhasználásával lehetőség nyílik, hogy becslést adjunk a XXI. századra 
+        várható éghajlatváltozás tendenciáira és számszerűsítsük azok bizonytalanságát 
+        a Kárpát-medence térségében.
+      </p>
+      <p>
+        Az egyik adaptált modell a RegCM hidrosztatikus modell, mely jelenleg a
+        trieszti Elméleti Fizikai Kutatóintézeten (ICTP) keresztül hozzáférhető. 
+        A tanszéki kutatásokra a CECILIA (Central and Eastern Europe Climate Change 
+        Impact and Vulnerability Assessment) Európai Uniós projekt keretében került 
+        sor, melynek során 18 vertikális szint alkalmazásával 10 km-es horizontális 
+        felbontású futtatásokat végeztünk a Kárpát-medence térségére (Torma et al.
+        , 2008, 2011). A RegCM modell felhasználásával az A1B szcenáriót vizsgáltuk 
+        az 1961-1990, 2021-2050 és 2071-2100 közötti időszeletek alapján, melyekhez 
+        a hamburgi ECHAM5 globális modell szolgáltatta a kezdeti- és a peremfeltételeket.
+      </p>
+      <p>
+        A másik tanszéki modell a PRECIS regionális klímamodell (Wilson et al., 2007), 
+        melyet a Brit Meteorológiai Szolgálat Hadley Központjában fejlesztettek ki a 
+        HadCM3 globális klímamodellbe beágyazva. Az általunk alkalmazott horizontális 
+        rácsfelbontás 25 km, s vertikálisan 19 szinttel számoltunk (Bartholy et al., 
+        2006). A 2071-2100 időszakra két futtatást végeztünk el (Bartholy et al., 
+        2009a, Pieczka et al., 2009): az A2, illetve a B2 forgatókönyv figyelembevételével. 
+        Ezeken kívül elkészült az A1B szcenárió vizsgálata egy 1951-2100 időszakra 
+        vonatkozó tranziens szimuláció alapján. A vizsgált szcenáriók közül az A2 
+        szcenárióhoz társul a legmagasabb becsült századvégi CO2-koncentráció (856 ppm), 
+        ezt követi az A1B (717 ppm), s végül a legalacsonyabb koncentráció szint 
+        (621 ppm) a B2 esetén várható.
+      </p>
+      <p>
+        A RegCM, illetve a PRECIS eredményei alapján készített elemzéseink számos 
+        korábbi publikációnkban (pl.: Bartholy et al., 2009b) részletesen megtalálhatók, 
+        itt csupán néhány példát mutatunk be, amelyek a téli, illetve a nyári hónapokra 
+        várható változásokat emelik ki. A vizsgálat során minden rácspontra 
+        meghatároztuk, hogy a szimulált hőmérsékleti idősorok alapján a referencia 
+        időszak (1961-1990) havi átlagaitól vett eltérés milyen gyakorisággal 
+        fog meghaladni bizonyos küszöbértékeket a jövőben. A kapott eredményeket 
+        évszakos bontásban, térképes formában ábrázoltuk. A szimulált mezőkből 
+        meghatározott információt kiegészítettük a referencia időszak havi anomáliáit 
+        figyelembe vevő évszakos térbeli eloszlást illusztráló térképekkel. 
+        Itt most terjedelmi okokból csak egy kiválasztott küszöbérték elemzését mutatjuk 
+        be a téli és a nyári hónapokra. Az 1. ábra tartalmazza a +4 °C-nál nagyobb 
+        hőmérsékleti anomáliák előfordulási valószínűségének évszakos területi eloszlását 
+        a közelmúlt (1961-1990) klimatikus viszonyai mellett, valamint a 2071-2100 
+        jövőbeli időszakra az A1B szcenárió figyelembevételével.
+      </p>
+      <div class="img-cont" style="display: flex; justify-content: center;">
+        <img src="./regcm_image001.gif" alt="" style="margin: 20px; width: 80%;">
       </div>
-      </nav>
-
+      <p>
+        A XX. század végén a téli hónapokban a +4 °C-ot meghaladó pozitív anomáliák 
+        a teljes időszak 5-10%-ában fordultak csupán elő, nyáron pedig egyáltalán nem. 
+        A szimulációk alapján mind télen, mind nyáron egyértelmű a pozitív hőmérsékleti 
+        anomáliák XXI. század végére várható gyakoriságnövekedése mindkét modell esetén. 
+        Kisebb növekedés várható a RegCM-szimuláció szerint: télen 20-35%, nyáron 
+        25-45% az 1961-1990 időszak átlagát +4 °C-kal meghaladó anomáliák valószínűsíthető 
+        gyakorisága. A PRECIS modell szerint a század végére jelentősebb lesz a 
+        múltbeli átlagos hőmérsékletnél legalább +4 °C-kal magasabb havi átlaghőmérsékletek
+        előfordulási gyakorisága (télen 50-60%, nyáron 75-90%).
+      </p>
+      <p>
+        A 2. ábrán a XXI. század közepére és végére várható csapadékváltozást foglaljuk 
+        össze az 1961-1990 referencia időszakhoz viszonyítva. Kékkel a téli csapadék, 
+        pirossal a nyári csapadék becsült változását jelenítjük meg Box-Whisker 
+        diagramok formájában. Mindkét modellszimuláció esetén egyértelműen megjelenik 
+        a nyári szárazodó tendencia, mely nagyobb mértékű a PRECIS modell esetén. 
+        Ugyancsak a PRECIS-szimulációnál jelentkezik a téli csapadék várható növekedése.
+      </p>
+      <p>
+        A 3. ábrán együttesen mutatjuk be a hőmérséklet és a csapadék valószínűsíthető 
+        évszakos változásait, melyet a magyarországi rácspontok átlagával reprezentálunk. 
+        Az ábra jobb alsó sarkában megjelenő nagymértékű melegedést és szárazodást jelző 
+        szimulációk a századvégi nyarakra vonatkoznak. Eredményeink alapján összességében 
+        véve enyhébb, csapadékosabb telekre számíthatunk. A többi évszakra is melegedő 
+        trend várható, ám a csapadékra vonatkozó becslések legnagyobb hányada nem 
+        szignifikáns.
+      </p>
+      <p>
+        Az itt bemutatott szimulációk eredményeit már széles körben alkalmazzák a 
+        felhasználók a hazai hatásvizsgálatokhoz. Ezzel párhuzamosan a tanszéken 
+        folyamatosan bekapcsolódunk a nemzetközi modellfejlesztésekbe, elvégezzük az 
+        újabb modellverziók hazai adaptációját és a régiónkra vonatkozó modellszimulációkat.
+      </p>
+      <div class="img-cont" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <img src="./regcm_image002.gif" alt="" style="margin: 20px;">
+        <img src="./regcm_image003.gif" alt="" style="margin: 20px; height: 100%;">
+      </div>
     </div>
-    <!-------------------------- LOCATION --------------------->
+  </main>
+  <!------------------------------------>
+  <!--FOOTER injection from footer.html-->
+  <footer></footer>
+  <!------------------------------------>
 
-    <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="erasmus.html" class="link_light">Kutatás</a> > <a href="research.html" class="link_light">Kutatási területek</a>
-    </div>
+  <script>
+    $( "header" ).load( "../../header.html" );
+    $( "footer" ).load( "../../footer.html #footer_prop" );
+  </script>
 
-
-    <!--------------------------- TORZS ----------------------->
-    <main>
-      <div class="content">
-        <h1 style="font-size: 1.5em;">Regionális klímamodellek adaptációja, parametrizációs kísérletei a Kárpát-medence térségére</h1>
-        <p>
-          A meteorológiai mérések egyértelműen bizonyítják, hogy a földi klíma 
-          melegedett az elmúlt másfél évszázadban. Ennek hátterében valószínűsíthető, 
-          hogy az üvegházhatású gázok antropogén eredetű kibocsátásának növekedése 
-          áll. A 2007-es IPCC-jelentésben közzétett modell-szimulációk szerint 
-          több fokos globális melegedésre számíthatunk az évszázad végére. 
-          A jelenlegi globális modellekkel lehetetlen regionális térskálán is 
-          megfelelő pontosságú becsléseket készíteni. Egyrészt azért nem, mert 
-          e modellek területi felbontása általában durva, gyakran 150-250 km, 
-          ami azt jelenti, hogy egész Magyarországra mindössze néhány rácspont 
-          esik. Másrészt e közelítés nem tartalmazza a felszín s a domborzat 
-          kellően részletes adatait. A dinamikus közelítés keretein belül elsőként 
-          Giorgi (1990) és munkatársai fejlesztették ki az ún. beágyazott modellekkel 
-          való szimulációt. Ennek lényege, hogy a globális modellek eredményeit 
-          bemenő paraméterként felhasználva korlátos tartományú regionális 
-          modelleket futtatunk, melyek felbontása akár 10-25 km is lehet, s 
-          ez lehetővé teszi kisebb régiók pontosabb éghajlati leírását is.
-        </p>
-        <p>
-          Az elmúlt évtized során két regionális klímamodellt adaptáltunk az 
-          ELTE Meteorológiai Tanszéken, melyekkel számos modellszimulációt végeztünk. 
-          (Ezzel párhuzamosan az Országos Meteorológiai Szolgálatnál is folytak hasonló
-          kísérletek, melyek közös értékelése folyamatban van.) Az eredmények 
-          felhasználásával lehetőség nyílik, hogy becslést adjunk a XXI. századra 
-          várható éghajlatváltozás tendenciáira és számszerűsítsük azok bizonytalanságát 
-          a Kárpát-medence térségében.
-        </p>
-        <p>
-          Az egyik adaptált modell a RegCM hidrosztatikus modell, mely jelenleg a
-          trieszti Elméleti Fizikai Kutatóintézeten (ICTP) keresztül hozzáférhető. 
-          A tanszéki kutatásokra a CECILIA (Central and Eastern Europe Climate Change 
-          Impact and Vulnerability Assessment) Európai Uniós projekt keretében került 
-          sor, melynek során 18 vertikális szint alkalmazásával 10 km-es horizontális 
-          felbontású futtatásokat végeztünk a Kárpát-medence térségére (Torma et al.
-          , 2008, 2011). A RegCM modell felhasználásával az A1B szcenáriót vizsgáltuk 
-          az 1961-1990, 2021-2050 és 2071-2100 közötti időszeletek alapján, melyekhez 
-          a hamburgi ECHAM5 globális modell szolgáltatta a kezdeti- és a peremfeltételeket.
-        </p>
-        <p>
-          A másik tanszéki modell a PRECIS regionális klímamodell (Wilson et al., 2007), 
-          melyet a Brit Meteorológiai Szolgálat Hadley Központjában fejlesztettek ki a 
-          HadCM3 globális klímamodellbe beágyazva. Az általunk alkalmazott horizontális 
-          rácsfelbontás 25 km, s vertikálisan 19 szinttel számoltunk (Bartholy et al., 
-          2006). A 2071-2100 időszakra két futtatást végeztünk el (Bartholy et al., 
-          2009a, Pieczka et al., 2009): az A2, illetve a B2 forgatókönyv figyelembevételével. 
-          Ezeken kívül elkészült az A1B szcenárió vizsgálata egy 1951-2100 időszakra 
-          vonatkozó tranziens szimuláció alapján. A vizsgált szcenáriók közül az A2 
-          szcenárióhoz társul a legmagasabb becsült századvégi CO2-koncentráció (856 ppm), 
-          ezt követi az A1B (717 ppm), s végül a legalacsonyabb koncentráció szint 
-          (621 ppm) a B2 esetén várható.
-        </p>
-        <p>
-          A RegCM, illetve a PRECIS eredményei alapján készített elemzéseink számos 
-          korábbi publikációnkban (pl.: Bartholy et al., 2009b) részletesen megtalálhatók, 
-          itt csupán néhány példát mutatunk be, amelyek a téli, illetve a nyári hónapokra 
-          várható változásokat emelik ki. A vizsgálat során minden rácspontra 
-          meghatároztuk, hogy a szimulált hőmérsékleti idősorok alapján a referencia 
-          időszak (1961-1990) havi átlagaitól vett eltérés milyen gyakorisággal 
-          fog meghaladni bizonyos küszöbértékeket a jövőben. A kapott eredményeket 
-          évszakos bontásban, térképes formában ábrázoltuk. A szimulált mezőkből 
-          meghatározott információt kiegészítettük a referencia időszak havi anomáliáit 
-          figyelembe vevő évszakos térbeli eloszlást illusztráló térképekkel. 
-          Itt most terjedelmi okokból csak egy kiválasztott küszöbérték elemzését mutatjuk 
-          be a téli és a nyári hónapokra. Az 1. ábra tartalmazza a +4 °C-nál nagyobb 
-          hőmérsékleti anomáliák előfordulási valószínűségének évszakos területi eloszlását 
-          a közelmúlt (1961-1990) klimatikus viszonyai mellett, valamint a 2071-2100 
-          jövőbeli időszakra az A1B szcenárió figyelembevételével.
-        </p>
-        <div class="img-cont" style="display: flex; justify-content: center;">
-          <img src="./regcm_image001.gif" alt="" style="margin: 20px;">
-        </div>
-        <p>
-          A XX. század végén a téli hónapokban a +4 °C-ot meghaladó pozitív anomáliák 
-          a teljes időszak 5-10%-ában fordultak csupán elő, nyáron pedig egyáltalán nem. 
-          A szimulációk alapján mind télen, mind nyáron egyértelmű a pozitív hőmérsékleti 
-          anomáliák XXI. század végére várható gyakoriságnövekedése mindkét modell esetén. 
-          Kisebb növekedés várható a RegCM-szimuláció szerint: télen 20-35%, nyáron 
-          25-45% az 1961-1990 időszak átlagát +4 °C-kal meghaladó anomáliák valószínűsíthető 
-          gyakorisága. A PRECIS modell szerint a század végére jelentősebb lesz a 
-          múltbeli átlagos hőmérsékletnél legalább +4 °C-kal magasabb havi átlaghőmérsékletek
-          előfordulási gyakorisága (télen 50-60%, nyáron 75-90%).
-        </p>
-        <p>
-          A 2. ábrán a XXI. század közepére és végére várható csapadékváltozást foglaljuk 
-          össze az 1961-1990 referencia időszakhoz viszonyítva. Kékkel a téli csapadék, 
-          pirossal a nyári csapadék becsült változását jelenítjük meg Box-Whisker 
-          diagramok formájában. Mindkét modellszimuláció esetén egyértelműen megjelenik 
-          a nyári szárazodó tendencia, mely nagyobb mértékű a PRECIS modell esetén. 
-          Ugyancsak a PRECIS-szimulációnál jelentkezik a téli csapadék várható növekedése.
-        </p>
-        <p>
-          A 3. ábrán együttesen mutatjuk be a hőmérséklet és a csapadék valószínűsíthető 
-          évszakos változásait, melyet a magyarországi rácspontok átlagával reprezentálunk. 
-          Az ábra jobb alsó sarkában megjelenő nagymértékű melegedést és szárazodást jelző 
-          szimulációk a századvégi nyarakra vonatkoznak. Eredményeink alapján összességében 
-          véve enyhébb, csapadékosabb telekre számíthatunk. A többi évszakra is melegedő 
-          trend várható, ám a csapadékra vonatkozó becslések legnagyobb hányada nem 
-          szignifikáns.
-        </p>
-        <p>
-          Az itt bemutatott szimulációk eredményeit már széles körben alkalmazzák a 
-          felhasználók a hazai hatásvizsgálatokhoz. Ezzel párhuzamosan a tanszéken 
-          folyamatosan bekapcsolódunk a nemzetközi modellfejlesztésekbe, elvégezzük az 
-          újabb modellverziók hazai adaptációját és a régiónkra vonatkozó modellszimulációkat.
-        </p>
-        <div class="img-cont" style="display: flex; justify-content: center;">
-          <img src="./regcm_image002.gif" alt="" style="margin: 20px;">
-          <img src="./regcm_image003.gif" alt="" style="margin: 20px; height: 100%;">
-        </div>
-      </div>
-    </main>                                                                          
-
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
-        </div><!--white space reset
-        --><div class="pagemap">
-          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
-        </div>
-      </div>
-    </footer>
-
-  </body>
-
+</body>
 </html>
+

@@ -1,0 +1,102 @@
+.content p{
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+.map_container{
+  overflow-x: scroll;
+  transform: rotate(180deg);
+}
+
+.map{
+  margin: 0 auto;
+  width: 1000px;
+  transform: rotate(180deg);
+}
+
+.map_main{
+  padding-top: 10px;
+  width: 100%;
+}
+
+.map_canv{
+  width: 100%;
+  height: 40px;
+}
+
+.map_subcanv{
+  width: 100%;
+  height: 20px;
+}
+
+.map_menu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.map_submenu{
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+}
+
+.submenu{
+  height: 100%;
+  width: 250px;
+}
+
+.subsubmenu{
+  position:absolute;
+  bottom: 0;
+  width: 250px;
+  height: 198px;
+}
+
+.subsubmenu .box{
+  width: 250px;
+  margin-top: 20px;
+  padding: 2px 0px;
+  background-color: rgba(40, 96, 112, 1);
+}
+
+#subsubCanv1{
+  width: 40px;
+  height: 198px;
+  position:absolute;
+  bottom: 0;
+  left: 225px;
+}
+
+#subsubmenu1{
+  left: 265px;
+}
+
+#subsubmenu2{
+  right: 0;
+}
+
+.box{
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 200px;
+  transition: 0.2s;
+}
+
+.lightgreen{
+  background-color: rgba(93, 150, 148, .8);
+  padding: 5px 0px;
+}
+
+.darkgreen{
+  padding: 2px 0px;
+  background-color: rgba(40, 96, 112, .7);
+}
+
+.link_main{
+  margin: 0 auto;
+}
+
+.box:hover{
+  transform: scale(1.05, 1.05); 
+}

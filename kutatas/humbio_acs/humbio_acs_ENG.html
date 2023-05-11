@@ -1,433 +1,323 @@
 <!DOCTYPE html>
 <html lang="hu">
+<head>
+  <!--meta tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <!--meta tag-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "../../scripts/nav_index.js" defer></script>
+  <script src = "../../scripts/switch-button.js" defer></script>
 
-    <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src = "../../scripts/nav_index.js" defer></script>
-    <script src = "../../scripts/switch-button.js" defer></script>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/general.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/logo_remove.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/research_al.css">  
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/general.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/logo_remove.css">
-    <link rel="stylesheet" type="text/css" href="../../styles/research_al.css">  
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
   
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
-    
-    <!--icons(font-awesome)-->
-    <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
-  
-    <!--favicon-->
-    <link rel="icon" href="elte.ico">
-    <title>ELTE Meteorológiai Tanszék</title>
+  <!--icons(font-awesome)-->
+  <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
 
-  </head>
-  
-  <body>
-    <div class="top_head">
-      <!--------------------------- FEJLEC ----------------------->   
-      <header id="header_id" class="header_class">
-        <div class="headbar">
-          <div class="language hbcont">
-            <a href="index.html" class="link_light active">Magyar</a>
-            <a href="index_en.html" class="link_light">English</a>
-          </div>
-          <div class="searchbar hbcont"  id="mobileSearch">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input class="placeholder" type="text" placeholder="Keresés..." name="q">
-              <button type="submit"><i class="fa fa-search"></i></button>
-              <input name="domains" value="nimbus.elte.hu" type="hidden">
-              <input name="sitesearch" value="nimbus.elte.hu" type="hidden">
-            </form>   
-          </div>
-          <div class="ext_links hbcont">
-            <a href="https://www.facebook.com/ELTEmeteo/" target="_blank" class="link_light"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.elte.hu" target="_blank" class="link_light">ELTE</a>
-            <a href="https://neptun.elte.hu" target="_blank" class="link_light">Neptun</a>
-          </div>
-        </div>
-        <div class="main-head" id="main-head_id">
-          <div class="logo-cont head-cont">
-            <a href="../../index.html"><img id="logo_id" class = "logo" src="../../elte_logo.png" alt="logo"></a>
-          </div><!--white space reset
-          --><div class="elte-met head-cont">
-            <div class="main_text" >
-                <ul>
-                <li><h1 class="elte" >ELTE TTK</h1></li>
-                <li><h1 > Meteorológiai Tanszék</h1></li>
-                </ul>
-            </div>
-          </div>
-          <div class="head-contact">
-            <div class="cont_text">
-            <ul>
-              <li><p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p></li>
-              <li><p><span>Telefon:</span> 06 (1) 372-2945</p></li>
-              <li><p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p></li>
-              <li><p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </header>
+  <!--favicon-->
+  <link rel="icon" href="elte.ico">
+  <title>ELTE Meteorológiai Tanszék</title>
 
-      <!--------------------------- MENU ----------------------->
-      <nav>
-        <div class="mobile_logo" id="mobile_logo_id">
-          <a href="index.html"><img  class = "m_logo" src="elte_logo.png" alt="logo"></a>
-        </div>
-      <div class="topnav" id="mobileTopnav">
-        <a href="news.html">Hírek</a>
-        <div class="dropdwn">
-          <a href="#" class="hallgatoknak"  onclick="dropMenuStud()" >Hallgatóknak
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_hall" id="dropd_oncl_stud">
-            <a href="bsc_info.html">BSc tudástár</a>
-            <a href="msc_info.html">MSc tudástár</a>
-            <a href="phd_info.html">PhD képzés</a>
-            <a href="for_students.html">Ismertető a képzésről</a>
-            <a href="mentor.html">Mentorálási program</a>
-            <a href="tdk.html">TDK</a>
-            <a href="erasmus.html">Erasmus</a>
-            <a href="fund_scholarship.html">Pályázatok és ösztöndíjak</a>
-            <a href="https://theforecastchallenge.com/" target="_blank">Előrejelzési vetélkedő</a>
-            <a href="lecture_notes.html">Jegyzetek és segédanyagok</a>
-          </div>   
-        </div>
-        <a href="research.html">Kutatás</a>
-        <a href="staff.html">Munkatársak</a>
-        <div class="dropdwn">
-          <a href="#" class="deptinfo" onclick="dropMenuDep()">A Tanszékről
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </a>
-          <div class="dropdwn_content dc_dept" id="dropd_oncl_dep">
-            <a href="contact.html">Elérhetőség</a>
-            <a href="history.html">Történet</a>
-            <a href="alumni.html">Végzett hallgatók</a>
-            <a href="trips.html">Kirándulások</a>
-            <a href="emf.html">Egyetemi Meteorológiai Füzetek</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" class="icon" onclick="respTopnav()">&#9776;</a>
+</head>
+<body>  
+  <!--HEADER injection from header.html-->
+  <header></header>
+  <div class="currloc" id="currloc_id">
+    <a href="index.html" class="link_light">Főoldal</a> 
+  </div>
+  <!------------------------------------>
+  <!--CONTENT-->
+  <main>
+    <div class="content">
+      <div class="butcontainer">
+        <a href="humbio_acs.html" id="switchButton" class="eng langbut" >HU <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
-      </nav>
-
+      <h1>Human biometeorological data collection, modeling and weather analysis</h1>
+      <h2>Leading researcher: <a href="#" class="darkgreen" target="_blank">dr. Ferenc Ács</a></h2>
+      <p>
+        <span class="darkgreen"> Human biometeorology </span>
+        investigates the relationship between humans and the atmosphere. A person is 
+        characterized by his clothing and activity, the air environment can be outdoor or
+        indoor. In what follows, we look at an outdoor person.
+      </p>
+      <p>
+        The air environment of a person outside varies greatly; this variability can be 
+        characterized on the space-time scale of climate and weather. A person's clothing 
+        can be appropriate for the summer (minimum) or winter (maximum) season, their 
+        activity can change, for instance, one can lie down, stand, walk or run (other 
+        activity types are also possible). We assume that the person is in good health.
+      </p>
+      <p>
+        <span class="darkgreen"> Data collection: </span>
+        the human-atmosphere relationship is characterized by data, by linking data on 
+        humans and the atmosphere. We are mostly interested in the thermal load of the
+         air environment and the thermal perception of people in it. There are two data 
+         collection methods: longitudinal and transversal data collection. In the case of 
+         longitudinal data collection, 1 person collects weather data over as long a period 
+         as possible to create the longest possible time series (the length of the time 
+         series is equal to the number of weather observations). When collecting transversal 
+         data, many people provide information about themselves in the current weather 
+         situation. In this case too, the goal is to make the time series as long as possible 
+         (the length of the time series is equal to the number of people). 
+      </p>
+      <p>
+        In this project, we carry out longitudinal data collection while simultaneously 
+        documenting data gathered on the human participants and the weather. Among the weather 
+        data, we document solar radiation (GR), air temperature (Ta), air humidity (rh), 
+        wind speed (W) and cloudiness (N). With regard to human data, the following are 
+        captured: anthropometric data (body mass, body length, age, sex), thermal perception 
+        (seven-level scale: "very warm", "warm", "slightly warm", "neutral", "cool", "cold" 
+        and "very cold”), the clothing worn and the type and intensity of the activity. 
+        Longitudinal observations began in the summer of 2016 and have been carried out 
+        continuosuly to this day. The person conducting the observation is Dr. Ferenc Ács. 
+        We can report on the following data collections:
+      </p>
+      <div class="table-cont">
+        <table class="complex-table">
+          <caption>
+            Table 1 Longitudinal observations focusing on characterizing the relationship between human 
+            activity and thermal load (Notation: *: documentation of body mass before and after the run 
+            with a scale, measurement of the average running speed based on an estimate of the distance 
+            (5 km) and duration (stopwatch); **: estimation of the average running speed (distance:
+             404 m/lap, measuring the duration of the distance with a stopwatch) and average heart 
+             rate (based on a smart watch))
+          </caption>
+          <tr class="trhead">
+            <td rowspan="2">Observation</td>
+            <td colspan="3">Human characteristics</td>
+            <td>Air environment</td>
+            <td>Period</td>
+            <td>Publication</td>
+          </tr>
+          <tr class="trhead">
+            <td>Activity</td>
+            <td>Clothing</td>
+            <td>Thermal perception</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr class="row">
+            <td>1.</td>
+            <td>*running </td>
+            <td>documentation of the clothing worn</td>
+            <td>--</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2016.08.09-2018.05.23</td>
+            <td>Ács et al. (2019)</td>
+          </tr>
+          <tr class="row">
+            <td>2.</td>
+            <td>walking</td>
+            <td>--</td>
+            <td>determining of thermal sensation types</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2020.04.01-2021.06.29</td>
+            <td>Ács et al. (2022)</td>
+          </tr>
+          <tr class="row">
+            <td>3.</td>
+            <td>lying down</td>
+            <td>short sports pants</td>
+            <td>determining of thermal sensation types</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2022.05.12-2022.09.18</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>4.</td>
+            <td>*running</td>
+            <td>documentation of the clothing worn</td>
+            <td>--</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2023.02.07- ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>5.</td>
+            <td>**running</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>2022.10.09- ongoing</td>
+            <td>--</td>
+          </tr>
+        </table>
+      </div>
+      <p>
+        <span class="darkgreen">Modeling:</span>
+        Recently, energy balance-based models are the most widespread 
+        (Pochter et al., 2018). The main advantage of these models is 
+        that they can also simulate the effect of human factors on thermal 
+        load. The energy balance equation can be used in two ways. The usual 
+        procedure is to calculate skin surface and/or clothing surface temperatures 
+        based on knowledge of activity (metabolic heat flow density) and 
+        clothing worn (thermal resistance of clothing). This is the so-called 
+        „forward” procedure. The other method calculates the thermal resistance 
+        of the clothing and/or the evaporative resistance of the skin surface 
+        based on the knowledge of the activity and the temperature of the skin 
+        surface. This is the so-called „backward” procedure. Models using the 
+        "backward" process are also called inverse "forward" models (briefly 
+        inverse models). In human biometeorology, traditional „forward” models 
+        are much more widespread than inverse models (de Freitas and Grigorieva, 2015). 
+      </p>
+      <p>
+        The thermal load is estimated based on running our own inverse models. 
+        The environmental heat deficit is simulated with a clothing thermal resistance 
+        (rcl) model (briefly clothing index model), which estimates the rcl 
+        (m2·℃/W) value that exists in the case of energy balance. The environmental 
+        heat surplus is simulated with a skin evaporative   resistance (rskin) model,
+         which calculates the rskin (m2·hPa/W) value ensuring the energy balance at 
+         the human body-environment interface.
+      </p>
+      <p>
+        <span class="darkgreen">Weather analysis:</span>
+        Weather can also be analyzed from the point of view of human thermal load and 
+        thermal perception. We may hear such remarks during the announcement of the
+         weather, but this important aspect is not highlighted and evaluated. To fill 
+         this gap, we conduct longitudinal observations for the following weather conditions.
+      </p>
+      <div class="table-cont">
+        <table class="complex-table">
+          <caption>
+            Table 2 Longitudinal observations in select weather situations to 
+            characterize human thermal load
+          </caption>
+          <tr class="trhead">
+            <td>Observation</td>
+            <td>Observation	Characterization of the weather situation in keywords</td>
+            <td>Air environment</td>
+            <td>Period</td>
+            <td>Publication</td>
+          </tr>
+          <tr class="row">
+            <td>1.</td>
+            <td>cyclone, warm front</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2021.03.12– ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>2.</td>
+            <td>cyclone, cold front</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2021.03.05- ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>3.</td>
+            <td>convection, anticyclone</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2021.03.01- ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>4.</td>
+            <td>advection, anticyclone</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2021.02.27- ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>5.</td>
+            <td>frosty dawns, mornings, anticyclone</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2020.01.23- ongoing</td>
+            <td>--</td>
+          </tr>
+          <tr class="row">
+            <td>6.</td>
+            <td>fog</td>
+            <td>GR, Ta, rh, W, N</td>
+            <td>2017.02.15- ongoing</td>
+            <td>--</td>
+          </tr>
+        </table>
+      </div>
+      <P>
+        <span class="darkgreen">Some results:</span>
+        Our results form a "cloud of points" as we use the methodology 
+        of longitudinal observation. Here are some results.
+      </P>
+      <p>
+        1. Point-cloud characterizing the relationship between clothing 
+        thermal resistance, operative temperature and thermal sensation 
+        types. The human walks at a speed of 1.1 ms-1.
+      </p>
+      <div class="resimage-container">
+        <img src="fig4.png" alt="">
+      </div>
+      <p>
+        2.	Point-cloud characterizing the relationship between skin evaporative 
+        resistance, operative temperature and thermal sensation types. 
+        The human is in the resting position. (the illustration was made 
+        by Erzsébet Kristóf)
+      </p>
+      <div class="resimage-container">
+        <img src="6-To-rskin_resting55.png" alt="">
+      </div>
+      <p>
+        3.	Point-cloud characterizing the relationship between heart rate, 
+        activity types and average movement speed. (the figure was made by 
+        Zsófia Szalkai)
+      </p>
+      <div class="resimage-container">
+        <img src="BPM-WMOT_uj.jpg" alt="">
+      </div>
+      <p>
+        4.	Point-cloud characterizing the relationship between clothing thermal
+        resistance and operative temperature in the fog. The human walks at a speed 
+        of 1.1 ms-1. (the figure was made by Zsófia Szalkai)          
+      </p>
+      <div class="resimage-container">
+        <img src="To_rcl_kodben.png" alt="">
+      </div>
+      <p>
+        <span class="darkgreen">References:</span>
+      </p>
+      <p class="citation">
+        Ács, F.; Kristóf, E.; Zsákai, A. New clothing resistance scheme for 
+        estimating outdoor environmental thermal load. Geographica Pannonica 2019, 23(4), 
+        245–255. 
+        <a href="https://doi.org/10.5937/gp23-23717" class="darkgreen" target="_blank"><span>DOI</span></a> 
+      </p>
+      <p class="citation">
+        Ács, F.; Kristóf, E.; Zsákai A. Individual local human thermal climates in the Hungarian 
+        lowland: Estimations by a simple clothing resistance–operative temperature model. Int. 
+        J. Climatol. 2022, 
+        <a href="https://doi.org/10.1002/joc.7910" class="darkgreen" target="_blank"><span>DOI</span></a> 
+      </p>
+      <p class="citation">
+        de Freitas, C.R.; Grigorieva, E.A. A comprehensive catalogue and classification of human thermal 
+        climate indices. Int. J. Biometeorol. 2015, 59, 109–120.
+      </p>
+      <p class="citation">
+        Potchter, O.; Cohen, P.; Lin, T.P.; Matzarakis A. Outdoor human thermal perception in various climates: 
+        A comprehensive review of approaches, methods and quantification. Sci. Total Environ. 2018, 
+        631–632, 390–406. 
+        <a href="https://doi.org/10.1016/j.scitotenv.2018.02.276" class="darkgreen" target="_blank"><span>DOI</span></a> 
+      </p>
     </div>
-    <!-------------------------- LOCATION --------------------->
+  </main> 
+  <!------------------------------------>
+  <!--FOOTER injection from footer.html-->
+  <footer></footer>
+  <!------------------------------------>
 
-    <div class="currloc" id="currloc_id">
-        <a href="index.html" class="link_light">Főoldal</a> > <a href="research.html" class="link_light">Kutatás</a>
-    </div>
+  <script>
+    $( "header" ).load( "../../header.html" );
+    $( "footer" ).load( "../../footer.html #footer_prop" );
+  </script>
 
-
-    <!--------------------------- TORZS ----------------------->
-    <main>
-      <div class="content">
-        <div class="butcontainer">
-          <a href="humbio_acs.html" id="switchButton" class="eng langbut" >HU <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        </div>
-        <h1>Human biometeorological data collection, modeling and weather analysis</h1>
-        <h2>Leading researcher: <a href="https://nimbus.elte.hu/~bhajni/" class="darkgreen" target="_blank">dr. Ferenc Ács</a></h2>
-        <p>
-          <span class="darkgreen"> Human biometeorology </span>
-          investigates the relationship between humans and the atmosphere. A person is 
-          characterized by his clothing and activity, the air environment can be outdoor or
-          indoor. In what follows, we look at an outdoor person.
-        </p>
-        <p>
-          The air environment of a person outside varies greatly; this variability can be 
-          characterized on the space-time scale of climate and weather. A person's clothing 
-          can be appropriate for the summer (minimum) or winter (maximum) season, their 
-          activity can change, for instance, one can lie down, stand, walk or run (other 
-          activity types are also possible). We assume that the person is in good health.
-        </p>
-        <p>
-          <span class="darkgreen"> Data collection: </span>
-          the human-atmosphere relationship is characterized by data, by linking data on 
-          humans and the atmosphere. We are mostly interested in the thermal load of the
-           air environment and the thermal perception of people in it. There are two data 
-           collection methods: longitudinal and transversal data collection. In the case of 
-           longitudinal data collection, 1 person collects weather data over as long a period 
-           as possible to create the longest possible time series (the length of the time 
-           series is equal to the number of weather observations). When collecting transversal 
-           data, many people provide information about themselves in the current weather 
-           situation. In this case too, the goal is to make the time series as long as possible 
-           (the length of the time series is equal to the number of people). 
-        </p>
-        <p>
-          In this project, we carry out longitudinal data collection while simultaneously 
-          documenting data gathered on the human participants and the weather. Among the weather 
-          data, we document solar radiation (GR), air temperature (Ta), air humidity (rh), 
-          wind speed (W) and cloudiness (N). With regard to human data, the following are 
-          captured: anthropometric data (body mass, body length, age, sex), thermal perception 
-          (seven-level scale: "very warm", "warm", "slightly warm", "neutral", "cool", "cold" 
-          and "very cold”), the clothing worn and the type and intensity of the activity. 
-          Longitudinal observations began in the summer of 2016 and have been carried out 
-          continuosuly to this day. The person conducting the observation is Dr. Ferenc Ács. 
-          We can report on the following data collections:
-        </p>
-        <div class="table-cont">
-          <table class="complex-table">
-            <caption>
-              Table 1 Longitudinal observations focusing on characterizing the relationship between human 
-              activity and thermal load (Notation: *: documentation of body mass before and after the run 
-              with a scale, measurement of the average running speed based on an estimate of the distance 
-              (5 km) and duration (stopwatch); **: estimation of the average running speed (distance:
-               404 m/lap, measuring the duration of the distance with a stopwatch) and average heart 
-               rate (based on a smart watch))
-            </caption>
-            <tr class="trhead">
-              <td rowspan="2">Observation</td>
-              <td colspan="3">Human characteristics</td>
-              <td>Air environment</td>
-              <td>Period</td>
-              <td>Publication</td>
-            </tr>
-            <tr class="trhead">
-              <td>Activity</td>
-              <td>Clothing</td>
-              <td>Thermal perception</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="row">
-              <td>1.</td>
-              <td>*running </td>
-              <td>documentation of the clothing worn</td>
-              <td>--</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2016.08.09-2018.05.23</td>
-              <td>Ács et al. (2019)</td>
-            </tr>
-            <tr class="row">
-              <td>2.</td>
-              <td>walking</td>
-              <td>--</td>
-              <td>determining of thermal sensation types</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2020.04.01-2021.06.29</td>
-              <td>Ács et al. (2022)</td>
-            </tr>
-            <tr class="row">
-              <td>3.</td>
-              <td>lying down</td>
-              <td>short sports pants</td>
-              <td>determining of thermal sensation types</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2022.05.12-2022.09.18</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>4.</td>
-              <td>*running</td>
-              <td>documentation of the clothing worn</td>
-              <td>--</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2023.02.07- ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>5.</td>
-              <td>**running</td>
-              <td>--</td>
-              <td>--</td>
-              <td>--</td>
-              <td>2022.10.09- ongoing</td>
-              <td>--</td>
-            </tr>
-          </table>
-        </div>
-        <p>
-          <span class="darkgreen">Modeling:</span>
-          Recently, energy balance-based models are the most widespread 
-          (Pochter et al., 2018). The main advantage of these models is 
-          that they can also simulate the effect of human factors on thermal 
-          load. The energy balance equation can be used in two ways. The usual 
-          procedure is to calculate skin surface and/or clothing surface temperatures 
-          based on knowledge of activity (metabolic heat flow density) and 
-          clothing worn (thermal resistance of clothing). This is the so-called 
-          „forward” procedure. The other method calculates the thermal resistance 
-          of the clothing and/or the evaporative resistance of the skin surface 
-          based on the knowledge of the activity and the temperature of the skin 
-          surface. This is the so-called „backward” procedure. Models using the 
-          "backward" process are also called inverse "forward" models (briefly 
-          inverse models). In human biometeorology, traditional „forward” models 
-          are much more widespread than inverse models (de Freitas and Grigorieva, 2015). 
-        </p>
-        <p>
-          The thermal load is estimated based on running our own inverse models. 
-          The environmental heat deficit is simulated with a clothing thermal resistance 
-          (rcl) model (briefly clothing index model), which estimates the rcl 
-          (m2·℃/W) value that exists in the case of energy balance. The environmental 
-          heat surplus is simulated with a skin evaporative   resistance (rskin) model,
-           which calculates the rskin (m2·hPa/W) value ensuring the energy balance at 
-           the human body-environment interface.
-        </p>
-        <p>
-          <span class="darkgreen">Weather analysis:</span>
-          Weather can also be analyzed from the point of view of human thermal load and 
-          thermal perception. We may hear such remarks during the announcement of the
-           weather, but this important aspect is not highlighted and evaluated. To fill 
-           this gap, we conduct longitudinal observations for the following weather conditions.
-        </p>
-        <div class="table-cont">
-          <table class="complex-table">
-            <caption>
-              Table 2 Longitudinal observations in select weather situations to 
-              characterize human thermal load
-            </caption>
-            <tr class="trhead">
-              <td>Observation</td>
-              <td>Observation	Characterization of the weather situation in keywords</td>
-              <td>Air environment</td>
-              <td>Period</td>
-              <td>Publication</td>
-            </tr>
-            <tr class="row">
-              <td>1.</td>
-              <td>cyclone, warm front</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2021.03.12– ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>2.</td>
-              <td>cyclone, cold front</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2021.03.05- ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>3.</td>
-              <td>convection, anticyclone</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2021.03.01- ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>4.</td>
-              <td>advection, anticyclone</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2021.02.27- ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>5.</td>
-              <td>frosty dawns, mornings, anticyclone</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2020.01.23- ongoing</td>
-              <td>--</td>
-            </tr>
-            <tr class="row">
-              <td>6.</td>
-              <td>fog</td>
-              <td>GR, Ta, rh, W, N</td>
-              <td>2017.02.15- ongoing</td>
-              <td>--</td>
-            </tr>
-          </table>
-        </div>
-        <P>
-          <span class="darkgreen">Some results:</span>
-          Our results form a "cloud of points" as we use the methodology 
-          of longitudinal observation. Here are some results.
-        </P>
-        <p>
-          1. Point-cloud characterizing the relationship between clothing 
-          thermal resistance, operative temperature and thermal sensation 
-          types. The human walks at a speed of 1.1 ms-1.
-        </p>
-        <div class="resimage-container">
-          <img src="fig4.png" alt="">
-        </div>
-        <p>
-          2.	Point-cloud characterizing the relationship between skin evaporative 
-          resistance, operative temperature and thermal sensation types. 
-          The human is in the resting position. (the illustration was made 
-          by Erzsébet Kristóf)
-        </p>
-        <div class="resimage-container">
-          <img src="6-To-rskin_resting55.png" alt="">
-        </div>
-        <p>
-          3.	Point-cloud characterizing the relationship between heart rate, 
-          activity types and average movement speed. (the figure was made by 
-          Zsófia Szalkai)
-        </p>
-        <div class="resimage-container">
-          <img src="BPM-WMOT_uj.jpg" alt="">
-        </div>
-        <p>
-          4.	Point-cloud characterizing the relationship between clothing thermal
-          resistance and operative temperature in the fog. The human walks at a speed 
-          of 1.1 ms-1. (the figure was made by Zsófia Szalkai)          
-        </p>
-        <div class="resimage-container">
-          <img src="To_rcl_kodben.png" alt="">
-        </div>
-        <p>
-          <span class="darkgreen">References:</span>
-        </p>
-        <p class="citation">
-          Ács, F.; Kristóf, E.; Zsákai, A. New clothing resistance scheme for 
-          estimating outdoor environmental thermal load. Geographica Pannonica 2019, 23(4), 
-          245–255. 
-          <a href="https://doi.org/10.5937/gp23-23717" class="darkgreen" target="_blank"><span>DOI</span></a> 
-        </p>
-        <p class="citation">
-          Ács, F.; Kristóf, E.; Zsákai A. Individual local human thermal climates in the Hungarian 
-          lowland: Estimations by a simple clothing resistance–operative temperature model. Int. 
-          J. Climatol. 2022, 
-          <a href="https://doi.org/10.1002/joc.7910" class="darkgreen" target="_blank"><span>DOI</span></a> 
-        </p>
-        <p class="citation">
-          de Freitas, C.R.; Grigorieva, E.A. A comprehensive catalogue and classification of human thermal 
-          climate indices. Int. J. Biometeorol. 2015, 59, 109–120.
-        </p>
-        <p class="citation">
-          Potchter, O.; Cohen, P.; Lin, T.P.; Matzarakis A. Outdoor human thermal perception in various climates: 
-          A comprehensive review of approaches, methods and quantification. Sci. Total Environ. 2018, 
-          631–632, 390–406. 
-          <a href="https://doi.org/10.1016/j.scitotenv.2018.02.276" class="darkgreen" target="_blank"><span>DOI</span></a> 
-        </p>
-      </div>
-    </main>                                                                          
-
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
-        </div><!--white space reset
-        --><div class="pagemap">
-          <h1 class="pgmp"><span><a href="#" class="link_light">Oldaltérkép</a></span></h1>
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
-        </div>
-      </div>
-    </footer>
-
-  </body>
-
+</body>
 </html>
+
