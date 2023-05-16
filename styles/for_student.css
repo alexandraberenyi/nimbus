@@ -24,6 +24,10 @@
     transition: 0.4s;
 }
 
+.active{
+    overflow-y: scroll;
+}
+
 .foldtud{
     background-color: rgba(40, 96, 112, .7);
 }

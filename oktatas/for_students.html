@@ -4,11 +4,12 @@
   <!--meta tag-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="http://berenyia.web.elte.hu/nimbus_prot/">
 
   <!--JS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src = "scripts/nav_index.js" defer></script>
-  <script src = "scripts/forstudent_resp.js" defer></script>
+  <script src = "scripts/forstudent_resp.js" defer></script> 
 
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -34,7 +35,7 @@
   <!--HEADER injection from header.html-->
   <header></header>
   <div class="currloc" id="currloc_id">
-    <a href="index.html" class="link_light">Főoldal</a> 
+    <a href="index.html" class="link_light">Főoldal</a> > <a href="students_subpage.html" class="link_light">Hallgatóknak</a> > <a href="oktatas/for_students.html" class="link_light">Ismertető a képzésről</a>  
   </div>
   <!------------------------------------>
   <!--CONTENT-->
@@ -43,18 +44,26 @@
       <div class="content" id="cont01">
         <h1>Ismertető a meteorológus képzésről</h1>
         <h2>Mivel foglalkozik a meteorológia? Mit csinál egy meteorológus?</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>
+          Bár legtöbben elsőre a meteorológiát az időjárás-előrejelzéssel vagy a 
+          klímakutatással azonosítják, ez ennél sokkal szerteágazóbb tudományterület. 
+          A meteorológia tudománya összefoglalóan a légköri folyamatokkal foglalkozik. 
+          Alterületei az előrejelzés és a klímaváltozás kutatása mellett többek közt 
+          a városklimatológia, agrometeorológia, a modellezés és mérés, a hidrológia, 
+          illetve a légszennyezettség értékelése is. 
+        </p>
+        <p>Ezekhez kapcsolódó tanulmányok érdekelnek?</p>
         <h2>"Hogyan lehetek meteorológus?"</h2>
         <p>A meteorológia képzés Magyarországon egyedül az ELTE-n végezhető. A mesterképzést megelőzően a <span>földtudomány</span>, fizika vagy környezettan alapszakok valamelyikének elvégzése szükséges.</p>
         <h3>Melyiket válasszam?</h3>
 
-        <div class="box foldtud" id="foldtud_id">
+        <div class="box foldtud" id="foldtud_id" onclick="dropDownEarthsci()">
           <div class="main_drop">
             <div class="block left">
               <p>Földtudomány</p>
             </div>
             <div class="block right">
-              <a href="javascript:void(0);" class="cont_icon" onclick="dropDownEarthsci()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <a href="javascript:void(0);" class="cont_icon" ><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="cont_dropdown">
@@ -69,13 +78,13 @@
         </div>
 
 
-        <div class="box fizika" id="fizika_id">
+        <div class="box fizika" id="fizika_id" onclick="dropDownPhys()">
           <div class="main_drop">
             <div class="block left">
               <p>Fizika</p>
             </div>
             <div class="block right">
-              <a href="javascript:void(0);" class="cont_icon" onclick="dropDownPhys()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <a href="javascript:void(0);" class="cont_icon" ><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="cont_dropdown">
@@ -88,13 +97,13 @@
         </div>
 
 
-        <div class="box kornytud" id="kornytud_id">
+        <div class="box kornytud" id="kornytud_id"  onclick="dropDownEnvsci()">
           <div class="main_drop">
             <div class="block left">
               <p>Környezettan</p>
             </div>
             <div class="block right">
-              <a href="javascript:void(0);" class="cont_icon" onclick="dropDownEnvsci()"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <a href="javascript:void(0);" class="cont_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="cont_dropdown">
@@ -124,8 +133,8 @@
       <div class="content" id="cont02">
           <p>A földtudományi alapszak 3 éves (6 szemeszter) képzés. Szakirányt az első félév végén kell választani, melyet követően - meteorológus specializáción - a meteorológia képzéshez szükséges alapozó-, illetve bevezető tárgyakat hallgathatod.</p>
           <p>A természetföldrajzi bevezető tárgyak mellett nagy részben a fizika, matematika, illetve informatikai alapozás zajlik. A teljes tantervi hálót <a href="http://to.ttk.elte.hu/foldtudomanyi-alapszak" target="_blank" class="lightgreen">ezen a linken</a> nézheted meg.</p>
-          <p>A tantárgyak elvégzése mellett már az alapképzés során lehetőség nyílik kutatásra is. A <a href="tdk.html" target="_blank" class="lightgreen">TDK (Tudományos Diákkör)</a>  kutatás során általad választott, neked tetsző témán dolgozhatsz. Ez az érdekes feladatmegoldás, és a tapasztalat mellett segítséget nyújt később a szakdolgozat elkészítéséhez is, akár későbbi munkatársakat is megismerhetsz, illetve az MSc felvételin, valamint ösztöndíjpályázatokhoz is plusz pontot jelent.</p>
-          <p>Az <a href="erasmus.html" target="_blank" class="lightgreen">Erasmus ösztöndíjakra</a>  szintén lehet jelentkezni az alapképzés során.</p>
+          <p>A tantárgyak elvégzése mellett már az alapképzés során lehetőség nyílik kutatásra is. A <a href="oktatas/tdk.html" target="_blank" class="lightgreen">TDK (Tudományos Diákkör)</a>  kutatás során általad választott, neked tetsző témán dolgozhatsz. Ez az érdekes feladatmegoldás, és a tapasztalat mellett segítséget nyújt később a szakdolgozat elkészítéséhez is, akár későbbi munkatársakat is megismerhetsz, illetve az MSc felvételin, valamint ösztöndíjpályázatokhoz is plusz pontot jelent.</p>
+          <p>Az <a href="oktatas/erasmus.html" target="_blank" class="lightgreen">Erasmus ösztöndíjakra</a>  szintén lehet jelentkezni az alapképzés során.</p>
           <p>Az utolsó évben a <a href="research.html" target="_blank" class="lightgreen">tanszéki kutatásokhoz</a> kapcsolódó témákból választva kell szakdolgozati témát választani, illetve írni. A 6. félév végén a záróvizsgával fejeződik be az alapképzés, illetve ezt követően kerül sor az MSc felvételire is.
           </p>
       </div>

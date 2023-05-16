@@ -4,7 +4,7 @@
   <!--meta tag-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <base href="http://berenyia.web.elte.hu/nimbus_prot/">
   <!--JS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
   <script src = "scripts/nav_index.js" defer></script>
@@ -34,8 +34,9 @@
 <body>  
   <!--HEADER injection from header.html-->
   <header></header>
+  <div id="staff_direct"></div>
   <div class="currloc" id="currloc_id">
-    <a href="index.html" class="link_light">Főoldal</a> 
+    <a href="index.html" class="link_light">Főoldal</a> > <a href="staff.html" class="link_light">Munkatársak</a>
   </div>
   <!------------------------------------>
   <!--CONTENT-->
@@ -46,7 +47,7 @@
       <div class = "staff_container">
         <div class="staff" id="meszaros_robert">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/meszaros_robert.jpg" alt="Mészáros Róbert">
+            <img src="media/staff_kepek/meszaros_robert.jpg" alt="Mészáros Róbert">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -63,21 +64,21 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011579&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011579&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="bartholy_judit">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/bartholy judit.jpg" alt="Bartholy Judit">
+            <img src="media/staff_kepek/bartholy judit.jpg" alt="Bartholy Judit">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
-                <h3><a href="bartholy.html">Bartholy Judit</a></h3>
+                <h3><a href="tanszek/bartholy.html">Bartholy Judit</a></h3>
                 <p>professor emeritus</p>
             </div> 
             <div class="staff-contact st">
@@ -90,22 +91,22 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003656&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003656&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="weidinger_tamas">
           <div class="pic-cont">
-            <a href="javascript:void(0);" onclick='easterEgg("weidinger_tamas_ee")' class="cursor"><img src="./media/staff_kepek/weidinger_tamas.jpg" alt="Weidinger Tamás"></a>
-            <a href="javascript:void(0);" onclick='easterEggRemove("weidinger_tamas_ee")'><img src="./media/staff_kepek/weidinger_tamas_ee.jpg" class="easter_egg" id="weidinger_tamas_ee"></a>
+            <a href="javascript:void(0);" onclick='easterEgg("weidinger_tamas_ee")' class="cursor"><img src="media/staff_kepek/weidinger_tamas.jpg" alt="Weidinger Tamás"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("weidinger_tamas_ee")'><img src="media/staff_kepek/weidinger_tamas_ee.jpg" class="easter_egg" id="weidinger_tamas_ee"></a>
           </div>
           <div class="staff_info">
             <div class="staff-head st">
-                <h3><a href="./weidinger.html">Weidinger Tamás</a></h3>
+                <h3><a href="tanszek/weidinger.html">Weidinger Tamás</a></h3>
                 <p>egyetemi docens</p>
             </div> 
             <div class="staff-contact st">
@@ -118,17 +119,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003401&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003401&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="barcza_zoltan">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/barcza_zoltan.jpg" alt="Barcza Zoltán">
+            <img src="media/staff_kepek/barcza_zoltan.jpg" alt="Barcza Zoltán">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -145,17 +146,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011134&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011134&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="pongracz_rita">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/pongracz_rita.jpg" alt="Pongrácz Rita">
+            <img src="media/staff_kepek/pongracz_rita.jpg" alt="Pongrácz Rita">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -172,17 +173,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011580&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10011580&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="soosne_dezso_zsuzsanna">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/soosne_dezso_zsuzsanna.jpg" alt="Sooósné Dezső Zuzsanna">
+            <img src="media/staff_kepek/soosne_dezso_zsuzsanna.jpg" alt="Sooósné Dezső Zuzsanna">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -199,17 +200,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10020721&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10020721&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="torma_csaba">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/torma_csaba.jpg" alt="Torma Csaba">
+            <img src="media/staff_kepek/torma_csaba.jpg" alt="Torma Csaba">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -226,18 +227,18 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10019288&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <a href="https://www.researchgate.net/profile/Csaba-Torma" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="https://scholar.google.hu/citations?user=Pi56z5QAAAAJ&hl=hu&oi=ao" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="https://orcid.org/0000-0002-4240-0788" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=36605242400" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10019288&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Csaba-Torma" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="https://scholar.google.hu/citations?user=Pi56z5QAAAAJ&hl=hu&oi=ao" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="https://orcid.org/0000-0002-4240-0788" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=36605242400" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="breuer_hajnalka">
           <div class="pic-cont">
-            <a href="javascript:void(0);" onclick='easterEgg("breuer_hajnalka_ee")' class="cursor"><img src="./media/staff_kepek/breuer_hajnalka.jpg" alt="Breuer Hajnalka"></a>
-            <a href="javascript:void(0);" onclick='easterEggRemove("breuer_hajnalka_ee")'><img src="./media/staff_kepek/breuer_hajnalka_ee.jpg" class="easter_egg" id="breuer_hajnalka_ee"></a>
+            <a href="javascript:void(0);" onclick='easterEgg("breuer_hajnalka_ee")' class="cursor"><img src="media/staff_kepek/breuer_hajnalka.jpg" alt="Breuer Hajnalka"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("breuer_hajnalka_ee")'><img src="media/staff_kepek/breuer_hajnalka_ee.jpg" class="easter_egg" id="breuer_hajnalka_ee"></a>
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -254,17 +255,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025473&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025473&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="pieczka_ildiko">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/pieczka_ildiko.jpg" alt="Pieczka Ildikó">
+            <img src="media/staff_kepek/pieczka_ildiko.jpg" alt="Pieczka Ildikó">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -281,17 +282,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025625&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10025625&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="leelosy_adam">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/leelossy_adam.jpg" alt="Leelőssy Ádám">
+            <img src="media/staff_kepek/leelossy_adam.jpg" alt="Leelőssy Ádám">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -308,17 +309,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030136&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030136&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="kristof_erzsebet">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="Kristóf Erzsébet">
+            <img src="media/staff_kepek/teglafal.jpg" alt="Kristóf Erzsébet">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -335,17 +336,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055707&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10055707&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <!--<div class="staff" id="staff_neve">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
+            <img src="media/staff_kepek/teglafal.jpg" alt="staffname">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -362,11 +363,11 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -391,7 +392,7 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10006357&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10006357&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -412,7 +413,7 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10005819&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10005819&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -435,7 +436,7 @@
         </div>
         <div class="staff" id="acs_ferenc">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/acs_ferenc.jpg" alt="Ács Ferenc">
+            <img src="media/staff_kepek/acs_ferenc.jpg" alt="Ács Ferenc">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -452,11 +453,11 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000754&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <a href="https://www.researchgate.net/profile/Ferenc-Acs-3" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000754&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Ferenc-Acs-3" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
@@ -474,7 +475,7 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001303&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001303&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -489,7 +490,7 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003034&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10003034&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -501,10 +502,11 @@
             </div> 
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10007991&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10007991&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
+        <div id="res_direct"></div>
         <div class="staff row" id="szepszo_gabriella">
           <div class="staff_info row">
             <div class="staff-head st">
@@ -513,16 +515,17 @@
             </div> 
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043830&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10043830&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
       </div>
+      <div id="phd_direct"></div>
       <h2 id="res">Kutatók</h2>
       <div class="staff_container">
         <div class="staff" id="kis_anna">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/kis_anna.jpg" alt="Kis Anna">
+            <img src="media/staff_kepek/kis_anna.jpg" alt="Kis Anna">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -539,17 +542,17 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10039498&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10039498&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
         <div class="staff" id="kalmar_timea">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/kalmar_timea.jpg" alt="Kalmár Tímea">
+            <img src="media/staff_kepek/kalmar_timea.jpg" alt="Kalmár Tímea">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -566,11 +569,11 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10060846" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <a href="https://www.researchgate.net/profile/Timea-Kalmar" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="https://orcid.org/0000-0003-0405-4404" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <!--<a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>-->
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10060846" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <a href="https://www.researchgate.net/profile/Timea-Kalmar" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="https://orcid.org/0000-0003-0405-4404" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <!--<a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>-->
             </div>
           </div>
         </div>
@@ -579,8 +582,8 @@
       <div class="staff_container">
         <div class="staff" id="berenyi_alexandra">
           <div class="pic-cont">
-            <a href="javascript:void(0);" onclick='easterEgg("berenyi_alexandra_ee")' class="cursor"><img src="./media/staff_kepek/berenyi_alexandra.jpg" alt="Berényi Alexandra"></a>
-            <a href="javascript:void(0);" onclick='easterEggRemove("berenyi_alexandra_ee")'><img src="./media/staff_kepek/berenyi_alexandra_ee.JPG" class="easter_egg" id="berenyi_alexandra_ee"></a>
+            <a href="javascript:void(0);" onclick='easterEgg("berenyi_alexandra_ee")' class="cursor"><img src="media/staff_kepek/berenyi_alexandra.jpg" alt="Berényi Alexandra"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("berenyi_alexandra_ee")'><img src="media/staff_kepek/berenyi_alexandra_ee.JPG" class="easter_egg" id="berenyi_alexandra_ee"></a>
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -597,13 +600,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069771&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069771&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="david_reka_agnes">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/david_reka.jpeg" alt="Dávid Réka Ágnes">
+            <img src="media/staff_kepek/david_reka.jpeg" alt="Dávid Réka Ágnes">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -620,14 +623,14 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10070103&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10070103&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="varga_akos_janos">
           <div class="pic-cont">
-            <a href="javascript:void(0);" onclick='easterEgg("varga_akos_ee")' class="cursor"><img src="./media/staff_kepek/varga_akos.jpg" alt="Varga Ákos János"></a>
-            <a href="javascript:void(0);" onclick='easterEggRemove("varga_akos_ee")'><img src="./media/staff_kepek/varga_akos_ee.jpg" class="easter_egg" id="varga_akos_ee"></a>
+            <a href="javascript:void(0);" onclick='easterEgg("varga_akos_ee")' class="cursor"><img src="media/staff_kepek/varga_akos.jpg" alt="Varga Ákos János"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("varga_akos_ee")'><img src="media/staff_kepek/varga_akos_ee.jpg" class="easter_egg" id="varga_akos_ee"></a>
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -644,14 +647,14 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10067144&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10067144&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="varga-balogh_adrienn">
           <div class="pic-cont">
-            <a href="javascript:void(0);" onclick='easterEgg("varga-balogh_adrienn_ee")' class="cursor"><img src="./media/staff_kepek/varga-balogh_adrienn.jpg" alt="Varga-Balogh Adrienn"></a>
-            <a href="javascript:void(0);" onclick='easterEggRemove("varga-balogh_adrienn_ee")'><img src="./media/staff_kepek/varga-balogh_adrienn_ee.jpg" class="easter_egg" id="varga-balogh_adrienn_ee"></a>
+            <a href="javascript:void(0);" onclick='easterEgg("varga-balogh_adrienn_ee")' class="cursor"><img src="media/staff_kepek/varga-balogh_adrienn.jpg" alt="Varga-Balogh Adrienn"></a>
+            <a href="javascript:void(0);" onclick='easterEggRemove("varga-balogh_adrienn_ee")'><img src="media/staff_kepek/varga-balogh_adrienn_ee.jpg" class="easter_egg" id="varga-balogh_adrienn_ee"></a>
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -668,13 +671,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069312&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10069312&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="abderrahmane_mendyl">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="Abderrahmane Mendyl">
+            <img src="media/staff_kepek/teglafal.jpg" alt="Abderrahmane Mendyl">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -691,13 +694,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Abderrahmane%20Mendyl" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Abderrahmane%20Mendyl" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="peter_musymi">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/peter_musymi.jpg" alt="Peter Musyimi">
+            <img src="media/staff_kepek/peter_musymi.jpg" alt="Peter Musyimi">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -714,13 +717,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084937&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084937&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="arun_gandhi">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="Arun Gandhi">
+            <img src="media/staff_kepek/teglafal.jpg" alt="Arun Gandhi">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -737,13 +740,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Arun%20Gandhi" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?mode=search&query=publication;labelOrMtid;eq;Arun%20Gandhi" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="helga_chauke">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/helga_chauke.jpg" alt="Chauke Helga">
+            <img src="media/staff_kepek/helga_chauke.jpg" alt="Chauke Helga">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -760,13 +763,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="dolgos_emilia">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/dolgos_emilia.jpg" alt="Dolgos Emília">
+            <img src="media/staff_kepek/dolgos_emilia.jpg" alt="Dolgos Emília">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -783,13 +786,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="incze_dora">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/incze_dora.jpg" alt="Incze Dóra">
+            <img src="media/staff_kepek/incze_dora.jpg" alt="Incze Dóra">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -806,13 +809,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083559&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083559&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="fejes_lilian">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/fejes_lilian.jpg" alt="Fejes Lilian">
+            <img src="media/staff_kepek/fejes_lilian.jpg" alt="Fejes Lilian">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -827,13 +830,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10079313&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10079313&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="herincs_david">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/herincs_david.jpg" alt="Hérincs Dávid">
+            <img src="media/staff_kepek/herincs_david.jpg" alt="Hérincs Dávid">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -850,13 +853,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084663&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10084663&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="simon_csilla">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/simon_csilla.jpg" alt="Simon Csilla">
+            <img src="media/staff_kepek/simon_csilla.jpg" alt="Simon Csilla">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -873,13 +876,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10085266&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10085266&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="szabo_peter">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/szabo_peter.jpg" alt="Szabó Péter">
+            <img src="media/staff_kepek/szabo_peter.jpg" alt="Szabó Péter">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -894,13 +897,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
           <div class="staff" id="szalkai_zsofia">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/szalkai_zsofia.jpg" alt="Szalkai Zsófia">
+            <img src="media/staff_kepek/szalkai_zsofia.jpg" alt="Szalkai Zsófia">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -917,13 +920,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10086689&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10086689&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="vincze_csilla">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/vincze_csilla.jpg" alt="vincze_csilla">
+            <img src="media/staff_kepek/vincze_csilla.jpg" alt="vincze_csilla">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -940,13 +943,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="gula_miklos">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="Gula Miklós">
+            <img src="media/staff_kepek/teglafal.jpg" alt="Gula Miklós">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -963,13 +966,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="horvath_krisztina">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/horvath_krisztina.jpg" alt="Horváth Krisztina">
+            <img src="media/staff_kepek/horvath_krisztina.jpg" alt="Horváth Krisztina">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -984,13 +987,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="komjati_kornel">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/komjati_kornel.jpg" alt="Komjáti Kornél">
+            <img src="media/staff_kepek/komjati_kornel.jpg" alt="Komjáti Kornél">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1005,13 +1008,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087561&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087561&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="molnar_csilla">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/molnar_csilla.jpg" alt="staffname">
+            <img src="media/staff_kepek/molnar_csilla.jpg" alt="staffname">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1026,13 +1029,13 @@
             </div>
             <!--<div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>-->
           </div>
         </div>
         <div class="staff" id="szentes_oliver">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/szentes_oliver.jpg" alt="Szentes Olivér">
+            <img src="media/staff_kepek/szentes_oliver.jpg" alt="Szentes Olivér">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1047,13 +1050,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10074963&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10074963&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="tordai_agoston">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="Tordai Ágoston">
+            <img src="media/staff_kepek/teglafal.jpg" alt="Tordai Ágoston">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1070,13 +1073,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078175&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078175&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="toth_helga">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/toth_helga.jpg" alt="Tóth Helga">
+            <img src="media/staff_kepek/toth_helga.jpg" alt="Tóth Helga">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1091,13 +1094,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10081328&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10081328&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <div class="staff" id="zempleni_zsuzsanna">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/zempleni_zsuzsanna.jpg" alt="Zempléni Zsuzsanna">
+            <img src="media/staff_kepek/zempleni_zsuzsanna.jpg" alt="Zempléni Zsuzsanna">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1114,13 +1117,13 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087957&view=dataSheet" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087957&view=dataSheet" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
             </div>
           </div>
         </div>
         <!--<div class="staff" id="staff_neve">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/teglafal.jpg" alt="staffname">
+            <img src="media/staff_kepek/teglafal.jpg" alt="staffname">
           </div>
           <div class="staff_info">
             <div class="staff-head st">
@@ -1137,20 +1140,20 @@
             </div>
             <div class="staff-pub st">
                 <p><span>Publikációk: </span></p>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/mtmt.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/researchgate.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/ClipartKey_1242841.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/orcid.png" alt=""></a>
-                <a href="#" target="_blank"><img class="pub_logo" src="./media/Scopus_logo.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/mtmt.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/researchgate.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/ClipartKey_1242841.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/orcid.png" alt=""></a>
+                <a href="#" target="_blank"><img class="pub_logo" src="media/Scopus_logo.png" alt=""></a>
             </div>
           </div>
         </div>-->
       </div>
       <h2>Hivatal</h2>
-      <div class="staff_container">
+      <div class="staff_container" id="hivatal">
         <div class="staff" id="demkune_jenei_zsuzsanna">
           <div class="pic-cont">
-            <img src="./media/staff_kepek/demkune_jenei_zsuzsanna.jpg" alt="Demkuné Jenei Zsuzsanna">
+            <img src="media/staff_kepek/demkune_jenei_zsuzsanna.jpg" alt="Demkuné Jenei Zsuzsanna">
           </div>
           <div class="staff_info">
             <div class="staff-head st">

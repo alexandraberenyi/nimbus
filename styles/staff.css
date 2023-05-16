@@ -229,3 +229,7 @@ body {
 .cursor {
     cursor: default;
 }
+
+li{
+    margin-left: 10px;
+}

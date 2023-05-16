@@ -69,7 +69,7 @@ window.onscroll = function() {
 };
 
 
-function scrollFunction3(){
+/*function scrollFunction3(){
   if (document.documentElement.scrollTop > 80) {
     document.getElementById("mobileTopnav").classList.remove("responsive");
     document.getElementById("dropd_oncl_stud").classList.remove("show");
@@ -77,7 +77,7 @@ function scrollFunction3(){
     document.getElementById("mobileTopnav").classList.remove("dp_resp1");
     document.getElementById("mobileTopnav").classList.remove("dp_resp2");
   }
-}
+}*/
 
 /* A fejléc összenyomása nagyobb képernyőn*/
 function scrollFunction() {

@@ -125,3 +125,7 @@ li{
 .yscrollable table{
     transform: rotate(180deg);
 }
+
+td.nobreak{
+    white-space: nowrap;
+}

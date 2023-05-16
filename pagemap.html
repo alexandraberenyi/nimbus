@@ -4,11 +4,11 @@
   <!--meta tag-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <base href="http://berenyia.web.elte.hu/nimbus_prot/">
   <!--JS-->
   <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-  <script src ="./scripts/nav_index.js" defer></script>
-  <script src ="./scripts/pagemap.js" defer></script>
+  <script src ="scripts/nav_index.js" defer></script>
+  <script src ="scripts/pagemap.js" defer></script>
   
 
   <!--CSS-->
@@ -36,7 +36,7 @@
   <!--HEADER injection from header.html-->
   <header></header>
   <div class="currloc" id="currloc_id">
-    <a href="index.html" class="link_light">Főoldal</a> 
+    <a href="index.html" class="link_light">Főoldal</a> > <a href="pagemap.html" class="link_light">Oldaltérkép</a>
   </div>
   <!------------------------------------>
   <!--CONTENT-->
@@ -53,93 +53,93 @@
             <canvas width="1000" height="40" id="canvasMain"></canvas>
           </div>
           <div class="map_menu">
-            <a href=""><div class="box lightgreen"><p>Hallgatóknak</p>
+            <a href="students_subpage.html"><div class="box lightgreen"><p>Hallgatóknak</p>
             </div></a>
-            <a href=""><div class="box lightgreen"><p>Kutatás</p>
+            <a href="research.html"><div class="box lightgreen"><p>Kutatás</p>
             </div></a>
-            <a href=""><div class="box lightgreen"><p>Munkatársak</p>
+            <a href="staff.html"><div class="box lightgreen"><p>Munkatársak</p>
             </div></a>
-            <a href=""><div class="box lightgreen"><p>A Tanszékről</p>
+            <a href="dep_subpage.html"><div class="box lightgreen"><p>A Tanszékről</p>
             </div></a>
           </div>
           <div class="map_submenu">
             <div class="sub_hall submenu">
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub1"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Jegyzetek és segédanyagok</p>
+              <a href="oktatas/lecture_notes.html"><div class="box darkgreen"><p>Jegyzetek és segédanyagok</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub2"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Előrejelzési vetélkedő</p>
+              <a href="https://theforecastchallenge.com/" target="_blank" ><div class="box darkgreen"><p>Előrejelzési vetélkedő</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub3"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Erasmus</p>
+              <a href="oktatas/erasmus.html"><div class="box darkgreen"><p>Erasmus</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub4"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>TDK</p>
+              <a href="oktatas/tdk.html"><div class="box darkgreen"><p>TDK</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub5"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Mentorálási program</p>
+              <a href="oktatas/mentor.html"><div class="box darkgreen"><p>Mentorálási program</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub6"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Ismertető a képzésről</p>
+              <a href="oktatas/for_students.html"><div class="box darkgreen"><p>Ismertető a képzésről</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub7"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>PhD képzés</p>
+              <a href="oktatas/phd_info.html"><div class="box darkgreen"><p>PhD képzés</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub8"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>MSc Tudástár</p>
+              <a href="oktatas/msc_info.html"><div class="box darkgreen"><p>MSc Tudástár</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub9"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>BSc Tudástár</p>
+              <a href="oktatas/bsc_info.html"><div class="box darkgreen"><p>BSc Tudástár</p>
               </div></a>
             </div>
             <div class="sub_kut submenu">
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub10"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Elnyert pályázatok</p>
+              <a href="kutatas/kut_palyazat.html"><div class="box darkgreen"><p>Elnyert pályázatok</p>
               </div></a>
             </div>
             <div class="sub_staff submenu">
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub11"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Oktatók</p>
+              <a href="staff.html#staff_direct"><div class="box darkgreen"><p>Oktatók</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub12"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Kutatók</p>
+              <a href="staff.html#res_direct"><div class="box darkgreen"><p>Kutatók</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub13"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Doktoranduszok</p>
+              <a href="staff.html#phd_direct"><div class="box darkgreen"><p>Doktoranduszok</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub14"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Hivatal</p>
+              <a href="staff.html#hivatal"><div class="box darkgreen"><p>Hivatal</p>
               </div></a>
             </div>
             <div class="sub_dep submenu">
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub15"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Elérhetőség</p>
+              <a href="tanszek/contact.html"><div class="box darkgreen"><p>Elérhetőség</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub16"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Történet</p>
+              <a href="tanszek/history.html"><div class="box darkgreen"><p>Történet</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub17"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Kirándulások</p>
+              <a href="tanszek/trips.html"><div class="box darkgreen"><p>Kirándulások</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub18"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Egyetemi Meteorológiai Füzetek</p>
+              <a href="tanszek/emf.html"><div class="box darkgreen"><p>Egyetemi Meteorológiai Füzetek</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub19"></canvas></div>
-              <a href=""><div class="box darkgreen"><p>Végzett hallgatók</p>
+              <a href="tanszek/alumni.html"><div class="box darkgreen"><p>Végzett hallgatók</p>
               </div></a>
               <div class="map_subcanv"><canvas width="250" height="20" id="canvasSub20"></canvas></div>
-              <a href=""><div class="box darkgreen" style="background-color: rgba(40, 96, 112, 1);"><p>Doktori oklevelett szerzettek</p>
+              <a href="alumni/phd.html"><div class="box darkgreen" style="background-color: rgba(40, 96, 112, 1);"><p>Doktori oklevelett szerzettek</p>
               </div></a>
             </div>
             <div class="subsubcanvas" >
               <canvas width="40" height="198" id="subsubCanv1"></canvas>
             </div>
             <div class="subsubmenu" id="subsubmenu1">
-              <a href=""><div class="box"><p>Szakirányválasztás</p>
+              <a href="oktatas/specialization.html"><div class="box"><p>Szakirányválasztás</p>
               </div></a>
-              <a href=""><div class="box"><p>Szakdolgozat és államvizsga</p>
+              <a href="oktatas/thesis_final.html"><div class="box"><p>Szakdolgozat és államvizsga</p>
               </div></a>
-              <a href=""><div class="box"><p>MSc felvételi</p>
+              <a href="oktatas/msc_felveteli.html"><div class="box"><p>MSc felvételi</p>
               </div></a>
             </div>
             <div class="subsubmenu" id="subsubmenu2">

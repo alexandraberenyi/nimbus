@@ -1,4 +1,4 @@
-
+var base = 'http://berenyia.web.elte.hu/nimbus_prot/'
 var asyncLoop = function(o){
   var i=22,
       length = o.length;
@@ -25,7 +25,7 @@ asyncLoop({
 });
 
 function emfSnippet(index) {
-  $.get('./oktatas/metfuzet/EMF0' + index + '/EMF' + index + '.htm').done(function () {
+  $.get(base + 'oktatas/metfuzet/EMF0' + index + '/EMF' + index + '.htm').done(function () {
       //lekérjük a parent elemet és a legfelső child elemet.
       const parentNode = document.querySelector('.content');
       let lastChild = document.querySelector(`#EMF${index-1}`) 
@@ -64,11 +64,11 @@ function emfSnippet(index) {
       p4.textContent = ", ";
 
       //lekérjük a megfelelő oldalról az adatokat az ID-l segítségével
-      $( "#noID" ).load( "./oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #noID" );
-      $( "#editorID" ).load( "./oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #editorID" );
-      $( "#titleID" ).load( "./oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #titleID" );
-      $( "#yearID" ).load("./oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #yearID" );
-      document.getElementById("titleID").setAttribute("href", "./oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm");
+      $( "#noID" ).load( base +"/oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #noID" );
+      $( "#editorID" ).load( base +"/oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #editorID" );
+      $( "#titleID" ).load(base +"/oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #titleID" );
+      $( "#yearID" ).load(base +"/oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm #yearID" );
+      document.getElementById("titleID").setAttribute("href", base + "oktatas/metfuzet/EMF0" +index+ "/EMF" +index+ ".htm");
 
       //console.log(emfszam)
 
