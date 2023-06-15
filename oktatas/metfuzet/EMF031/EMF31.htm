@@ -5,14 +5,15 @@
     <!--meta tag-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="http://berenyia.web.elte.hu/nimbus_prot/">
 
     <!--JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="../../../styles/general.css">
-    <link rel="stylesheet" type="text/css" href="../../../styles/emf.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/emf.css">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
     <script src="https://kit.fontawesome.com/edcb623efd.js" crossorigin="anonymous"></script>
   
     <!--favicon-->
-    <link rel="icon" href="../../../elte.ico">
+    <link rel="icon" href="media/elte.ico">
     <title>ELTE Meteorológiai Tanszék</title>
 
   </head>
@@ -34,7 +35,7 @@
       <header id="header_id" class="header_class">
         <div class="main-head" id="main-head_id">
           <div class="logo-cont head-cont">
-            <a href="index.html"><img id="logo_id" class = "logo" src="../../../elte_logo.png" alt="logo"></a>
+            <a href="index.html"><img id="logo_id" class = "logo" src="media/elte_logo.png" alt="logo"></a>
           </div><!--white space reset
           --><div class="elte-met head-cont">
             <div class="main_text" >
@@ -59,11 +60,11 @@
         </div>
         <div class="editors">
           <p>Szerkesztők:</p>
-          <p id = "editorID"><a href="#">Pongrácz Rita</a>, <a href="#">Mészáros Róbert</a> és <a href="#">Kis Anna</a></p>
+          <p id = "editorID"><a href="~prita/">Pongrácz Rita</a>, <a href="~mrobi/">Mészáros Róbert</a> és <a href="~kisanna/">Kis Anna</a></p>
         </div>
         <div id="mainContainer">
           <div id="mainImage">
-            <img src="../../../media/emf/EMF34-50dpi.jpg" alt="">
+            <img src="oktatas/metfuzet/EMF031/EMF31-50dpi.jpg" alt="">
           </div>
           <div id="secondaryContainer">
             <div id="emf">
@@ -81,15 +82,15 @@
               <p>ISBN 978-963-489-184-0 (online)</p>
             </div>
             <div id="programRedirect">
-              <a href="#">Program</a>
+              <a href="oktatas/metfuzet/EMF031/PDF/EMF-31-Program.pdf">Program</a>
             </div>
             <div id="contentRedirect">
-              <a href="#">Tartalom</a>
+              <a href="oktatas/metfuzet/EMF031/Tartalom.htm">Tartalom</a>
             </div>
           </div>
         </div>
         <div id="publisherResp">
-          <p>Kiadásért felel: <a href="#">Mészáros Róbert</a> tanszékvezető egyetemi docens</p>
+          <p>Kiadásért felel: <a href="~mrobi/">Mészáros Róbert</a> tanszékvezető egyetemi docens</p>
         </div>
         <div id="publish">
           <p>Kiadja: ELTE METEOROLÓGIAI TANSZÉK, 1117 Budapest, Pázmány Péter Sétány 1/a.</p>
@@ -101,31 +102,14 @@
       </div>
     </main>                                                                          
 
-    <!--------------------------- FOOTER ----------------------->
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <h1>ELTE Meteorológiai Tanszék</h1>
-          <p><span>Cím:</span> 1117 Budapest, Pázmány Péter sétány 1/A</p>
-          <p><span>Telefon:</span> 06 (1) 372-2945</p>
-          <p><span>Postafiók:</span> 1518 Budapest, Pf. 32.</p>
-          <p><span>Email:</span> <bdo dir="rtl"> uh.etle.submin@tem</bdo></p>
-        </div><!--white space reset
-        --><div class="pagemap">
-          <p><a href="https://ttk.elte.hu/" target="_blank" class="link_light">ELTE TTK</a></p>
-          <p><a href="https://geo.elte.hu/" target="_blank" class="link_light">Földrajz- és Földtudományi Intézet</a></p>
-          <p><a href="http://to.ttk.elte.hu/" target="_blank" class="link_light">Tanulmányi Osztály</a></p>
-        </div><!--white space reset
-        --><div class="webmaestros">
-          <p><span>Webmesterek: </p></span>
-          <p><a href="#" class="link_light">Breuer Hajnalka</a>, <a href="#" class="link_light">Leelőssy Ádám</a>, <a href="#" class="link_light">Barcza Zoltán</a></p>
-          <p class="webdev"><span>Weboldal fejlesztés: </span><a href="http://berenyia.web.elte.hu/aboutme" class="link_light">Berényi Alexandra</a></p>
-          <p>© 2022 ELTE Meteorológiai Tanszék</p>
-          <p>Minden jog fenntartva.</p>
-        </div>
-      </div>
-    </footer>
+  <!--FOOTER injection from footer.html-->
+  <footer></footer>
+  <!------------------------------------>
 
-  </body>
+  <script>
+    $( "footer" ).load( "footer.html #footer_prop" );
+  </script>
+
+</body>
 
 </html>

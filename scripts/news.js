@@ -1,7 +1,7 @@
 
 setTimeout(function(){
   newsLoad();
-},100);
+},2000);
 
 function newsLoad(){
   var x = document.getElementById("news1");

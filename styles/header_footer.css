@@ -13,6 +13,11 @@ body {
     z-index: 999;
 }
 
+
+.language.hbcont{
+    display: none;
+}
+
 @media (min-width:600px) {
     .top_head {
         position: fixed;
@@ -763,12 +768,13 @@ footer {
     background-color: rgba(40, 96, 112, 1);
     color: white;
     padding:20px;
-    height: 320px;
+    height: 325px;
     position: relative;
     z-index: 50;
 }
 
-.pagemap {
+
+.nopgmp{
     display: none;
 }
 
@@ -785,6 +791,11 @@ footer {
 .webmaestros {
     padding-top: 20px;
     padding-bottom: 5px;
+    text-align: center;
+}
+
+.pgmp{
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -845,12 +856,18 @@ footer a:hover{
         text-align: left;
     }
 
+    .nopgmp{
+        display: block;
+    }
+
     .footer_contact p{
         padding-bottom: 4px;
     }
 
     .pgmp{
         padding-bottom: 20px;
+        padding-top: 0px;
+        text-align: unset;
     }
 
     .pagemap p {
